@@ -1,0 +1,6 @@
+name	entity	label	dataType	idAttribute	nillable
+value	DigitalMammographyMg_SoftwareVersion	Value (English)	String	TRUE	FALSE
+description	DigitalMammographyMg_SoftwareVersion	Description (English)	Text	FALSE	TRUE
+codesystem	DigitalMammographyMg_SoftwareVersion	The code system (e.g. ontology) this term belongs to	String	FALSE	TRUE
+code	DigitalMammographyMg_SoftwareVersion	The code within the code system	String	FALSE	TRUE
+iri	DigitalMammographyMg_SoftwareVersion	The Internationalized Resource Identifier for this term	String	FALSE	TRUE

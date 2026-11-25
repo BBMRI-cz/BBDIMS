@@ -9,105 +9,60 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://w3id.org/fair-genomes/ontology/> a owl:Ontology;
-  dc:title "FAIR Genomes metadata schema";
-  dc:description "The FAIR Genomes semantic metadata schema to power reuse of NGS data in research and healthcare.";
-  dc:date "2025-10-21";
-  owl:versionInfo "1.3-SNAPSHOT";
+  dc:title "Biobank Biosample and Data Integration Metadata Schema";
+  dc:description "The Biobank Biosample and Data Integration Metadata Schema extends the MOLGENIS FAIR Genomes framework to standardise how biobank catalogues describe biological samples and their associated large-scale datasets. It links donor profiles, consent, and biospecimen records directly to multi-omics and imaging data using established ontologies. This structured approach facilitates seamless sample discovery, data harmonisation, and metadata exchange across biobank networks.";
+  dc:date "2026-10-15";
+  owl:versionInfo "1.1-SNAPSHOT";
   dc:language "en";
-  dc:rights "This ontology is distributed under a Attribution 4.0 International (CC BY 4.0) License - https://creativecommons.org/licenses/by/4.0/. Copyright: University Medical Center Groningen (2019-2021).";
+  dc:rights "This ontology is distributed under a Attribution 4.0 International (CC BY 4.0) License - https://creativecommons.org/licenses/by/4.0/. Copyright: University Medical Center Groningen (2026).";
   dc:publisher <https://github.com/fairgenomes/fairgenomes-semantic-model>;
   <http://purl.org/dc/terms/license> "Attribution 4.0 International (CC BY 4.0)";
   <http://purl.org/dc/terms/LicenseDocument> <https://creativecommons.org/licenses/by/4.0/>;
-  dc:creator "K. Joeri van der Velde <k.j.van.der.velde@umcg.nl>", <https://orcid.org/0000-0002-0934-8375>,
-    "Gurnoor Singh <gurnoor1990@gmail.com>", <https://orcid.org/0000-0003-1615-4197>,
-    "Rajaram Kaliyaperumal <R.Kaliyaperumal@lumc.nl>", <https://orcid.org/0000-0002-1215-167X>,
-    "XiaoFeng Liao <XiaoFeng.Liao@radboudumc.nl>", <https://orcid.org/0000-0002-4706-1084>,
-    "Esther van Enckevort <e.j.van.enckevort@rug.nl>", <https://orcid.org/0000-0002-2440-3993>,
-    "Jeroen A.M. Beliën <jam.belien@amsterdamumc.nl>", <https://orcid.org/0000-0002-7160-5942>,
-    "Daphne Stemkens <d.stemkens@vsop.nl>", <https://orcid.org/0000-0003-1301-5204>, "Peter A.C. 't Hoen <peter-bram.thoen@radboudumc.nl>",
-    <https://orcid.org/0000-0003-4450-3112>, "Mariëlle E. van Gijn <m.e.van.gijn@umcg.nl>",
-    <https://orcid.org/0000-0002-1073-0539>, "Morris A. Swertz <m.a.swertz@umcg.nl>",
-    <https://orcid.org/0000-0002-0979-3401>, "FAIR Genomes Consortium";
-  dc:contributor <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-drugs.ttl>,
-    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-anatomicfocus.ttl>,
-    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-inclusioncriteria.ttl>,
-    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-familymembers.ttl>,
-    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-imagingdevicesoftwareversion.ttl>,
-    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-datausemodifiers.ttl>,
-    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-countries.ttl>,
-    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-genes.ttl>,
-    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-medicalhistory.ttl>,
-    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-institutes.ttl>,
-    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-genderatbirth.ttl>,
-    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-sequencingplatform.ttl>,
-    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-sequencinginstrumentmodels.ttl>,
-    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-representedby.ttl>,
-    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-datausepermissions.ttl>,
-    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-dataformats.ttl>,
-    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-genomeaccessions.ttl>,
-    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-biomarkermolecular.ttl>,
-    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-imagetype.ttl>,
-    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-treatmentresponse.ttl>,
-    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-imagingdevice.ttl>,
-    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-dcmitypes.ttl>,
-    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-ancestry.ttl>,
-    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-inclusionstatus.ttl>,
-    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-laterality.ttl>,
-    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-pathologicalstate.ttl>,
-    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-recontacting.ttl>,
-    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-phenotypes.ttl>,
-    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-imagingprocedure.ttl>,
-    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-biospecimentypes.ttl>,
-    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-institutesror.ttl>,
-    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-genotypicsex.ttl>,
-    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-genderidentity.ttl>,
-    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-reasonforimagingprocedure.ttl>,
-    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-treatmentsettings.ttl>,
-    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-diseases.ttl>,
-    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-anatomicalsources.ttl>,
-    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-sequencingmethods.ttl>,
-    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-storageconditions.ttl>,
-    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-ngskits.ttl>,
-    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-biomarkertype.ttl>,
-    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-analysesperformed.ttl>,
-    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-manufacturerofid.ttl>,
-    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-modality.ttl> .
+  dc:creator "Radoslava Kacová <radoslava.kacova@mou.cz>", <https://orcid.org/0009-0008-1429-6988>,
+    "K. Joeri van der Velde <k.j.van.der.velde@umcg.nl>", <https://orcid.org/0000-0002-0934-8375>,
+    "Morris A. Swertz <m.a.swertz@umcg.nl>", <https://orcid.org/0000-0002-0979-3401> .
 
 fg:Study a owl:Class;
   rdfs:isDefinedBy obo:NCIT_C63536;
   rdfs:label "Study";
-  dc:description "A detailed examination, analysis, or critical inspection of one or multiple subjects designed to discover facts." .
+  dc:description "A research study, trial, or project context under which biological samples and associated datasets are collected, grouped, and managed for specific research objectives." .
 
 fg:Study_Identifier a owl:DatatypeProperty;
   rdfs:label "Identifier";
   rdfs:domain fg:Study;
   rdfs:isDefinedBy obo:OMIABIS_0000006;
-  dc:description "A unique proper name or character sequence that identifies this particular study." .
+  dc:description "A unique character string or persistent identifier that unambiguously distinguishes this study." .
 
 fg:Study_Name a owl:DatatypeProperty;
   rdfs:label "Name";
   rdfs:domain fg:Study;
   rdfs:isDefinedBy obo:OMIABIS_0000037;
-  dc:description "A name that designates this study." .
+  dc:description "The official title, full name, or public label designating this study or research project." .
 
 fg:Study_Description a owl:DatatypeProperty;
   rdfs:label "Description";
   rdfs:domain fg:Study;
   rdfs:isDefinedBy obo:OMIABIS_0000036;
-  dc:description "A statement or piece of writing that provides details on this study." .
+  dc:description "A narrative summary outlining the scientific background, main objectives, and overall scope of the study." .
+
+fg:Study_Study_URL a owl:DatatypeProperty;
+  rdfs:label "Study URL";
+  rdfs:domain fg:Study;
+  rdfs:isDefinedBy obo:NCIT_C42743;
+  dc:description "A resolvable web address, digital object identifier (DOI) link, or persistent public repository URL pointing to the study documentation, trial registration, or associated online publication." .
 
 fg:Study_Inclusion_criteria a owl:ObjectProperty;
   rdfs:label "Inclusion criteria";
   rdfs:domain fg:Study;
   rdfs:isDefinedBy obo:OBI_0500027;
-  dc:description "The conditions which, if met, make an person eligible for participation in this study.";
+  dc:description "The primary medical, demographic, or genetic eligibility criteria required for a participant to be enrolled in this study.";
   rdfs:range obo:OBI_0500027 .
 
 fg:Study_Principal_investigator a owl:DatatypeProperty;
   rdfs:label "Principal investigator";
   rdfs:domain fg:Study;
   rdfs:isDefinedBy obo:OMIABIS_0000100;
-  dc:description "The principal investigator or responsible person for this study." .
+  dc:description "The primary scientific leader, lead researcher, or designated contact person responsible for the design, execution, and integrity of the study." .
 
 fg:Study_Contact_information a owl:DatatypeProperty;
   rdfs:label "Contact information";
@@ -119,7 +74,7 @@ fg:Study_Study_design a owl:DatatypeProperty;
   rdfs:label "Study design";
   rdfs:domain fg:Study;
   rdfs:isDefinedBy obo:OBI_0500000;
-  dc:description "A plan specification comprised of protocols (which may specify how and what kinds of data will be gathered) that are executed as part of this study." .
+  dc:description "The methodological framework and operational protocol specification describing how subjects, biospecimens, and data are structured and collected (e.g. cohort, case-control, longitudinal, cross-sectional)." .
 
 fg:Study_Start_date a owl:DatatypeProperty;
   rdfs:label "Start date";
@@ -131,60 +86,47 @@ fg:Study_Completion_date a owl:DatatypeProperty;
   rdfs:label "Completion date";
   rdfs:domain fg:Study;
   rdfs:isDefinedBy obo:NCIT_C142702;
-  dc:description "The date on which the concluding information for this study is completed. Usually, this is when the last subject has a final visit, or the main analysis has finished, or any other protocol-defined completion date." .
+  dc:description "The date on which all study protocols are finalized, participant follow-ups conclude, or the primary research objectives are fully met." .
 
 fg:Personal a owl:Class;
   rdfs:isDefinedBy obo:NCIT_C90492;
   rdfs:label "Personal";
-  dc:description "Data, facts or figures about an individual; the set of relevant items would depend on the use case.";
-  obo:RO_0000056 fg:Study .
+  dc:description "Demographic, phenotypic, and baseline characteristics of an individual study participant or patient from whom biological materials and associated research data are collected.";
+  obo:RO_0000056 fg:Study;
+  obo:ICO_0000005 fg:Individual_consent .
 
 fg:Personal_Personal_identifier a owl:DatatypeProperty;
   rdfs:label "Personal identifier";
   rdfs:domain fg:Personal;
   rdfs:isDefinedBy obo:NCIT_C164337;
-  dc:description "A unique proper name or character sequence that identifies this particular person." .
-
-fg:Personal_Gender_identity a owl:ObjectProperty;
-  rdfs:label "Gender identity";
-  rdfs:domain fg:Personal;
-  rdfs:isDefinedBy <http://purl.bioontology.org/ontology/MESH/D005783>;
-  dc:description "A person's concept of self as being male and masculine or female and feminine, or ambivalent, based in part on physical characteristics, parental responses, and psychological and social pressures. It is the internal experience of gender role. For practical reasons the lookups are limited to first and second-level entries, but can be expanded when needed. Note that 'Gender at birth', 'Genotypic sex' and any (gender-related) hormone therapies in 'Medication' are usually medically more relevant than this term.";
-  rdfs:range <http://purl.bioontology.org/ontology/MESH/D005783> .
+  dc:description "A unique pseudonymised code or persistent subject identifier assigned to an individual within the study or biobank repository." .
 
 fg:Personal_Gender_at_birth a owl:ObjectProperty;
   rdfs:label "Gender at birth";
   rdfs:domain fg:Personal;
   rdfs:isDefinedBy obo:GSSO_009418;
-  dc:description "Assigned gender is one's gender which was assigned at birth, typically by a medical and/or legal organization, and then later registered with other organizations. Such a designation is typically based off of the superficial appearance of external genitalia present at birth.";
+  dc:description "The gender or biological sex assigned to the individual at birth, typically documented in medical records or official birth certificates.";
   rdfs:range obo:GSSO_009418 .
-
-fg:Personal_Genotypic_sex a owl:ObjectProperty;
-  rdfs:label "Genotypic sex";
-  rdfs:domain fg:Personal;
-  rdfs:isDefinedBy obo:PATO_0020000;
-  dc:description "A biological sex quality inhering in an individual based upon genotypic composition of sex chromosomes.";
-  rdfs:range obo:NCIT_C168871 .
 
 fg:Personal_Country_of_residence a owl:ObjectProperty;
   rdfs:label "Country of residence";
   rdfs:domain fg:Personal;
-  rdfs:isDefinedBy obo:NCIT_C171105;
-  dc:description "Country of residence at enrollment.";
+  rdfs:isDefinedBy obo:NCIT_C224826;
+  dc:description "The sovereign country where the individual primarily resides at the time of study enrolment or sample collection.";
   rdfs:range obo:GENEPIO_0001830 .
 
 fg:Personal_Ancestry a owl:ObjectProperty;
   rdfs:label "Ancestry";
   rdfs:domain fg:Personal;
   rdfs:isDefinedBy obo:NCIT_C176763;
-  dc:description "Population category defined using ancestry informative markers (AIMs) based on genetic/genomic data.";
+  dc:description "The genetic or geographic ancestral background of an individual, evaluated using ancestry-informative genomic markers or population categories.";
   rdfs:range obo:HANCESTRO_0004 .
 
 fg:Personal_Country_of_birth a owl:ObjectProperty;
   rdfs:label "Country of birth";
   rdfs:domain fg:Personal;
   rdfs:isDefinedBy obo:GENEPIO_0001094;
-  dc:description "The country that this person was born in.";
+  dc:description "The country in which the individual was born.";
   rdfs:range obo:GENEPIO_0001830 .
 
 fg:Personal_Year_of_birth a owl:DatatypeProperty;
@@ -192,13 +134,13 @@ fg:Personal_Year_of_birth a owl:DatatypeProperty;
   sio:SIO_000074 obo:NCIT_C159612;
   rdfs:domain fg:Personal;
   rdfs:isDefinedBy obo:NCIT_C83164;
-  dc:description "The year in which this person was born." .
+  dc:description "The year in which the individual person was born." .
 
-fg:Personal_Inclusion_status a owl:ObjectProperty;
-  rdfs:label "Inclusion status";
+fg:Personal_Status a owl:ObjectProperty;
+  rdfs:label "Status";
   rdfs:domain fg:Personal;
   rdfs:isDefinedBy obo:NCIT_C166244;
-  dc:description "An indicator that provides information on the current health status of this person.";
+  dc:description "The most recent vital or clinical follow-up status of the individual recorded by the biobank or registry (e.g. alive, deceased, lost to follow-up).";
   rdfs:range obo:NCIT_C19332 .
 
 fg:Personal_Age_at_death a owl:DatatypeProperty;
@@ -206,26 +148,13 @@ fg:Personal_Age_at_death a owl:DatatypeProperty;
   sio:SIO_000074 obo:UO_0000036;
   rdfs:domain fg:Personal;
   rdfs:isDefinedBy obo:NCIT_C135383;
-  dc:description "The age at which death occurred." .
-
-fg:Personal_Consanguinity a owl:DatatypeProperty;
-  rdfs:label "Consanguinity";
-  rdfs:domain fg:Personal;
-  rdfs:isDefinedBy obo:OMIT_0004546;
-  dc:description "Information on whether the patient is a child from two family members who are second cousins or closer." .
+  dc:description "In the event of participant decease, the calculated age of the individual at the time of death, measured in completed years." .
 
 fg:Personal_Primary_affiliated_institute a owl:ObjectProperty;
   rdfs:label "Primary affiliated institute";
   rdfs:domain fg:Personal;
   rdfs:isDefinedBy obo:NCIT_C25412;
-  dc:description "The most significant institute for medical consultation and/or study inclusion in context of the genetic disease of this person.";
-  rdfs:range <http://semanticscience.org/resource/SIO_000688> .
-
-fg:Personal_Resources_in_other_institutes a owl:ObjectProperty;
-  rdfs:label "Resources in other institutes";
-  rdfs:domain fg:Personal;
-  rdfs:isDefinedBy obo:NCIT_C19012;
-  dc:description "Material or data related to this person that is not captured by this system though known to be available in other institutes such as biobanks or hospitals.";
+  dc:description "The primary healthcare facility, clinical centre, or biobank institution responsible for the medical management or enrolment of the individual.";
   rdfs:range <http://semanticscience.org/resource/SIO_000688> .
 
 fg:Personal_Participates_in_study a owl:ObjectProperty;
@@ -237,69 +166,39 @@ fg:Personal_Participates_in_study a owl:ObjectProperty;
 fg:Leaflet_and_consent_form a owl:Class;
   rdfs:isDefinedBy obo:NCIT_C16468;
   rdfs:label "Leaflet and consent form";
-  dc:description "A document explaining all the relevant information to assist an individual in understanding the expectations and risks in making a decision about a procedure. This document is presented to and signed by the individual or guardian." .
-
-fg:Leaflet_and_consent_form_Leaflet_title a owl:DatatypeProperty;
-  rdfs:label "Leaflet title";
-  rdfs:domain fg:Leaflet_and_consent_form;
-  rdfs:isDefinedBy <http://purl.org/dc/terms/title>;
-  dc:description "A title or name given to the leaflet that belongs to this consent form." .
-
-fg:Leaflet_and_consent_form_Leaflet_date a owl:DatatypeProperty;
-  rdfs:label "Leaflet date";
-  rdfs:domain fg:Leaflet_and_consent_form;
-  rdfs:isDefinedBy <http://purl.org/dc/terms/date>;
-  dc:description "A point or period of time associated with the publication of this leaflet that belongs to this consent form." .
-
-fg:Leaflet_and_consent_form_Leaflet_version a owl:DatatypeProperty;
-  rdfs:label "Leaflet version";
-  rdfs:domain fg:Leaflet_and_consent_form;
-  rdfs:isDefinedBy <http://purl.org/dc/terms/hasVersion>;
-  dc:description "The version, edition, or adaptation of this leaflet that belongs to this consent form." .
+  dc:description "Specification and metadata of the informative leaflet and blank informed consent template version approved for a study or biobank collection." .
 
 fg:Leaflet_and_consent_form_Consent_form_identifier a owl:DatatypeProperty;
   rdfs:label "Consent form identifier";
   rdfs:domain fg:Leaflet_and_consent_form;
   rdfs:isDefinedBy <http://purl.org/dc/terms/identifier>;
-  dc:description "A unique proper name or character sequence that identifies this particular leaflet and consent form combination used in signing individual consent. Using a DOI would be optimal. Using any resolvable URL is suboptimal but still preferable over using a plain text value." .
+  dc:description "A unique persistent identifier, DOI, or resolvable URL unambiguously identifying this specific consent template and leaflet pair." .
 
 fg:Leaflet_and_consent_form_Consent_form_title a owl:DatatypeProperty;
   rdfs:label "Consent form title";
   rdfs:domain fg:Leaflet_and_consent_form;
   rdfs:isDefinedBy <http://purl.org/dc/terms/title>;
-  dc:description "A title or name given to this consent form." .
-
-fg:Leaflet_and_consent_form_Consent_form_accepted_date a owl:DatatypeProperty;
-  rdfs:label "Consent form accepted date";
-  rdfs:domain fg:Leaflet_and_consent_form;
-  rdfs:isDefinedBy <http://purl.org/dc/terms/dateAccepted>;
-  dc:description "Date of acceptance of this consent form." .
-
-fg:Leaflet_and_consent_form_Consent_form_valid_until a owl:DatatypeProperty;
-  rdfs:label "Consent form valid until";
-  rdfs:domain fg:Leaflet_and_consent_form;
-  rdfs:isDefinedBy <http://purl.org/dc/terms/valid>;
-  dc:description "End date of the validity of this consent form." .
+  dc:description "The formal document title of the informed consent form template." .
 
 fg:Leaflet_and_consent_form_Consent_form_creator a owl:ObjectProperty;
   rdfs:label "Consent form creator";
   rdfs:domain fg:Leaflet_and_consent_form;
   rdfs:isDefinedBy <http://purl.org/dc/terms/creator>;
-  dc:description "Indicates the authoritative body who brought this consent form into existence.";
+  dc:description "The authoritative biobank institution, hospital, or governance board that authored and issued this consent form.";
   rdfs:range <http://semanticscience.org/resource/SIO_000688> .
 
 fg:Leaflet_and_consent_form_Consent_form_version a owl:DatatypeProperty;
   rdfs:label "Consent form version";
   rdfs:domain fg:Leaflet_and_consent_form;
   rdfs:isDefinedBy <http://purl.org/dc/terms/hasVersion>;
-  dc:description "The version, edition, or adaptation of this consent form." .
+  dc:description "The formal version number, release tag, or revision identifier of this consent form template." .
 
 fg:Individual_consent a owl:Class;
   rdfs:isDefinedBy obo:NCIT_C16735;
   rdfs:label "Individual consent";
-  dc:description "Consent given by a patient to a surgical or medical procedure or participation in a study, examination or analysis after achieving an understanding of the relevant medical facts and the risks involved.";
+  dc:description "Record of a signed informed consent given by an individual or legal guardian, specifying data and sample use permissions, restrictions, and validity periods.";
   obo:IAO_0021007 fg:Leaflet_and_consent_form;
-  obo:ICO_0000005 fg:Personal .
+  obo:IAO_0000136 fg:Study .
 
 fg:Individual_consent_Individual_consent_identifier a owl:DatatypeProperty;
   rdfs:label "Individual consent identifier";
@@ -310,20 +209,26 @@ fg:Individual_consent_Individual_consent_identifier a owl:DatatypeProperty;
 fg:Individual_consent_Person_consenting a owl:ObjectProperty;
   rdfs:label "Person consenting";
   rdfs:domain fg:Individual_consent;
-  rdfs:isDefinedBy obo:IAO_0000136;
+  rdfs:isDefinedBy <http://semanticscience.org/resource/SIO_000132>;
   dc:description "Reference to the person (i.e. subject) to whom this individual consent applies." .
 
 fg:Individual_consent_Consent_form_used a owl:ObjectProperty;
   rdfs:label "Consent form used";
   rdfs:domain fg:Individual_consent;
+  rdfs:isDefinedBy <http://purl.org/dc/terms/conformsTo>;
+  dc:description "Link to the specific approved template version in the Leaflet and consent form module used during signing." .
+
+fg:Individual_consent_Belongs_to_study a owl:ObjectProperty;
+  rdfs:label "Belongs to study";
+  rdfs:domain fg:Individual_consent;
   rdfs:isDefinedBy obo:IAO_0000136;
-  dc:description "Reference to the informed consent form that was signed. Points to a particular instance of leaflet and consent form that usually exists as a record (i.e. a row) within the same database as this individual consent." .
+  dc:description "Reference to the study for which this individual consent permits data and sample use." .
 
 fg:Individual_consent_Collected_by a owl:ObjectProperty;
   rdfs:label "Collected by";
   rdfs:domain fg:Individual_consent;
   rdfs:isDefinedBy obo:NCIT_C45262;
-  dc:description "Indicates the institute who performed the collection act.";
+  dc:description "The healthcare facility, clinical ward, or biobank site where the informed consent was administered and obtained.";
   rdfs:range <http://semanticscience.org/resource/SIO_000688> .
 
 fg:Individual_consent_Signing_date a owl:DatatypeProperty;
@@ -332,17 +237,11 @@ fg:Individual_consent_Signing_date a owl:DatatypeProperty;
   rdfs:isDefinedBy obo:ICO_0000036;
   dc:description "A date specification that designates when this individual consent form was signed." .
 
-fg:Individual_consent_Valid_from a owl:DatatypeProperty;
-  rdfs:label "Valid from";
-  rdfs:domain fg:Individual_consent;
-  rdfs:isDefinedBy <http://purl.org/dc/terms/valid>;
-  dc:description "Starting date of the validity of this individual consent." .
-
 fg:Individual_consent_Valid_until a owl:DatatypeProperty;
   rdfs:label "Valid until";
   rdfs:domain fg:Individual_consent;
   rdfs:isDefinedBy <http://purl.org/dc/terms/valid>;
-  dc:description "End date of the validity of this individual consent." .
+  dc:description "The expiry date or termination date of the consent, such as upon participant withdrawal or completion of a time-limited study protocol." .
 
 fg:Individual_consent_Represented_by a owl:ObjectProperty;
   rdfs:label "Represented by";
@@ -355,7 +254,7 @@ fg:Individual_consent_Data_use_permissions a owl:ObjectProperty;
   rdfs:label "Data use permissions";
   rdfs:domain fg:Individual_consent;
   rdfs:isDefinedBy obo:DUO_0000001;
-  dc:description "A data item that is used to indicate consent permissions for datasets and/or materials, and relates to the purposes for which datasets and/or material might be used.";
+  dc:description "The primary consented permission and intended scope governing the secondary research use of datasets and biological specimens.";
   rdfs:range obo:DUO_0000001 .
 
 fg:Individual_consent_Data_use_modifiers a owl:ObjectProperty;
@@ -365,23 +264,17 @@ fg:Individual_consent_Data_use_modifiers a owl:ObjectProperty;
   dc:description "Data use modifiers indicate additional conditions for use. For instance, a dataset is restricted to investigations into specific diseases or performed at specific geographical locations.";
   rdfs:range obo:DUO_0000017 .
 
-fg:Individual_consent_Data_use_specification a owl:DatatypeProperty;
-  rdfs:label "Data use specification";
-  rdfs:domain fg:Individual_consent;
-  rdfs:isDefinedBy <http://semanticscience.org/resource/SIO_000090>;
-  dc:description "Further specification of applied data use permissions and modifiers. For example, a list of countries in case of geographic restrictions or a list of diseases when restricted to disease-specific research." .
-
 fg:Individual_consent_Allow_recontacting a owl:ObjectProperty;
   rdfs:label "Allow recontacting";
   rdfs:domain fg:Individual_consent;
   rdfs:isDefinedBy obo:NCIT_C25737;
-  dc:description "The procedure of recontacting the patient for specified reasons. This means the patient agrees to be re-identifiable under those circumstances.";
+  dc:description "Indication of whether the participant has consented to be re-contacted by the biobank or clinical team for study updates, further sample donations, or actionable secondary health findings.";
   rdfs:range obo:NCIT_C176244 .
 
 fg:Clinical a owl:Class;
   rdfs:isDefinedBy obo:NCIT_C25398;
   rdfs:label "Clinical";
-  dc:description "Findings and circumstances relating to the examination and treatment of a patient.";
+  dc:description "Clinical observations, diagnoses, disease staging, and longitudinal treatment responses recorded for a patient across specific disease encounters or study timepoints.";
   <http://semanticscience.org/resource/SIO_000332> fg:Personal .
 
 fg:Clinical_Clinical_identifier a owl:DatatypeProperty;
@@ -396,125 +289,61 @@ fg:Clinical_Belongs_to_person a owl:ObjectProperty;
   rdfs:isDefinedBy obo:IAO_0000136;
   dc:description "Reference to the person whom this clinical information is about." .
 
-fg:Clinical_Phenotype a owl:ObjectProperty;
-  rdfs:label "Phenotype";
-  rdfs:domain fg:Clinical;
-  rdfs:isDefinedBy obo:NCIT_C16977;
-  dc:description "The outward appearance of the individual. In medical context, these are often the symptoms caused by a disease.";
-  rdfs:range <https://www.wikidata.org/wiki/Property:P3841> .
-
-fg:Clinical_Unobserved_phenotype a owl:ObjectProperty;
-  rdfs:label "Unobserved phenotype";
-  rdfs:domain fg:Clinical;
-  rdfs:isDefinedBy <http://purl.bioontology.org/ontology/HL7/C0442737>;
-  dc:description "Phenotypes or symptoms that were looked for but not observed, which may help in differential diagnosis or establish incomplete penetrance.";
-  rdfs:range <https://www.wikidata.org/wiki/Property:P3841> .
-
-fg:Clinical_Phenotypic_data_available a owl:ObjectProperty;
-  rdfs:label "Phenotypic data available";
-  rdfs:domain fg:Clinical;
-  rdfs:isDefinedBy obo:NCIT_C15783;
-  dc:description "Types of phenotypic data collected in a clinical setting that is potentially available upon request.";
-  rdfs:range <http://purl.org/dc/terms/DCMIType> .
-
-fg:Clinical_Clinical_diagnosis a owl:ObjectProperty;
-  rdfs:label "Clinical diagnosis";
+fg:Clinical_Diagnosis a owl:ObjectProperty;
+  rdfs:label "Diagnosis";
   rdfs:domain fg:Clinical;
   rdfs:isDefinedBy obo:NCIT_C15607;
-  dc:description "A diagnosis made from a study of the signs and symptoms of a disease.";
+  dc:description "Main clinical diagnosis coded using ICD-10, ORPHA, or SNOMED CT.";
   rdfs:range <http://edamontology.org/data_3667> .
-
-fg:Clinical_Molecular_diagnosis_gene a owl:ObjectProperty;
-  rdfs:label "Molecular diagnosis gene";
-  rdfs:domain fg:Clinical;
-  rdfs:isDefinedBy obo:NCIT_C20826;
-  dc:description "Gene affected by pathogenic variation that is causal for disease of the patient.";
-  rdfs:range obo:NCIT_C16612 .
-
-fg:Clinical_Molecular_diagnosis_other a owl:DatatypeProperty;
-  rdfs:label "Molecular diagnosis other";
-  rdfs:domain fg:Clinical;
-  rdfs:isDefinedBy obo:NCIT_C20826;
-  dc:description "Causal variant in HGVS notation with optional classification or free text explaining any other molecular mechanisms involved." .
 
 fg:Clinical_Age_at_diagnosis a owl:DatatypeProperty;
   rdfs:label "Age at diagnosis";
   sio:SIO_000074 obo:UO_0000036;
   rdfs:domain fg:Clinical;
   rdfs:isDefinedBy <http://purl.bioontology.org/ontology/SNOMEDCT/423493009>;
-  dc:description "The age, measured from some defined time point (e.g. birth) at which a patient is diagnosed with a disease." .
+  dc:description "Age of the patient in years at the time of disease diagnosis." .
 
-fg:Clinical_Age_at_last_screening a owl:DatatypeProperty;
-  rdfs:label "Age at last screening";
-  sio:SIO_000074 obo:UO_0000036;
+fg:Clinical_Clinical_timepoint a owl:ObjectProperty;
+  rdfs:label "Clinical timepoint";
   rdfs:domain fg:Clinical;
-  rdfs:isDefinedBy obo:NCIT_C81258;
-  dc:description "Age of the patient at the moment of the most recent screening." .
+  rdfs:isDefinedBy obo:NCIT_C68568;
+  dc:description "Relative timepoint or clinical phase of this encounter relative to diagnosis or baseline (e.g. Baseline, Post-treatment, Relapse, Day 0, Month 3).";
+  rdfs:range obo:NCIT_C25213 .
 
-fg:Clinical_Medication a owl:ObjectProperty;
-  rdfs:label "Medication";
+fg:Clinical_Disease_stage a owl:ObjectProperty;
+  rdfs:label "Disease stage";
   rdfs:domain fg:Clinical;
-  rdfs:isDefinedBy obo:NCIT_C459;
-  dc:description "A drug product that contains one or more active and/or inactive ingredients used by the patient intended to treat, prevent or alleviate the symptoms of disease. Any hormone therapies, gender-related or otherwise, should also be recorded here.";
-  rdfs:range <http://edamontology.org/data_3103> .
+  rdfs:isDefinedBy obo:OBI_0000278;
+  dc:description "Broad categorisation of disease progression at the time of data or sample collection (e.g. Stage I-IV, Early/Advanced, Primary/Metastatic).";
+  rdfs:range obo:NCIT_C16899 .
 
-fg:Clinical_Drug_regimen a owl:DatatypeProperty;
-  rdfs:label "Drug regimen";
+fg:Clinical_Molecular_diagnosis_gene a owl:ObjectProperty;
+  rdfs:label "Molecular diagnosis gene";
   rdfs:domain fg:Clinical;
-  rdfs:isDefinedBy obo:NCIT_C142516;
-  dc:description "The specific way a therapeutic drug is to be taken, including formulation, route of administration, dose, dosing interval, and treatment duration." .
+  rdfs:isDefinedBy obo:NCIT_C20826;
+  dc:description "Causal gene(s) bearing a confirmed pathogenic or clinically significant variant associated with the patient's diagnosis or response to treatment (e.g. BRCA1, EGFR, KRAS). Do not list all tested panel genes here.";
+  rdfs:range obo:NCIT_C16612 .
 
-fg:Clinical_Family_members_affected a owl:ObjectProperty;
-  rdfs:label "Family members affected";
+fg:Clinical_Treatment_category a owl:ObjectProperty;
+  rdfs:label "Treatment category";
   rdfs:domain fg:Clinical;
-  rdfs:isDefinedBy obo:HP_0032320;
-  dc:description "Family members related by descent rather than by marriage or law who were diagnosed with the same condition as the individual who is the primary focus of investigation (i.e. the proband).";
-  rdfs:range obo:NCIT_C71384 .
+  rdfs:isDefinedBy obo:NCIT_C49236;
+  dc:description "High-level classification of therapies applied to the patient (e.g. Chemotherapy, Radiotherapy, Immunotherapy, Surgery, Naive/Untreated).";
+  rdfs:range obo:NCIT_C49236 .
 
-fg:Clinical_Family_members_sequenced a owl:ObjectProperty;
-  rdfs:label "Family members sequenced";
+fg:Clinical_Response_to_treatment a owl:ObjectProperty;
+  rdfs:label "Response to treatment";
   rdfs:domain fg:Clinical;
-  rdfs:isDefinedBy obo:NCIT_C79916;
-  dc:description "Family members related by descent rather than by marriage or law who were also tested by next-generation sequencing.";
-  rdfs:range obo:NCIT_C71384 .
-
-fg:Clinical_Medical_history a owl:ObjectProperty;
-  rdfs:label "Medical history";
-  rdfs:domain fg:Clinical;
-  rdfs:isDefinedBy obo:NCIT_C18772;
-  dc:description "A record of a person's background regarding health, occurrence of disease events and surgical procedures.";
-  rdfs:range <http://scdontology.h3abionet.org/ontology/SCDO_1000093> .
-
-fg:Clinical_Age_of_onset a owl:DatatypeProperty;
-  rdfs:label "Age of onset";
-  sio:SIO_000074 obo:UO_0000036;
-  rdfs:domain fg:Clinical;
-  rdfs:isDefinedBy ordo:Orphanet_C023;
-  dc:description "Age of onset of clinical manifestations related to the disease of the patient." .
-
-fg:Clinical_First_contact a owl:DatatypeProperty;
-  rdfs:label "First contact";
-  rdfs:domain fg:Clinical;
-  rdfs:isDefinedBy <http://purl.bioontology.org/ontology/LNC/MTHU048806>;
-  dc:description "First contact of the patient with a specialised center in context of disease or study inclusion." .
-
-fg:Clinical_Functioning a owl:DatatypeProperty;
-  rdfs:label "Functioning";
-  rdfs:domain fg:Clinical;
-  rdfs:isDefinedBy obo:NCIT_C21007;
-  dc:description "Patient's classification of functioning i.e. disability profile according to International Classification of Functioning and Disability (ICF)." .
-
-fg:Clinical_Material_used_in_diagnosis a owl:DatatypeProperty;
-  rdfs:label "Material used in diagnosis";
-  rdfs:domain fg:Clinical;
-  rdfs:isDefinedBy <http://semanticscience.org/resource/SIO_000641>;
-  dc:description "This diagnosis c.q. clinical examination is based on one or more sampled materials." .
+  rdfs:isDefinedBy <http://purl.bioontology.org/ontology/SNOMEDCT/182985004>;
+  dc:description "The patients' response to the applied treatment regimen.";
+  rdfs:range <http://purl.bioontology.org/ontology/SNOMEDCT/182985004> .
 
 fg:Material a owl:Class;
   rdfs:isDefinedBy obo:NCIT_C43376;
   rdfs:label "Material";
-  dc:description "A natural substance derived from living organisms such as cells, tissues, proteins, and DNA.";
-  obo:HSO_0000242 fg:Personal .
+  dc:description "Primary biological material obtained directly from a donor or patient through a collection procedure (e.g. biopsy, surgery, blood draw), defining the original anatomical source, sampling timestamp, and pathological state.";
+  obo:HSO_0000242 fg:Personal;
+  obo:RO_0000056 fg:Clinical .
 
 fg:Material_Material_identifier a owl:DatatypeProperty;
   rdfs:label "Material identifier";
@@ -534,112 +363,254 @@ fg:Material_Belongs_to_diagnosis a owl:ObjectProperty;
   rdfs:isDefinedBy <http://semanticscience.org/resource/SIO_000068>;
   dc:description "Reference to a diagnosis c.q. clinical examination of which this material may be a part of. There can be multiple diagnoses when a non-tumor material is reused as reference." .
 
-fg:Material_Sampling_timestamp a owl:DatatypeProperty;
-  rdfs:label "Sampling timestamp";
+fg:Material_Sampling_date a owl:DatatypeProperty;
+  rdfs:label "Sampling date";
   rdfs:domain fg:Material;
-  rdfs:isDefinedBy <http://www.ebi.ac.uk/efo/EFO_0000689>;
-  dc:description "Date and time at which this material was collected." .
+  rdfs:isDefinedBy obo:NCIT_C164024;
+  dc:description "The date that a sample was collected or obtained." .
 
-fg:Material_Registration_timestamp a owl:DatatypeProperty;
-  rdfs:label "Registration timestamp";
-  rdfs:domain fg:Material;
-  rdfs:isDefinedBy obo:NCIT_C25646;
-  dc:description "Date and time at which this material was listed or recorded officially, i.e. officially qualified or enrolled." .
-
-fg:Material_Sampling_protocol a owl:DatatypeProperty;
-  rdfs:label "Sampling protocol";
-  rdfs:domain fg:Material;
-  rdfs:isDefinedBy <http://www.ebi.ac.uk/efo/EFO_0005518>;
-  dc:description "The procedure whereby this material was sampled for an analysis." .
-
-fg:Material_Sampling_protocol_deviation a owl:DatatypeProperty;
-  rdfs:label "Sampling protocol deviation";
-  rdfs:domain fg:Material;
-  rdfs:isDefinedBy obo:NCIT_C50996;
-  dc:description "A variation from processes or procedures defined in the sampling protocol. Deviations usually do not preclude the overall evaluability of subject data for either efficacy or safety, and are often acknowledged and accepted in advance by the sponsor." .
-
-fg:Material_Reason_for_sampling_protocol_deviation a owl:DatatypeProperty;
-  rdfs:label "Reason for sampling protocol deviation";
-  rdfs:domain fg:Material;
-  rdfs:isDefinedBy obo:NCIT_C93529;
-  dc:description "The rationale for why a deviation from the sampling protocol has occurred." .
-
-fg:Material_Biospecimen_type a owl:ObjectProperty;
-  rdfs:label "Biospecimen type";
+fg:Material_Material_type a owl:ObjectProperty;
+  rdfs:label "Material type";
   rdfs:domain fg:Material;
   rdfs:isDefinedBy obo:NCIT_C70713;
-  dc:description "The type of material taken from a biological entity for testing, diagnostic, propagation, treatment or research purposes.";
+  dc:description "The broad biological nature of the collected substance prior to processing (e.g. whole blood, solid tissue, bone marrow, saliva, urine).";
   rdfs:range obo:NCIT_C70699 .
 
 fg:Material_Anatomical_source a owl:ObjectProperty;
   rdfs:label "Anatomical source";
   rdfs:domain fg:Material;
-  rdfs:isDefinedBy obo:NCIT_C103264;
-  dc:description "Biological entity that constitutes the structural organization of an individual member of a biological species from which this material was taken.";
+  rdfs:isDefinedBy obo:NCIT_C13717;
+  dc:description "The specific organ, anatomical site, or bodily structure of the individual from which the biological material was procured.";
   rdfs:range obo:UBERON_0001062 .
 
 fg:Material_Pathological_state a owl:ObjectProperty;
   rdfs:label "Pathological state";
   rdfs:domain fg:Material;
   rdfs:isDefinedBy obo:NCIT_C28257;
-  dc:description "The pathological state of the tissue from which this material was derived.";
+  dc:description "The histological or pathological condition of the procured biological specimen or biofluid (e.g. malignant, benign, non-involved control, premalignant).";
   rdfs:range obo:NCIT_C164617 .
 
-fg:Material_Storage_conditions a owl:ObjectProperty;
-  rdfs:label "Storage conditions";
-  rdfs:domain fg:Material;
-  rdfs:isDefinedBy obo:NCIT_C96145;
-  dc:description "The conditions under which this biological material was stored.";
-  rdfs:range obo:NCIT_C96145 .
+fg:Biospecimens a owl:Class;
+  rdfs:isDefinedBy obo:NCIT_C70699;
+  rdfs:label "Biospecimens";
+  dc:description "A specific physical unit, aliquot, or processed preparation derived from primary material (e.g. FFPE block, frozen tissue section, biofluid aliquot) managed in biobank storage under defined preservation and fixation conditions.";
+  obo:RO_0001000 fg:Material .
 
-fg:Material_Expiration_date a owl:DatatypeProperty;
-  rdfs:label "Expiration date";
-  rdfs:domain fg:Material;
-  rdfs:isDefinedBy obo:NCIT_C164516;
-  dc:description "The date beyond which this material is no longer regarded as fit for use." .
+fg:Biospecimens_Biospecimen_identifier a owl:DatatypeProperty;
+  rdfs:label "Biospecimen identifier";
+  rdfs:domain fg:Biospecimens;
+  rdfs:isDefinedBy obo:NCIT_C93400;
+  dc:description "A unique proper name or character sequence that identifies this particular biospecimen." .
 
-fg:Material_Percentage_tumor_cells a owl:DatatypeProperty;
+fg:Biospecimens_Derived_from_material a owl:ObjectProperty;
+  rdfs:label "Derived from material";
+  rdfs:domain fg:Biospecimens;
+  rdfs:isDefinedBy obo:RO_0001000;
+  dc:description "Identifies the parent biological Material entity from which this biospecimen directly or indirectly originates, either as a physical portion (aliquot) or as a derived fraction (e.g., extracted DNA, serum, tissue section)." .
+
+fg:Biospecimens_Biospecimen_Form a owl:ObjectProperty;
+  rdfs:label "Biospecimen Form";
+  rdfs:domain fg:Biospecimens;
+  rdfs:isDefinedBy obo:NCIT_C70713;
+  dc:description "The specific physical form, fraction, or analyte derived from the parent material (e.g., extracted genomic DNA, total RNA, serum, cell lysate, or FFPE section) prepared for downstream analysis or sequencing.";
+  rdfs:range obo:NCIT_C173496 .
+
+fg:Biospecimens_Percentage_tumor_cells a owl:DatatypeProperty;
   rdfs:label "Percentage tumor cells";
-  rdfs:domain fg:Material;
-  rdfs:isDefinedBy obo:NCIT_C127771;
+  rdfs:domain fg:Biospecimens;
+  rdfs:isDefinedBy obo:NCIT_C123556;
   dc:description "The percentage of tumor cells compared to total cells present in this material." .
 
-fg:Material_Physical_location a owl:DatatypeProperty;
-  rdfs:label "Physical location";
-  rdfs:domain fg:Material;
-  rdfs:isDefinedBy obo:GAZ_00000448;
-  dc:description "A place on the Earth where this material is located, by its name or by its geographical location. This definition is intentionally vague to allow reuse locally (e.g. which freezer), for contacting (e.g. which institute), broadly for logistical or legal reasons (e.g. city, country or continent)." .
+fg:Biospecimens_Quantity a owl:DatatypeProperty;
+  rdfs:label "Quantity";
+  rdfs:domain fg:Biospecimens;
+  rdfs:isDefinedBy obo:NCIT_C25256;
+  dc:description "The total count or number of available physical units, aliquots, blocks, or slides representing this specific biospecimen instance." .
 
-fg:Material_Analyses_performed a owl:ObjectProperty;
-  rdfs:label "Analyses performed";
-  rdfs:domain fg:Material;
-  rdfs:isDefinedBy obo:IAO_0000702;
-  dc:description "Reports the existence of any analyses performed on this material other than genomics (e.g. transcriptomics, metabolomics, proteomics).";
-  rdfs:range <http://edamontology.org/topic_3391> .
+fg:Biospecimens_Storage_conditions a owl:ObjectProperty;
+  rdfs:label "Storage conditions";
+  rdfs:domain fg:Biospecimens;
+  rdfs:isDefinedBy obo:NCIT_C96145;
+  dc:description "The environmental temperature and preservation parameter under which the biospecimen is maintained in the repository.";
+  rdfs:range obo:NCIT_C96145 .
 
-fg:Material_Derived_from a owl:DatatypeProperty;
-  rdfs:label "Derived from";
-  rdfs:domain fg:Material;
-  rdfs:isDefinedBy obo:NCIT_C28355;
-  dc:description "Indicate if this material was produced from or related to another." .
+fg:Biospecimens_Managing_biobank a owl:ObjectProperty;
+  rdfs:label "Managing biobank";
+  rdfs:domain fg:Biospecimens;
+  rdfs:isDefinedBy obo:NCIT_C48800;
+  dc:description "The organization or facility that owns, manages, and physically stores this biospecimen or slide, maintaining custody and responsibility for its storage conditions and associated data.";
+  rdfs:range <http://hdl.handle.net/21.12110/1.BE90-1C99-5787> .
 
-fg:Fixed_Block a owl:Class;
-  rdfs:isDefinedBy obo:NCIT_C25436;
-  rdfs:label "Fixed Block";
-  dc:description "Refers to preserved specimens embedded in support material. These are typically cut into thin slices for microscopic examination, with or without an enhancement such as staining.";
-  obo:HSO_0000242 fg:Personal .
+fg:Biospecimens_Availability a owl:ObjectProperty;
+  rdfs:label "Availability";
+  rdfs:domain fg:Biospecimens;
+  rdfs:isDefinedBy obo:NCIT_C25429;
+  dc:description "The current operational or inventory status indicating whether the biospecimen is available for research, reserved, depleted, or destroyed.";
+  rdfs:range obo:NCIT_C25429 .
 
-fg:Fixed_Block_Block_identifier a owl:DatatypeProperty;
-  rdfs:label "Block identifier";
-  rdfs:domain fg:Fixed_Block;
-  rdfs:isDefinedBy obo:NCIT_C93400;
-  dc:description "A unique proper name or character sequence that identifies this fixed block." .
+fg:Biospecimens_Name_of_fixative a owl:ObjectProperty;
+  rdfs:label "Name of fixative";
+  rdfs:domain fg:Biospecimens;
+  rdfs:isDefinedBy obo:NCIT_C128948;
+  dc:description "The name of the compound that preserves tissues and cells for microscopic study.";
+  rdfs:range obo:NCIT_C498 .
+
+fg:Biospecimens_Embedding_medium a owl:ObjectProperty;
+  rdfs:label "Embedding medium";
+  rdfs:domain fg:Biospecimens;
+  rdfs:isDefinedBy obo:NCIT_C113307;
+  dc:description "A material that infiltrates and supports a specimen and preserves its shape and structure for sectioning and microscopy.";
+  rdfs:range obo:NCIT_C113307 .
+
+fg:Imaging_study a owl:Class;
+  rdfs:isDefinedBy <https://w3id.org/reproduceme#ImagingStudy>;
+  rdfs:label "Imaging study";
+  dc:description "A diagnostic, clinical, or research imaging procedure comprising one or more imaging series (e.g. radiological scans such as CT/MRI or digital pathology whole slide images) acquired for a subject within a common clinical or study context.";
+  obo:BFO_0000051 fg:Imaging_Series;
+  obo:RO_0000056 fg:Clinical .
+
+fg:Imaging_study_Imaging_study_identifier a owl:DatatypeProperty;
+  rdfs:label "Imaging study identifier";
+  rdfs:domain fg:Imaging_study;
+  rdfs:isDefinedBy obo:NCIT_C164493;
+  dc:description "The user- or equipment-generated identifier of an instance of a study entity." .
+
+fg:Imaging_study_Belongs_to_person a owl:ObjectProperty;
+  rdfs:label "Belongs to person";
+  rdfs:domain fg:Imaging_study;
+  rdfs:isDefinedBy obo:NCIT_C164337;
+  dc:description "Reference to the person whom this imaging study is about." .
+
+fg:Imaging_study_Belongs_to_diagnosis a owl:ObjectProperty;
+  rdfs:label "Belongs to diagnosis";
+  rdfs:domain fg:Imaging_study;
+  rdfs:isDefinedBy <http://semanticscience.org/resource/SIO_000068>;
+  dc:description "Reference to the specific clinical examination, diagnosis, or disease timepoint during which this imaging study was indicated or evaluated." .
+
+fg:Imaging_study_Study_date a owl:DatatypeProperty;
+  rdfs:label "Study date";
+  rdfs:domain fg:Imaging_study;
+  rdfs:isDefinedBy obo:NCIT_C69208;
+  dc:description "The date on which a study began." .
+
+fg:Imaging_study_Imaging_procedure a owl:ObjectProperty;
+  rdfs:label "Imaging procedure";
+  rdfs:domain fg:Imaging_study;
+  rdfs:isDefinedBy obo:NCIT_C17369;
+  dc:description "An imaging procedure as defined by SNOMED CT, representing a specific diagnostic or acquisition procedure (e.g., 'CT of breast', 'MRI of head', or 'Whole Slide Imaging'), rather than the general modality or technique alone. The general modality or technique (e.g., 'CT', 'MR', 'SM') is captured separately in the 'Imaging modality' field.";
+  rdfs:range <http://snomed.info/id/15220000> .
+
+fg:Imaging_study_Reason_for_imaging_procedure a owl:ObjectProperty;
+  rdfs:label "Reason for imaging procedure";
+  rdfs:domain fg:Imaging_study;
+  rdfs:isDefinedBy obo:NCIT_C69216;
+  dc:description "The clinical or research rationale for performing the imaging procedure. This field captures why the procedure was indicated for the patient, such as screening, diagnosis, treatment planning, or research purposes. It should express the intent or medical reason, not the technical details of the procedure itself.";
+  rdfs:range <http://snomed.info/id/138875005> .
+
+fg:Imaging_study_Series_count a owl:DatatypeProperty;
+  rdfs:label "Series count";
+  rdfs:domain fg:Imaging_study;
+  rdfs:isDefinedBy obo:NCIT_C164492;
+  dc:description "The total number of image series contained within this imaging study." .
+
+fg:Imaging_study_Images_count a owl:DatatypeProperty;
+  rdfs:label "Images count";
+  rdfs:domain fg:Imaging_study;
+  rdfs:isDefinedBy obo:NCIT_C164540;
+  dc:description "The total number of individual image instances or frames comprising this imaging study." .
+
+fg:Imaging_study_Affiliated_institution a owl:ObjectProperty;
+  rdfs:label "Affiliated institution";
+  rdfs:domain fg:Imaging_study;
+  rdfs:isDefinedBy obo:NCIT_C25412;
+  dc:description "The organisation or institution responsible for performing the imaging study.";
+  rdfs:range <http://semanticscience.org/resource/SIO_000688> .
+
+fg:Slide_preparation_assay a owl:Class;
+  rdfs:isDefinedBy obo:OBI_0000070;
+  rdfs:label "Slide preparation assay";
+  dc:description "A laboratory protocol for preparing, sectioning, and staining biological specimens on glass slides (e.g. histological, special staining, or immunohistochemistry assays) prior to whole slide imaging or microscopic evaluation.";
+  obo:OBI_0000293 fg:Biospecimens;
+  <http://semanticscience.org/resource/SIO_000248> fg:Imaging_study .
+
+fg:Slide_preparation_assay_Assay_identifier a owl:DatatypeProperty;
+  rdfs:label "Assay identifier";
+  rdfs:domain fg:Slide_preparation_assay;
+  rdfs:isDefinedBy <http://purl.allotrope.org/ontologies/result#AFR_0001979>;
+  dc:description "An assay identifier is an identifier that identifies some assay (analysis)." .
+
+fg:Slide_preparation_assay_Assay_type a owl:ObjectProperty;
+  rdfs:label "Assay type";
+  rdfs:domain fg:Slide_preparation_assay;
+  rdfs:isDefinedBy obo:NCIT_C189101;
+  dc:description "The specific type of laboratory test or analytical procedure performed on a bio-specimen mounted on a glass slide. It defines the staining or labeling technique applied to the specimen to reveal specific structural, molecular, or cellular features.";
+  rdfs:range obo:NCIT_C23043 .
+
+fg:Slide_preparation_assay_Belongs_to_biospecimen a owl:ObjectProperty;
+  rdfs:label "Belongs to biospecimen";
+  rdfs:domain fg:Slide_preparation_assay;
+  rdfs:isDefinedBy obo:OBI_0000293;
+  dc:description "Reference to the biospecimen (e.g. FFPE block, slide) that was the physical input to this slide preparation assay." .
+
+fg:Slide_preparation_assay_Precedes_the_study a owl:ObjectProperty;
+  rdfs:label "Precedes the study";
+  rdfs:domain fg:Slide_preparation_assay;
+  rdfs:isDefinedBy <http://semanticscience.org/resource/SIO_000248>;
+  dc:description "Reference to the subsequent imaging study or digital whole-slide scanning event for which this prepared slide serves as the direct physical input." .
+
+fg:Slide_preparation_assay_Biomarker_type a owl:ObjectProperty;
+  rdfs:label "Biomarker type";
+  rdfs:domain fg:Slide_preparation_assay;
+  rdfs:isDefinedBy obo:NCIT_C201359;
+  dc:description "A classification of the type of biomolecule or biological component that the assay targets, labels, or detects. It characterizes whether the biomarker is, for example, a protein, nucleic acid, carbohydrate, lipid, or inorganic substance.";
+  rdfs:range obo:OPMI_0000452 .
+
+fg:Slide_preparation_assay_Section_thickness a owl:DatatypeProperty;
+  rdfs:label "Section thickness";
+  rdfs:domain fg:Slide_preparation_assay;
+  rdfs:isDefinedBy obo:NCIT_C176286;
+  dc:description "A measurement of the thickness of a sectioned slice (of tissue or mineral or other substance), expressed in micrometers (µm)." .
+
+fg:Slide_preparation_assay_Biomarker_spatial_localization a owl:ObjectProperty;
+  rdfs:label "Biomarker spatial localization";
+  rdfs:domain fg:Slide_preparation_assay;
+  rdfs:isDefinedBy obo:GO_0051641;
+  dc:description "The subcellular or structural location within a tissue or cell where the biomarker is expressed or detected.";
+  rdfs:range obo:GO_0110165 .
+
+fg:Slide_preparation_assay_Pathogen_type a owl:ObjectProperty;
+  rdfs:label "Pathogen type";
+  rdfs:domain fg:Slide_preparation_assay;
+  rdfs:isDefinedBy <https://w3id.org/evorao/pathogenType>;
+  dc:description "Identification of the specific type of pathogen among the listed categories e.g. 'Virus','Viroid','Bacterium'...";
+  rdfs:range obo:NCIT_C80324 .
+
+fg:Slide_preparation_assay_Dye_name a owl:ObjectProperty;
+  rdfs:label "Dye name";
+  rdfs:domain fg:Slide_preparation_assay;
+  rdfs:isDefinedBy <http://snomed.info/id/703857004>;
+  dc:description "The neutral or synthetic colored substance used for staining specific tissues or cellular components.";
+  rdfs:range <http://snomed.info/id/703857004> .
+
+fg:Slide_preparation_assay_Counter_labeling a owl:ObjectProperty;
+  rdfs:label "Counter labeling";
+  rdfs:domain fg:Slide_preparation_assay;
+  rdfs:isDefinedBy <http://snomed.info/id/703857004>;
+  dc:description "The counter-labeling technique used to highlight specific cellular or tissue structures, serving as a complementary method to the primary labeling for analysis";
+  rdfs:range <http://snomed.info/id/703857004> .
+
+fg:Slide_preparation_assay_Antibody_name a owl:ObjectProperty;
+  rdfs:label "Antibody name";
+  rdfs:domain fg:Slide_preparation_assay;
+  rdfs:isDefinedBy obo:XCO_0000194;
+  dc:description "The vendor-stated name of an antibody used to detect and visualize the presence of an antigen.";
+  rdfs:range obo:XCO_0000194 .
 
 fg:Sample_preparation a owl:Class;
   rdfs:isDefinedBy obo:OBI_0001902;
   rdfs:label "Sample preparation";
-  dc:description "A sample preparation for a nucleic acids sequencing assay.";
-  obo:NCIT_C179746 fg:Material .
+  dc:description "The pre-analytical laboratory procedure used to extract, isolate, and prepare nucleic acids into sequencing libraries, including target enrichment, molecular barcoding, and library quality control.";
+  obo:OBI_0000293 fg:Biospecimens .
 
 fg:Sample_preparation_Sampleprep_identifier a owl:DatatypeProperty;
   rdfs:label "Sampleprep identifier";
@@ -647,11 +618,11 @@ fg:Sample_preparation_Sampleprep_identifier a owl:DatatypeProperty;
   rdfs:isDefinedBy obo:NCIT_C132299;
   dc:description "A unique proper name or character sequence that identifies this particular sample preparation." .
 
-fg:Sample_preparation_Belongs_to_material a owl:ObjectProperty;
-  rdfs:label "Belongs to material";
+fg:Sample_preparation_Belongs_to_biospecimen a owl:ObjectProperty;
+  rdfs:label "Belongs to biospecimen";
   rdfs:domain fg:Sample_preparation;
-  rdfs:isDefinedBy obo:NCIT_C25683;
-  dc:description "Reference to the source material from which this sample was prepared." .
+  rdfs:isDefinedBy obo:OBI_0000293;
+  dc:description "Reference to the source biospecimen from which this sample was prepared." .
 
 fg:Sample_preparation_Input_amount a owl:DatatypeProperty;
   rdfs:label "Input amount";
@@ -680,6 +651,20 @@ fg:Sample_preparation_Target_enrichment_kit a owl:ObjectProperty;
   dc:description "Indicates which target enrichment kit was used to prepare this sample. Target enrichment is a pre-sequencing DNA preparation step where DNA sequences are either directly amplified (amplicon or multiplex PCR-based) or captured (hybrid capture-based) in order to only focus on specific regions of a genome or DNA sample.";
   rdfs:range obo:GENEPIO_0000081 .
 
+fg:Sample_preparation_Fully_sequenced_genes a owl:ObjectProperty;
+  rdfs:label "Fully sequenced genes";
+  rdfs:domain fg:Sample_preparation;
+  rdfs:isDefinedBy obo:NCIT_C16612;
+  dc:description "List of genes where the entire coding sequence (all exons) was targeted and sequenced.";
+  rdfs:range obo:NCIT_C16612 .
+
+fg:Sample_preparation_Partially_sequenced_genes a owl:ObjectProperty;
+  rdfs:label "Partially sequenced genes";
+  rdfs:domain fg:Sample_preparation;
+  rdfs:isDefinedBy obo:NCIT_C16612;
+  dc:description "List of genes where only specific regions or hotspots (selected exons/codons) were targeted and sequenced.";
+  rdfs:range obo:NCIT_C16612 .
+
 fg:Sample_preparation_UMIs_present a owl:DatatypeProperty;
   rdfs:label "UMIs present";
   rdfs:domain fg:Sample_preparation;
@@ -701,7 +686,7 @@ fg:Sample_preparation_Intended_read_length a owl:DatatypeProperty;
 fg:Sequencing a owl:Class;
   rdfs:isDefinedBy <http://edamontology.org/topic_3168>;
   rdfs:label "Sequencing";
-  dc:description "The determination of complete (typically nucleotide) sequences, including those of genomes (full genome sequencing, de novo sequencing and resequencing), amplicons and transcriptomes.";
+  dc:description "Technical execution and instrument run parameters of a high-throughput sequencing assay, including sequencer platform, read metrics, coverage depth, and sequencing quality control statistics.";
   <http://semanticscience.org/resource/SIO_001220> fg:Sample_preparation .
 
 fg:Sequencing_Sequencing_identifier a owl:DatatypeProperty;
@@ -782,7 +767,7 @@ fg:Sequencing_Other_quality_metrics a owl:DatatypeProperty;
 fg:Analysis a owl:Class;
   rdfs:isDefinedBy <http://edamontology.org/operation_2945>;
   rdfs:label "Analysis";
-  dc:description "An analysis applies analytical (often computational) methods to existing data of a specific type to produce some desired output.";
+  dc:description "Computational and bioinformatic processing workflows applied to primary sequencing data, including reference genome alignment, variant calling algorithms, standard pipeline guidelines, and stored output file formats.";
   <http://semanticscience.org/resource/SIO_000253> fg:Sequencing .
 
 fg:Analysis_Analysis_identifier a owl:DatatypeProperty;
@@ -796,18 +781,6 @@ fg:Analysis_Belongs_to_sequencing a owl:ObjectProperty;
   rdfs:domain fg:Analysis;
   rdfs:isDefinedBy obo:NCIT_C25683;
   dc:description "Reference to the sequencing that was performed, i.e. the source on which this analysis was based." .
-
-fg:Analysis_Physical_data_location a owl:DatatypeProperty;
-  rdfs:label "Physical data location";
-  rdfs:domain fg:Analysis;
-  rdfs:isDefinedBy obo:GAZ_00000448;
-  dc:description "A place on the Earth where the data is located, by its name or by its geographical location. This definition is intentionally vague to allow reuse locally (e.g. which computer), for contacting (e.g. which institute), broadly for logistical or legal reasons (e.g. city, country or continent)." .
-
-fg:Analysis_Abstract_data_location a owl:DatatypeProperty;
-  rdfs:label "Abstract data location";
-  rdfs:domain fg:Analysis;
-  rdfs:isDefinedBy obo:NCIT_C142494;
-  dc:description "The file location of the data, or a copy of the data, on an electronically accessible device for preservation (either in plain-text or encrypted format)." .
 
 fg:Analysis_Data_formats_stored a owl:ObjectProperty;
   rdfs:label "Data formats stored";
@@ -835,308 +808,1442 @@ fg:Analysis_Bioinformatic_protocol_used a owl:DatatypeProperty;
   rdfs:isDefinedBy <http://edamontology.org/data_2531>;
   dc:description "A human-readable collection of information about about how a scientific experiment or analysis was carried out that results in a specific set of data or results used for further analysis or to test a specific hypothesis." .
 
-fg:Analysis_Bioinformatic_protocol_deviation a owl:DatatypeProperty;
-  rdfs:label "Bioinformatic protocol deviation";
-  rdfs:domain fg:Analysis;
-  rdfs:isDefinedBy obo:NCIT_C50996;
-  dc:description "A variation from processes or procedures defined in the bioinformatic protocol. Deviations usually do not preclude the overall evaluability of subject data for either efficacy or safety, and are often acknowledged and accepted in advance by the sponsor." .
+fg:Imaging_series a owl:Class;
+  rdfs:isDefinedBy obo:NCIT_C69225;
+  rdfs:label "Imaging series";
+  dc:description "Common metadata and technical characteristics for a coherent series of biomedical image instances acquired using a single equipment, coordinate frame, and imaging modality within an imaging study.";
+  obo:RO_0000053 <https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)>,
+    <https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)>, <https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)>,
+    <https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)>, <https://w3id.org/fair-genomes/ontology/Digital_mammography_(MG)>,
+    <https://w3id.org/fair-genomes/ontology/Ultrasound_imaging_(US)> .
 
-fg:Analysis_Reason_for_bioinformatic_protocol_deviation a owl:DatatypeProperty;
-  rdfs:label "Reason for bioinformatic protocol deviation";
-  rdfs:domain fg:Analysis;
-  rdfs:isDefinedBy obo:NCIT_C93529;
-  dc:description "The rationale for why a deviation from the bioinformatic protocol has occurred." .
-
-fg:Analysis_WGS_guideline_followed a owl:DatatypeProperty;
-  rdfs:label "WGS guideline followed";
-  rdfs:domain fg:Analysis;
-  rdfs:isDefinedBy obo:NCIT_C17564;
-  dc:description "Any followed systematic statement of policy rules or principles. Guidelines may be developed by government agencies at any level, institutions, professional societies, governing boards, or by convening expert panels." .
-
-fg:HMD_Submission a owl:Class;
-  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/FG_0000750>;
-  rdfs:label "HMD Submission";
-  dc:description "A class specific for the 1+MG GDI project containing items for metadata submission." .
-
-fg:HMD_Submission_Submitter_Role a owl:DatatypeProperty;
-  rdfs:label "Submitter Role";
-  rdfs:domain fg:HMD_Submission;
-  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/FG_0000752>;
-  dc:description "Role of the Submitter (e.g. Oncologist in charge of the patient, Research Project PI)." .
-
-fg:HMD_Submission_Data_Center a owl:DatatypeProperty;
-  rdfs:label "Data Center";
-  rdfs:domain fg:HMD_Submission;
-  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/FG_0000753>;
-  dc:description "Refers to the Department in charge of Data Production and/ or analysis" .
-
-fg:HMD_Submission_Clinical_Center a owl:DatatypeProperty;
-  rdfs:label "Clinical Center";
-  rdfs:domain fg:HMD_Submission;
-  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/FG_0000754>;
-  dc:description "Refers to the Clinical Department in charge of the patient." .
-
-fg:HMD_Submission_Institution_Clinical a owl:ObjectProperty;
-  rdfs:label "Institution Clinical";
-  rdfs:domain fg:HMD_Submission;
-  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/FG_0000755>;
-  dc:description "Identifies the Institution/s involved.";
-  rdfs:range <http://semanticscience.org/resource/SIO_000688> .
-
-fg:HMD_Submission_Institution_Data_Center a owl:ObjectProperty;
-  rdfs:label "Institution Data Center";
-  rdfs:domain fg:HMD_Submission;
-  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/FG_0000756>;
-  dc:description "Identifies the Institution/s involved.";
-  rdfs:range <http://semanticscience.org/resource/SIO_000688> .
-
-fg:HMD_Submission_Publication_description a owl:DatatypeProperty;
-  rdfs:label "Publication description";
-  rdfs:domain fg:HMD_Submission;
-  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/FG_0000757>;
-  dc:description "Linked to the instance of publication_doi; should provide a human-readably description of the publication." .
-
-fg:HMD_Submission_Collection a owl:DatatypeProperty;
-  rdfs:label "Collection";
-  rdfs:domain fg:HMD_Submission;
-  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/FG_0000751>;
-  dc:description "Identifies collection (Biobank, Collection, Cohort, other types of projects) in which data are part of." .
-
-fg:HMD_Submission_Research_Consortia a owl:DatatypeProperty;
-  rdfs:label "Research Consortia";
-  rdfs:domain fg:HMD_Submission;
-  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/FG_0000758>;
-  dc:description "Identifies Research Consortia Involved." .
-
-fg:Treatment a owl:Class;
-  rdfs:isDefinedBy obo:NCIT_C49236;
-  rdfs:label "Treatment";
-  dc:description "An action or administration of therapeutic agents to produce an effect that is intended to alter or stop a pathologic process." .
-
-fg:Treatment_Dose_Units a owl:DatatypeProperty;
-  rdfs:label "Dose Units";
-  rdfs:domain fg:Treatment;
-  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/FG_0000759>;
-  dc:description "Indicates the total dose given in units (e.g. of Gray (Gy) when radiation, Millimeters/24hours for medication)" .
-
-fg:Treatment_Setting a owl:ObjectProperty;
-  rdfs:label "Setting";
-  rdfs:domain fg:Treatment;
-  rdfs:isDefinedBy obo:NCIT_C124308;
-  dc:description "Indicate the treatment setting, which describes the treatment's purpose in relation to the primary treatment.";
-  rdfs:range obo:NCIT_C124308 .
-
-fg:Treatment_Response_to_Treatment a owl:ObjectProperty;
-  rdfs:label "Response to Treatment";
-  rdfs:domain fg:Treatment;
-  rdfs:isDefinedBy <http://purl.bioontology.org/ontology/SNOMEDCT/182985004>;
-  dc:description "The patients' response to the applied treatment regimen.";
-  rdfs:range <http://purl.bioontology.org/ontology/SNOMEDCT/182985004> .
-
-fg:Biomarker a owl:Class;
-  rdfs:isDefinedBy obo:NCIT_C16342;
-  rdfs:label "Biomarker";
-  dc:description "TODO" .
-
-fg:Biomarker_Type a owl:ObjectProperty;
-  rdfs:label "Type";
-  rdfs:domain fg:Biomarker;
-  rdfs:isDefinedBy obo:NCIT_C164707;
-  dc:description "What type is the biomarker classified as.";
-  rdfs:range obo:NCIT_C164707 .
-
-fg:Biomarker_Subtype_Molecular a owl:ObjectProperty;
-  rdfs:label "Subtype_Molecular";
-  rdfs:domain fg:Biomarker;
-  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/FG_0000766>;
-  dc:description "Subtype of the molecular biomarker.";
-  rdfs:range <https://w3id.org/fair-genomes/resource/FG_0000766> .
-
-fg:Imaging_Study a owl:Class;
-  rdfs:isDefinedBy <http://dicom.nema.org/resources/ontology/DCM/113014>;
-  rdfs:label "Imaging Study";
-  dc:description "The Study IE defines the characteristics of a medical Study performed on a Patient. A Study is a collection of one or more Series of medical images, presentation states, and/or SR documents that are logically related for the purpose of diagnosing a Patient. Each Study is associated with exactly one Patient. A Study may include Composite Instances that are created by a single modality, multiple modalities or by multiple devices of the same modality. The Study IE is modality independent.";
-  obo:RO_0000056 fg:Patient .
-
-fg:Imaging_Study_Imaging_Study_identifier a owl:DatatypeProperty;
-  rdfs:label "Imaging Study identifier";
-  rdfs:domain fg:Imaging_Study;
-  rdfs:isDefinedBy obo:NCIT_C164493;
-  dc:description "The user- or equipment-generated identifier of an instance of a DICOM study entity." .
-
-fg:Imaging_Study_Belongs_to_person a owl:ObjectProperty;
-  rdfs:label "Belongs to person";
-  rdfs:domain fg:Imaging_Study;
-  rdfs:isDefinedBy obo:NCIT_C164337;
-  dc:description "Reference to the person whom this imaging study is about." .
-
-<https://w3id.org/fair-genomes/ontology/Imaging_Study_Imaging_Technique_(Modality)>
-  a owl:ObjectProperty;
-  rdfs:label "Imaging Technique (Modality)";
-  rdfs:domain fg:Imaging_Study;
-  rdfs:isDefinedBy obo:NCIT_C17369;
-  dc:description "Any technology or method that aids in the visualization of any biological process, cell, tissue or organ for use in screening, diagnosis, surgical procedures or therapy.";
-  rdfs:range obo:NCIT_C17369 .
-
-fg:Imaging_Study_Body_Region a owl:ObjectProperty;
-  rdfs:label "Body Region";
-  rdfs:domain fg:Imaging_Study;
-  rdfs:isDefinedBy obo:NCIT_C12680;
-  dc:description "Named areas of the body.";
-  rdfs:range <http://snomed.info/id/52530000> .
-
-fg:Imaging_Study_Imaging_Procedure a owl:ObjectProperty;
-  rdfs:label "Imaging Procedure";
-  rdfs:domain fg:Imaging_Study;
-  rdfs:isDefinedBy obo:NCIT_C17369;
-  dc:description "An imaging procedure as defined by SNOMED CT, representing a specific diagnostic or acquisition procedure (e.g., 'CT of breast', 'MRI of head', or 'Whole Slide Imaging'), rather than the general modality or technique alone. The general modality or technique (e.g., 'CT', 'MR', 'SM') is captured separately in the 'Imaging Technique' field.";
-  rdfs:range <http://snomed.info/id/15220000> .
-
-fg:Imaging_Study_Reason_for_Imaging_Procedure a owl:ObjectProperty;
-  rdfs:label "Reason for Imaging Procedure";
-  rdfs:domain fg:Imaging_Study;
-  rdfs:isDefinedBy obo:NCIT_C69216;
-  dc:description "The clinical or research rationale for performing the imaging procedure. This field captures why the procedure was indicated for the patient, such as screening, diagnosis, treatment planning, or research purposes. It should express the intent or medical reason, not the technical details of the procedure itself.";
-  rdfs:range <http://snomed.info/id/138875005> .
-
-fg:Imaging_Study_Study_Start_Date a owl:DatatypeProperty;
-  rdfs:label "Study Start Date";
-  rdfs:domain fg:Imaging_Study;
-  rdfs:isDefinedBy obo:NCIT_C69208;
-  dc:description "The date on which a study began." .
-
-fg:Imaging_Study_DICOM_Series_Count a owl:DatatypeProperty;
-  rdfs:label "DICOM Series Count";
-  rdfs:domain fg:Imaging_Study;
-  rdfs:isDefinedBy obo:NCIT_C164492;
-  dc:description "The number of DICOM series." .
-
-fg:Imaging_Study_DICOM_Images_Count a owl:DatatypeProperty;
-  rdfs:label "DICOM Images Count";
-  rdfs:domain fg:Imaging_Study;
-  rdfs:isDefinedBy obo:NCIT_C164540;
-  dc:description "The number of DICOM instances in the imaging study." .
-
-fg:Imaging_Study_Affiliated_Institution a owl:ObjectProperty;
-  rdfs:label "Affiliated Institution";
-  rdfs:domain fg:Imaging_Study;
-  rdfs:isDefinedBy obo:NCIT_C25412;
-  dc:description "The organisation or institution responsible for performing the imaging study.";
-  rdfs:range <http://semanticscience.org/resource/SIO_000688> .
-
-fg:Imaging_Series a owl:Class;
-  rdfs:isDefinedBy <http://dicom.nema.org/resources/ontology/DCM/113015>;
-  rdfs:label "Imaging Series";
-  dc:description "A distinct logical set used to group composite instances. All instances within a Series are of the same modality, in the same Frame of Reference (if any), and created by the same equipment.";
-  <http://semanticscience.org/resource/SIO_000068> fg:Imaging_Study .
-
-fg:Imaging_Series_Series_Instance_UID a owl:DatatypeProperty;
-  rdfs:label "Series Instance UID";
-  rdfs:domain fg:Imaging_Series;
+fg:Imaging_series_Series_instance_identifier a owl:DatatypeProperty;
+  rdfs:label "Series instance identifier";
+  rdfs:domain fg:Imaging_series;
   rdfs:isDefinedBy obo:NCIT_C69219;
   dc:description "A unique identifier for series of images." .
 
-fg:Imaging_Series_Belongs_to_Imaging_Study a owl:ObjectProperty;
-  rdfs:label "Belongs to Imaging Study";
-  rdfs:domain fg:Imaging_Series;
+fg:Imaging_series_Belongs_to_imaging_study a owl:ObjectProperty;
+  rdfs:label "Belongs to imaging study";
+  rdfs:domain fg:Imaging_series;
   rdfs:isDefinedBy obo:NCIT_C164493;
-  dc:description "Reference to the parent imaging study of which this series is a part, linking the series to the overall study context." .
+  dc:description "Parent study context." .
 
-fg:Imaging_Series_DICOM_Images_Count a owl:DatatypeProperty;
-  rdfs:label "DICOM Images Count";
-  rdfs:domain fg:Imaging_Series;
+fg:Imaging_series_Images_count a owl:DatatypeProperty;
+  rdfs:label "Images count";
+  rdfs:domain fg:Imaging_series;
   rdfs:isDefinedBy obo:NCIT_C164540;
-  dc:description "The number of DICOM instances in the imaging study." .
+  dc:description "The total number of discrete image instances, slices, or frames contained within this imaging series." .
 
-<https://w3id.org/fair-genomes/ontology/Imaging_Series_Imaging_Technique_(Modality)>
-  a owl:ObjectProperty;
-  rdfs:label "Imaging Technique (Modality)";
-  rdfs:domain fg:Imaging_Series;
+fg:Imaging_series_Imaging_modality a owl:ObjectProperty;
+  rdfs:label "Imaging modality";
+  rdfs:domain fg:Imaging_series;
   rdfs:isDefinedBy obo:NCIT_C17369;
   dc:description "Any technology or method that aids in the visualization of any biological process, cell, tissue or organ for use in screening, diagnosis, surgical procedures or therapy.";
-  rdfs:range obo:NCIT_C17369 .
+  rdfs:range <http://purl.bioontology.org/ontology/SNOMEDCT/360037004> .
 
-fg:Imaging_Series_Imaging_Procedure a owl:ObjectProperty;
-  rdfs:label "Imaging Procedure";
-  rdfs:domain fg:Imaging_Series;
-  rdfs:isDefinedBy obo:NCIT_C17369;
-  dc:description "An imaging procedure as defined by SNOMED CT, representing a specific diagnostic or acquisition procedure (e.g., 'CT of breast', 'MRI of head', or 'Whole Slide Imaging'), rather than the general modality or technique alone. The general modality or technique (e.g., 'CT', 'MR', 'SM') is captured separately in the 'Imaging Technique' field.";
-  rdfs:range <http://snomed.info/id/15220000> .
-
-fg:Imaging_Series_Series_Start_Date a owl:DatatypeProperty;
-  rdfs:label "Series Start Date";
-  rdfs:domain fg:Imaging_Series;
+fg:Imaging_series_Series_date a owl:DatatypeProperty;
+  rdfs:label "Series date";
+  rdfs:domain fg:Imaging_series;
   rdfs:isDefinedBy obo:NCIT_C68616;
-  dc:description "The date when this imaging series started within the parent study." .
+  dc:description "The date on which a series began." .
 
-fg:Imaging_Series_Body_Region a owl:ObjectProperty;
-  rdfs:label "Body Region";
-  rdfs:domain fg:Imaging_Series;
+fg:Imaging_series_Body_region a owl:ObjectProperty;
+  rdfs:label "Body region";
+  rdfs:domain fg:Imaging_series;
   rdfs:isDefinedBy obo:NCIT_C12680;
-  dc:description "Named areas of the body.";
+  dc:description "The specific anatomical region, body part, or organ targeted by this imaging series.";
   rdfs:range <http://snomed.info/id/52530000> .
 
-fg:Imaging_Series_Laterality a owl:ObjectProperty;
+fg:Imaging_series_Laterality a owl:ObjectProperty;
   rdfs:label "Laterality";
-  rdfs:domain fg:Imaging_Series;
+  rdfs:domain fg:Imaging_series;
   rdfs:isDefinedBy obo:NCIT_C25185;
-  dc:description "Indicates the side of the body examined within the imaging series. This field specifies whether the imaging procedure focused on the right side, left side, both sides, or an unpaired (midline) structure.";
+  dc:description "The side of the body or paired organ being examined (e.g. Left, Right, Bilateral, Unilateral).";
   rdfs:range <http://snomed.info/id/106233006> .
 
-fg:Imaging_Series_Imaging_Device a owl:ObjectProperty;
-  rdfs:label "Imaging Device";
-  rdfs:domain fg:Imaging_Series;
+fg:Imaging_series_Imaging_device a owl:ObjectProperty;
+  rdfs:label "Imaging device";
+  rdfs:domain fg:Imaging_series;
   rdfs:isDefinedBy obo:NCIT_C19747;
   dc:description "A device for producing a representation or picture, usually of a part of the body, to aid in diagnosis and evaluation.";
   rdfs:range <http://snomed.info/id/314789007> .
 
-fg:Imaging_Series_Manufacturer_of_Imaging_Device a owl:ObjectProperty;
-  rdfs:label "Manufacturer of Imaging Device";
-  rdfs:domain fg:Imaging_Series;
+fg:Imaging_series_Manufacturer_of_imaging_device a owl:ObjectProperty;
+  rdfs:label "Manufacturer of imaging device";
+  rdfs:domain fg:Imaging_series;
   rdfs:isDefinedBy obo:NCIT_C25392;
-  dc:description "The company or organization that produces or supplies an imaging device, such as MRI, CT, X-ray, ultrasound, or whole-slide scanners, used to generate visual representations of anatomical structures or tissue samples for diagnostic, research, or clinical evaluation purposes.";
+  dc:description "A person, enterprise, or entity that produces imaging device.";
   rdfs:range obo:OBI_0000835 .
 
-fg:Imaging_Series_Software_Version a owl:ObjectProperty;
-  rdfs:label "Software Version";
-  rdfs:domain fg:Imaging_Series;
+fg:Imaging_series_Software_version a owl:ObjectProperty;
+  rdfs:label "Software version";
+  rdfs:domain fg:Imaging_series;
   rdfs:isDefinedBy obo:NCIT_C111093;
   dc:description "A form or variant of software; one of a sequence of copies of a software program, each incorporating new modifications.";
   rdfs:range <http://snomed.info/id/706687001> .
 
-fg:Image_Instance a owl:Class;
-  rdfs:isDefinedBy obo:NCIT_C48179;
-  rdfs:label "Image Instance";
-  dc:description "Any record of an imaging event whether physical or electronic.";
-  <http://semanticscience.org/resource/SIO_000068> fg:Imaging_Study, fg:Imaging_Series .
+fg:Imaging_series_Color_space a owl:ObjectProperty;
+  rdfs:label "Color space";
+  rdfs:domain fg:Imaging_series;
+  rdfs:isDefinedBy obo:NCIT_C37927;
+  dc:description "The photometric interpretation of pixel data that defines the type of colour or greyscale encoding used in the image (e.g., MONOCHROME2, RGB, YBR_FULL). Corresponds to DICOM tag (0028,0004).";
+  rdfs:range <https://w3id.org/valuesets/ColorSpaceEnum> .
 
-fg:Image_Instance_Image_Instance_Identifier a owl:DatatypeProperty;
-  rdfs:label "Image Instance Identifier";
-  rdfs:domain fg:Image_Instance;
-  rdfs:isDefinedBy obo:NCIT_C81289;
-  dc:description "A sequence of letters, numbers, or other characters that specifically identifies a particular image." .
+fg:Imaging_series_Pixel_spacing a owl:DatatypeProperty;
+  rdfs:label "Pixel spacing";
+  rdfs:domain fg:Imaging_series;
+  rdfs:isDefinedBy obo:NCIT_C45786;
+  dc:description "Physical distance between the centres of adjacent pixels in the image space, specified as row and column spacing. Expressed in millimetres (mm) according to DICOM attribute (0028,0030)." .
 
-fg:Image_Instance_Belongs_to_Imaging_Study a owl:ObjectProperty;
-  rdfs:label "Belongs to Imaging Study";
-  rdfs:domain fg:Image_Instance;
-  rdfs:isDefinedBy obo:NCIT_C164493;
-  dc:description "Reference to the parent imaging study of which this image is a part, linking the series to the overall study context." .
-
-fg:Image_Instance_Belongs_to_Imaging_Series a owl:ObjectProperty;
-  rdfs:label "Belongs to Imaging Series";
-  rdfs:domain fg:Image_Instance;
-  rdfs:isDefinedBy obo:NCIT_C69219;
-  dc:description "Reference to the parent imaging series of which this image is a part, linking the series to the overall study context." .
-
-fg:Image_Instance_Image_Instance_Date a owl:DatatypeProperty;
-  rdfs:label "Image Instance Date";
-  rdfs:domain fg:Image_Instance;
-  rdfs:isDefinedBy obo:NCIT_C68616;
-  dc:description "The date when this image was generated." .
-
-fg:Image_Instance_Image_Type a owl:ObjectProperty;
-  rdfs:label "Image Type";
-  rdfs:domain fg:Image_Instance;
+fg:Imaging_series_Image_type a owl:ObjectProperty;
+  rdfs:label "Image type";
+  rdfs:domain fg:Imaging_series;
   rdfs:isDefinedBy obo:NCIT_C69268;
-  dc:description "Indicates the characteristics and derivation of the image, e.g., whether it is a primary acquisition or a derived image.";
+  dc:description "A classification of the image based on the imaging modality and acquisition characteristics. It specifies the type of image produced during the scan (e.g., T1-weighted MRI, T2-weighted MRI, CT attenuation image, PET uptake image).";
   rdfs:range <http://snomed.info/id/363679005> .
+
+fg:Imaging_series_File_format a owl:ObjectProperty;
+  rdfs:label "File format";
+  rdfs:domain fg:Imaging_series;
+  rdfs:isDefinedBy obo:MS_1001459;
+  dc:description "The digital format used to encode and store an imaging file.";
+  rdfs:range obo:MS_1001459 .
+
+fg:Imaging_series_File_size a owl:DatatypeProperty;
+  rdfs:label "File size";
+  rdfs:domain fg:Imaging_series;
+  rdfs:isDefinedBy obo:NCIT_C171192;
+  dc:description "The size of the file in MB." .
+
+fg:Imaging_series_Image_width a owl:DatatypeProperty;
+  rdfs:label "Image width";
+  rdfs:domain fg:Imaging_series;
+  rdfs:isDefinedBy <http://purl.allotrope.org/ontologies/result#AFR_0002468>;
+  dc:description "Number of pixels in one row of the image, corresponding to the DICOM attribute Columns (0028,0011)." .
+
+fg:Imaging_series_Image_height a owl:DatatypeProperty;
+  rdfs:label "Image height";
+  rdfs:domain fg:Imaging_series;
+  rdfs:isDefinedBy <http://purl.allotrope.org/ontologies/result#AFR_0002467>;
+  dc:description "Number of pixels in one column of the image, corresponding to the DICOM attribute Rows (0028,0010)." .
+
+fg:Imaging_series_Image_depth a owl:DatatypeProperty;
+  rdfs:label "Image depth";
+  rdfs:domain fg:Imaging_series;
+  rdfs:isDefinedBy obo:NCIT_C69267;
+  dc:description "The number of distinct image planes captured during acquisition. For WSI, this represents the number of focal planes (Z-stack levels). For CT, MRI, and PET, it corresponds to the number of cross-sectional slices or frames. For DX and MG, this value is typically 1 (a single 2D projection)." .
+
+fg:Imaging_series_Number_of_channels a owl:DatatypeProperty;
+  rdfs:label "Number of channels";
+  rdfs:domain fg:Imaging_series;
+  rdfs:isDefinedBy <https://w3id.org/reproduceme#SamplesPerPixel>;
+  dc:description "The number of distinct data channels stored in each pixel of the image. Channels may represent color components (e.g., RGB), grayscale intensity, or modality-specific signal dimensions." .
+
+fg:Imaging_series_Channel_resolution a owl:DatatypeProperty;
+  rdfs:label "Channel resolution";
+  rdfs:domain fg:Imaging_series;
+  rdfs:isDefinedBy <https://w3id.org/reproduceme#SignificantBits>;
+  dc:description "The number of bits used to represent the stored value of each pixel channel. In DICOM, this corresponds to tag (0028,0101)." .
+
+fg:Imaging_series_Compression_method a owl:DatatypeProperty;
+  rdfs:label "Compression method";
+  rdfs:domain fg:Imaging_series;
+  rdfs:isDefinedBy obo:NCIT_C64347;
+  dc:description "Indicates whether the image was lossy-compressed and which method was used, based on DICOM tags (0028,2110) and (0028,2114)." .
+
+fg:Imaging_series_Annotations_available a owl:DatatypeProperty;
+  rdfs:label "Annotations available";
+  rdfs:domain fg:Imaging_series;
+  rdfs:isDefinedBy obo:NCIT_C44272;
+  dc:description "Indicates whether annotation data associated with the image (e.g., regions of interest, labels, markup, or segmentation overlays) are present and accessible." .
+
+<https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)> a owl:Class;
+  rdfs:isDefinedBy obo:NCIT_C165215;
+  rdfs:label "Whole slide imaging (WSI)";
+  dc:description "Modality-specific series metadata for high-resolution digital pathology whole slide images, capturing optical scanning modes, lens magnification, illumination parameters, and focal z-stacking." .
+
+<https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)_WSI_identifier>
+  a owl:DatatypeProperty;
+  rdfs:label "WSI identifier";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)>;
+  rdfs:isDefinedBy obo:NCIT_C69219;
+  dc:description "A unique identifier for WSI series of images." .
+
+<https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)_Z_stacking> a owl:ObjectProperty;
+  rdfs:label "Z_stacking";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)>;
+  rdfs:isDefinedBy obo:NCIT_C182016;
+  dc:description "A digital image processing method which combines multiple images taken at different focal distances to create a composite image with a greater depth of field than is possible for a single image.";
+  rdfs:range obo:NCIT_C182016 .
+
+<https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)_Objective_lens_magnification>
+  a owl:DatatypeProperty;
+  rdfs:label "Objective lens magnification";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)>;
+  rdfs:isDefinedBy <http://purl.allotrope.org/ontologies/result#AFR_0002226>;
+  dc:description "The objective lens magnification used for the acquisition of whole slide images, expressed as a dimensionless optical magnification factor (e.g., 10×, 20×, 40×). This refers only to the lens magnification and not the final stored image encoded by the spatial resolution attribute." .
+
+<https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)_Illumination_method>
+  a owl:ObjectProperty;
+  rdfs:label "Illumination method";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)>;
+  rdfs:isDefinedBy obo:FBbi_00000268;
+  dc:description "The method of optical illumination used to illuminate the specimen during scanning (e.g., brightfield, darkfield, fluorescence, phase contrast).";
+  rdfs:range obo:FBbi_00000268 .
+
+<https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)_Illumination_wavelength>
+  a owl:DatatypeProperty;
+  rdfs:label "Illumination wavelength";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)>;
+  rdfs:isDefinedBy <http://snomed.info/id/246522008>;
+  dc:description "Nominal wavelength of the illuminator expressed in nanometres (nm)." .
+
+<https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)_Scanning_operation_mode>
+  a owl:ObjectProperty;
+  rdfs:label "Scanning operation mode";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)>;
+  rdfs:isDefinedBy <http://snomed.info/id/246363001>;
+  dc:description "The scanning procedure used to digitize a glass slide. This attribute does not describe the capabilities of the scanner used for digitization.";
+  rdfs:range <http://snomed.info/id/246363001> .
+
+<https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)_Tissue_scan_area>
+  a owl:DatatypeProperty;
+  rdfs:label "Tissue scan area";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)>;
+  rdfs:isDefinedBy <http://purl.allotrope.org/ontologies/process#AFP_0003804>;
+  dc:description "The area of the tissue region that was scanned, expressed in square millimetres (mm²)." .
+
+<https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)_Number_of_focal_planes>
+  a owl:DatatypeProperty;
+  rdfs:label "Number of focal planes";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)>;
+  rdfs:isDefinedBy obo:NCIT_C102516;
+  dc:description "Number of focal planes along the vertical z-axis used for multiple and extended z-stacking methods." .
+
+<https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)_Distance_between_focal_planes>
+  a owl:DatatypeProperty;
+  rdfs:label "Distance between focal planes";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)>;
+  rdfs:isDefinedBy <http://purl.allotrope.org/ontologies/quality#AFQ_0000032>;
+  dc:description "Distance between acquisition focal planes given in micrometers (µm)." .
+
+<https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)_Pyramid_levels>
+  a owl:DatatypeProperty;
+  rdfs:label "Pyramid levels";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)>;
+  rdfs:isDefinedBy <http://purl.allotrope.org/ontologies/result#AFR_0001619>;
+  dc:description "The number of specific resolution levels of an image pyramid." .
+
+<https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)_Colour_(ICC)_profile>
+  a owl:DatatypeProperty;
+  rdfs:label "Colour (ICC) profile";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)>;
+  rdfs:isDefinedBy <https://w3id.org/reproduceme#PhotometricInterpretation>;
+  dc:description "A standardised colour profile defined by the International Color Consortium (ICC) that specifies how colours in an image should be interpreted to ensure consistent colour rendering across devices (e.g. sRGB or Gray Gamma 1.8/2.2, GSDF)." .
+
+<https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)_Assay_identifier>
+  a owl:ObjectProperty;
+  rdfs:label "Assay identifier";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)>;
+  rdfs:isDefinedBy <http://purl.allotrope.org/ontologies/result#AFR_0001979>;
+  dc:description "An assay identifier is an identifier that identifies some assay (analysis)." .
+
+<https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)_Compression_quality_label>
+  a owl:DatatypeProperty;
+  rdfs:label "Compression quality label";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)>;
+  rdfs:isDefinedBy <http://purl.allotrope.org/ontologies/process#AFP_0002843>;
+  dc:description "A vendor-specific indicator describing the applied level or strength of lossy compression (e.g., quality level or percentage), not defined in DICOM but used in some WSI formats to express perceived compression quality." .
+
+<https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)_Series_instance_identifier>
+  a owl:DatatypeProperty;
+  rdfs:label "Series instance identifier";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)>;
+  rdfs:isDefinedBy obo:NCIT_C69219;
+  dc:description "A unique identifier for series of images." .
+
+<https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)_Belongs_to_imaging_study>
+  a owl:ObjectProperty;
+  rdfs:label "Belongs to imaging study";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)>;
+  rdfs:isDefinedBy obo:NCIT_C164493;
+  dc:description "Parent study context." .
+
+<https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)_Images_count> a
+    owl:DatatypeProperty;
+  rdfs:label "Images count";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)>;
+  rdfs:isDefinedBy obo:NCIT_C164540;
+  dc:description "The total number of discrete image instances, slices, or frames contained within this imaging series." .
+
+<https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)_Imaging_modality>
+  a owl:ObjectProperty;
+  rdfs:label "Imaging modality";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)>;
+  rdfs:isDefinedBy obo:NCIT_C17369;
+  dc:description "Any technology or method that aids in the visualization of any biological process, cell, tissue or organ for use in screening, diagnosis, surgical procedures or therapy.";
+  rdfs:range <http://purl.bioontology.org/ontology/SNOMEDCT/360037004> .
+
+<https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)_Series_date> a owl:DatatypeProperty;
+  rdfs:label "Series date";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)>;
+  rdfs:isDefinedBy obo:NCIT_C68616;
+  dc:description "The date on which a series began." .
+
+<https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)_Body_region> a owl:ObjectProperty;
+  rdfs:label "Body region";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)>;
+  rdfs:isDefinedBy obo:NCIT_C12680;
+  dc:description "The specific anatomical region, body part, or organ targeted by this imaging series.";
+  rdfs:range <http://snomed.info/id/52530000> .
+
+<https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)_Laterality> a owl:ObjectProperty;
+  rdfs:label "Laterality";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)>;
+  rdfs:isDefinedBy obo:NCIT_C25185;
+  dc:description "The side of the body or paired organ being examined (e.g. Left, Right, Bilateral, Unilateral).";
+  rdfs:range <http://snomed.info/id/106233006> .
+
+<https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)_Imaging_device>
+  a owl:ObjectProperty;
+  rdfs:label "Imaging device";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)>;
+  rdfs:isDefinedBy obo:NCIT_C19747;
+  dc:description "A device for producing a representation or picture, usually of a part of the body, to aid in diagnosis and evaluation.";
+  rdfs:range <http://snomed.info/id/314789007> .
+
+<https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)_Manufacturer_of_imaging_device>
+  a owl:ObjectProperty;
+  rdfs:label "Manufacturer of imaging device";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)>;
+  rdfs:isDefinedBy obo:NCIT_C25392;
+  dc:description "A person, enterprise, or entity that produces imaging device.";
+  rdfs:range obo:OBI_0000835 .
+
+<https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)_Software_version>
+  a owl:ObjectProperty;
+  rdfs:label "Software version";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)>;
+  rdfs:isDefinedBy obo:NCIT_C111093;
+  dc:description "A form or variant of software; one of a sequence of copies of a software program, each incorporating new modifications.";
+  rdfs:range <http://snomed.info/id/706687001> .
+
+<https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)_Color_space> a owl:ObjectProperty;
+  rdfs:label "Color space";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)>;
+  rdfs:isDefinedBy obo:NCIT_C37927;
+  dc:description "The photometric interpretation of pixel data that defines the type of colour or greyscale encoding used in the image (e.g., MONOCHROME2, RGB, YBR_FULL). Corresponds to DICOM tag (0028,0004).";
+  rdfs:range <https://w3id.org/valuesets/ColorSpaceEnum> .
+
+<https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)_Pixel_spacing> a
+    owl:DatatypeProperty;
+  rdfs:label "Pixel spacing";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)>;
+  rdfs:isDefinedBy obo:NCIT_C45786;
+  dc:description "Physical distance between the centres of adjacent pixels in the image space, specified as row and column spacing. Expressed in millimetres (mm) according to DICOM attribute (0028,0030)." .
+
+<https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)_Image_type> a owl:ObjectProperty;
+  rdfs:label "Image type";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)>;
+  rdfs:isDefinedBy obo:NCIT_C69268;
+  dc:description "A classification of the image based on the imaging modality and acquisition characteristics. It specifies the type of image produced during the scan (e.g., T1-weighted MRI, T2-weighted MRI, CT attenuation image, PET uptake image).";
+  rdfs:range <http://snomed.info/id/363679005> .
+
+<https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)_File_format> a owl:ObjectProperty;
+  rdfs:label "File format";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)>;
+  rdfs:isDefinedBy obo:MS_1001459;
+  dc:description "The digital format used to encode and store an imaging file.";
+  rdfs:range obo:MS_1001459 .
+
+<https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)_File_size> a owl:DatatypeProperty;
+  rdfs:label "File size";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)>;
+  rdfs:isDefinedBy obo:NCIT_C171192;
+  dc:description "The size of the file in MB." .
+
+<https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)_Image_width> a owl:DatatypeProperty;
+  rdfs:label "Image width";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)>;
+  rdfs:isDefinedBy <http://purl.allotrope.org/ontologies/result#AFR_0002468>;
+  dc:description "Number of pixels in one row of the image, corresponding to the DICOM attribute Columns (0028,0011)." .
+
+<https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)_Image_height> a
+    owl:DatatypeProperty;
+  rdfs:label "Image height";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)>;
+  rdfs:isDefinedBy <http://purl.allotrope.org/ontologies/result#AFR_0002467>;
+  dc:description "Number of pixels in one column of the image, corresponding to the DICOM attribute Rows (0028,0010)." .
+
+<https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)_Image_depth> a owl:DatatypeProperty;
+  rdfs:label "Image depth";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)>;
+  rdfs:isDefinedBy obo:NCIT_C69267;
+  dc:description "The number of distinct image planes captured during acquisition. For WSI, this represents the number of focal planes (Z-stack levels). For CT, MRI, and PET, it corresponds to the number of cross-sectional slices or frames. For DX and MG, this value is typically 1 (a single 2D projection)." .
+
+<https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)_Number_of_channels>
+  a owl:DatatypeProperty;
+  rdfs:label "Number of channels";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)>;
+  rdfs:isDefinedBy <https://w3id.org/reproduceme#SamplesPerPixel>;
+  dc:description "The number of distinct data channels stored in each pixel of the image. Channels may represent color components (e.g., RGB), grayscale intensity, or modality-specific signal dimensions." .
+
+<https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)_Channel_resolution>
+  a owl:DatatypeProperty;
+  rdfs:label "Channel resolution";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)>;
+  rdfs:isDefinedBy <https://w3id.org/reproduceme#SignificantBits>;
+  dc:description "The number of bits used to represent the stored value of each pixel channel. In DICOM, this corresponds to tag (0028,0101)." .
+
+<https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)_Compression_method>
+  a owl:DatatypeProperty;
+  rdfs:label "Compression method";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)>;
+  rdfs:isDefinedBy obo:NCIT_C64347;
+  dc:description "Indicates whether the image was lossy-compressed and which method was used, based on DICOM tags (0028,2110) and (0028,2114)." .
+
+<https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)_Annotations_available>
+  a owl:DatatypeProperty;
+  rdfs:label "Annotations available";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Whole_slide_imaging_(WSI)>;
+  rdfs:isDefinedBy obo:NCIT_C44272;
+  dc:description "Indicates whether annotation data associated with the image (e.g., regions of interest, labels, markup, or segmentation overlays) are present and accessible." .
+
+<https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)> a owl:Class;
+  rdfs:isDefinedBy obo:NCIT_C17204;
+  rdfs:label "Computed tomography (CT)";
+  dc:description "Modality-specific series metadata for computed tomography acquisitions, capturing X-ray tube exposure parameters, spiral pitch, reconstruction convolution kernels, and slice geometry." .
+
+<https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)_CT_identifier> a
+    owl:DatatypeProperty;
+  rdfs:label "CT identifier";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)>;
+  rdfs:isDefinedBy obo:NCIT_C69219;
+  dc:description "A unique identifier for CT series of images." .
+
+<https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)_Tube_voltage_(kVp)>
+  a owl:DatatypeProperty;
+  rdfs:label "Tube voltage (kVp)";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)>;
+  rdfs:isDefinedBy obo:NCIT_C48432;
+  dc:description "The peak accelerating voltage applied in an X-ray tube between the cathode and anode, corresponding to DICOM tag (0018,0060)." .
+
+<https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)_X_Ray_tube_current_(mA)>
+  a owl:DatatypeProperty;
+  rdfs:label "X_Ray tube current (mA)";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)>;
+  rdfs:isDefinedBy obo:NCIT_C69233;
+  dc:description "The value of the electrical current applied to an X-ray tube (DICOM tag (0018,1151))." .
+
+<https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)_Exposure_time_(ms)>
+  a owl:DatatypeProperty;
+  rdfs:label "Exposure time (ms)";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)>;
+  rdfs:isDefinedBy obo:NCIT_C69233;
+  dc:description "The cumulative time a subject was exposed to X-rays during image acquisition. Corresponds to DICOM tag (0018,1150)." .
+
+<https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)_Spiral_pitch_factor>
+  a owl:DatatypeProperty;
+  rdfs:label "Spiral pitch factor";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)>;
+  rdfs:isDefinedBy obo:NCIT_C164623;
+  dc:description "Ratio of the distance that the table moves during a complete revolution of the source around the gantry orbit, to the width of the total collimation over the area of active x-ray detection (DICOM tag (0018,9311))." .
+
+<https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)_Filter_type> a owl:DatatypeProperty;
+  rdfs:label "Filter type";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)>;
+  rdfs:isDefinedBy <https://w3id.org/reproduceme#FilterType>;
+  dc:description "Specifies the type of X-ray beam–shaping filter used during image acquisition (e.g., body, head, bowtie, wedge). Corresponds to DICOM tag (0018,1160)." .
+
+<https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)_Convolution_kernel>
+  a owl:DatatypeProperty;
+  rdfs:label "Convolution kernel";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)>;
+  rdfs:isDefinedBy obo:NCIT_C41832;
+  dc:description "An algorithm used to reconstruct imaging data. Convolution kernels can be used to filter images to smooth them and reduce noise or to enhance edges or other image features. Corresponds to DICOM tag (0018,1210)." .
+
+<https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)_Field_of_view> a
+    owl:DatatypeProperty;
+  rdfs:label "Field of view";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)>;
+  rdfs:isDefinedBy obo:NCIT_C74298;
+  dc:description "The physical size of the anatomical region covered in the reconstructed image, expressed in millimetres. Corresponds to DICOM tag (0018,9317)." .
+
+<https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)_Slice_thickness>
+  a owl:DatatypeProperty;
+  rdfs:label "Slice thickness";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)>;
+  rdfs:isDefinedBy obo:NCIT_C106534;
+  dc:description "The dimension between two surfaces of an imaging plane, specified in millimetres (mm). Corresponds to DICOM tag (0018,0050)." .
+
+<https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)_Imaging_injection>
+  a owl:DatatypeProperty;
+  rdfs:label "Imaging injection";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)>;
+  rdfs:isDefinedBy obo:OBI_0000426;
+  dc:description "Administration of CT contrast medium using an injector device. Corresponds to DICOM tag (0018,1040)." .
+
+<https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)_Z_axis_spacing> a
+    owl:DatatypeProperty;
+  rdfs:label "Z_axis spacing";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)>;
+  rdfs:isDefinedBy obo:NCIT_C156499;
+  dc:description "The physical spacing between adjacent CT image slices along the Z-axis, representing the voxel dimension in the slice-selection direction. Expressed in millimetres (mm). Corresponds to DICOM tag (0018,0088)." .
+
+<https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)_Series_instance_identifier>
+  a owl:DatatypeProperty;
+  rdfs:label "Series instance identifier";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)>;
+  rdfs:isDefinedBy obo:NCIT_C69219;
+  dc:description "A unique identifier for series of images." .
+
+<https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)_Belongs_to_imaging_study>
+  a owl:ObjectProperty;
+  rdfs:label "Belongs to imaging study";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)>;
+  rdfs:isDefinedBy obo:NCIT_C164493;
+  dc:description "Parent study context." .
+
+<https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)_Images_count> a owl:DatatypeProperty;
+  rdfs:label "Images count";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)>;
+  rdfs:isDefinedBy obo:NCIT_C164540;
+  dc:description "The total number of discrete image instances, slices, or frames contained within this imaging series." .
+
+<https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)_Imaging_modality>
+  a owl:ObjectProperty;
+  rdfs:label "Imaging modality";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)>;
+  rdfs:isDefinedBy obo:NCIT_C17369;
+  dc:description "Any technology or method that aids in the visualization of any biological process, cell, tissue or organ for use in screening, diagnosis, surgical procedures or therapy.";
+  rdfs:range <http://purl.bioontology.org/ontology/SNOMEDCT/360037004> .
+
+<https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)_Series_date> a owl:DatatypeProperty;
+  rdfs:label "Series date";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)>;
+  rdfs:isDefinedBy obo:NCIT_C68616;
+  dc:description "The date on which a series began." .
+
+<https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)_Body_region> a owl:ObjectProperty;
+  rdfs:label "Body region";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)>;
+  rdfs:isDefinedBy obo:NCIT_C12680;
+  dc:description "The specific anatomical region, body part, or organ targeted by this imaging series.";
+  rdfs:range <http://snomed.info/id/52530000> .
+
+<https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)_Laterality> a owl:ObjectProperty;
+  rdfs:label "Laterality";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)>;
+  rdfs:isDefinedBy obo:NCIT_C25185;
+  dc:description "The side of the body or paired organ being examined (e.g. Left, Right, Bilateral, Unilateral).";
+  rdfs:range <http://snomed.info/id/106233006> .
+
+<https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)_Imaging_device> a
+    owl:ObjectProperty;
+  rdfs:label "Imaging device";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)>;
+  rdfs:isDefinedBy obo:NCIT_C19747;
+  dc:description "A device for producing a representation or picture, usually of a part of the body, to aid in diagnosis and evaluation.";
+  rdfs:range <http://snomed.info/id/314789007> .
+
+<https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)_Manufacturer_of_imaging_device>
+  a owl:ObjectProperty;
+  rdfs:label "Manufacturer of imaging device";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)>;
+  rdfs:isDefinedBy obo:NCIT_C25392;
+  dc:description "A person, enterprise, or entity that produces imaging device.";
+  rdfs:range obo:OBI_0000835 .
+
+<https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)_Software_version>
+  a owl:ObjectProperty;
+  rdfs:label "Software version";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)>;
+  rdfs:isDefinedBy obo:NCIT_C111093;
+  dc:description "A form or variant of software; one of a sequence of copies of a software program, each incorporating new modifications.";
+  rdfs:range <http://snomed.info/id/706687001> .
+
+<https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)_Color_space> a owl:ObjectProperty;
+  rdfs:label "Color space";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)>;
+  rdfs:isDefinedBy obo:NCIT_C37927;
+  dc:description "The photometric interpretation of pixel data that defines the type of colour or greyscale encoding used in the image (e.g., MONOCHROME2, RGB, YBR_FULL). Corresponds to DICOM tag (0028,0004).";
+  rdfs:range <https://w3id.org/valuesets/ColorSpaceEnum> .
+
+<https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)_Pixel_spacing> a
+    owl:DatatypeProperty;
+  rdfs:label "Pixel spacing";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)>;
+  rdfs:isDefinedBy obo:NCIT_C45786;
+  dc:description "Physical distance between the centres of adjacent pixels in the image space, specified as row and column spacing. Expressed in millimetres (mm) according to DICOM attribute (0028,0030)." .
+
+<https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)_Image_type> a owl:ObjectProperty;
+  rdfs:label "Image type";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)>;
+  rdfs:isDefinedBy obo:NCIT_C69268;
+  dc:description "A classification of the image based on the imaging modality and acquisition characteristics. It specifies the type of image produced during the scan (e.g., T1-weighted MRI, T2-weighted MRI, CT attenuation image, PET uptake image).";
+  rdfs:range <http://snomed.info/id/363679005> .
+
+<https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)_File_format> a owl:ObjectProperty;
+  rdfs:label "File format";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)>;
+  rdfs:isDefinedBy obo:MS_1001459;
+  dc:description "The digital format used to encode and store an imaging file.";
+  rdfs:range obo:MS_1001459 .
+
+<https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)_File_size> a owl:DatatypeProperty;
+  rdfs:label "File size";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)>;
+  rdfs:isDefinedBy obo:NCIT_C171192;
+  dc:description "The size of the file in MB." .
+
+<https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)_Image_width> a owl:DatatypeProperty;
+  rdfs:label "Image width";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)>;
+  rdfs:isDefinedBy <http://purl.allotrope.org/ontologies/result#AFR_0002468>;
+  dc:description "Number of pixels in one row of the image, corresponding to the DICOM attribute Columns (0028,0011)." .
+
+<https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)_Image_height> a owl:DatatypeProperty;
+  rdfs:label "Image height";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)>;
+  rdfs:isDefinedBy <http://purl.allotrope.org/ontologies/result#AFR_0002467>;
+  dc:description "Number of pixels in one column of the image, corresponding to the DICOM attribute Rows (0028,0010)." .
+
+<https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)_Image_depth> a owl:DatatypeProperty;
+  rdfs:label "Image depth";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)>;
+  rdfs:isDefinedBy obo:NCIT_C69267;
+  dc:description "The number of distinct image planes captured during acquisition. For WSI, this represents the number of focal planes (Z-stack levels). For CT, MRI, and PET, it corresponds to the number of cross-sectional slices or frames. For DX and MG, this value is typically 1 (a single 2D projection)." .
+
+<https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)_Number_of_channels>
+  a owl:DatatypeProperty;
+  rdfs:label "Number of channels";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)>;
+  rdfs:isDefinedBy <https://w3id.org/reproduceme#SamplesPerPixel>;
+  dc:description "The number of distinct data channels stored in each pixel of the image. Channels may represent color components (e.g., RGB), grayscale intensity, or modality-specific signal dimensions." .
+
+<https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)_Channel_resolution>
+  a owl:DatatypeProperty;
+  rdfs:label "Channel resolution";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)>;
+  rdfs:isDefinedBy <https://w3id.org/reproduceme#SignificantBits>;
+  dc:description "The number of bits used to represent the stored value of each pixel channel. In DICOM, this corresponds to tag (0028,0101)." .
+
+<https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)_Compression_method>
+  a owl:DatatypeProperty;
+  rdfs:label "Compression method";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)>;
+  rdfs:isDefinedBy obo:NCIT_C64347;
+  dc:description "Indicates whether the image was lossy-compressed and which method was used, based on DICOM tags (0028,2110) and (0028,2114)." .
+
+<https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)_Annotations_available>
+  a owl:DatatypeProperty;
+  rdfs:label "Annotations available";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Computed_tomography_(CT)>;
+  rdfs:isDefinedBy obo:NCIT_C44272;
+  dc:description "Indicates whether annotation data associated with the image (e.g., regions of interest, labels, markup, or segmentation overlays) are present and accessible." .
+
+<https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)> a owl:Class;
+  rdfs:isDefinedBy obo:NCIT_C16809;
+  rdfs:label "Magnetic resonance (MR)";
+  dc:description "Modality-specific series metadata for magnetic resonance imaging acquisitions, capturing static magnetic field strength, radiofrequency pulse sequence timing (TR/TE), flip angle, and receive coil configurations." .
+
+<https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)_MR_identifier> a owl:DatatypeProperty;
+  rdfs:label "MR identifier";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)>;
+  rdfs:isDefinedBy obo:NCIT_C69219;
+  dc:description "A unique identifier for MR series of images." .
+
+<https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)_Sequence_name> a owl:DatatypeProperty;
+  rdfs:label "Sequence name";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)>;
+  rdfs:isDefinedBy obo:NCIT_C164586;
+  dc:description "The literal identifier for the pulse sequence. Corresponds to DICOM tag (0018,0024)." .
+
+<https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)_Magnetic_field_strength>
+  a owl:DatatypeProperty;
+  rdfs:label "Magnetic field strength";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)>;
+  rdfs:isDefinedBy obo:NCIT_C156494;
+  dc:description "A measurement of the strength of the static magnetic field (B₀) generated by an MRI system, expressed in units of Tesla (T). Corresponds to DICOM tag (0018,0087)." .
+
+<https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)_Repetition_time> a
+    owl:DatatypeProperty;
+  rdfs:label "Repetition time";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)>;
+  rdfs:isDefinedBy obo:NCIT_C82330;
+  dc:description "The amount of time in milliseconds (ms) between successive pulse sequences applied to the same slice. Corresponds to DICOM tag (0018,0080)." .
+
+<https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)_Echo_time> a owl:DatatypeProperty;
+  rdfs:label "Echo time";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)>;
+  rdfs:isDefinedBy obo:NCIT_C82331;
+  dc:description "The time in milliseconds between the application of the excitation pulse and the recording of the peak echo signal. Corresponds to DICOM tag (0018,0081)." .
+
+<https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)_Imaging_frequency>
+  a owl:DatatypeProperty;
+  rdfs:label "Imaging frequency";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)>;
+  rdfs:isDefinedBy obo:UO_0000105;
+  dc:description "The Larmor resonance frequency used during MR data acquisition, determined by the strength of the static magnetic field (B₀) and expressed in megahertz (MHz). Corresponds to DICOM tag (0018,0084)." .
+
+<https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)_Flip_angle> a owl:DatatypeProperty;
+  rdfs:label "Flip angle";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)>;
+  rdfs:isDefinedBy obo:UO_0000122;
+  dc:description "In magnetic resonance imaging, the angle by which the net magnetization vector is rotated away from the main magnetic field (B₀) by an applied radiofrequency pulse. It is expressed in degrees (°). Corresponds to DICOM tag (0018,1314)." .
+
+<https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)_Inversion_time> a
+    owl:DatatypeProperty;
+  rdfs:label "Inversion time";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)>;
+  rdfs:isDefinedBy obo:NCIT_C116124;
+  dc:description "The time between the inversion and excitation pulses in an inversion recovery pulse sequence, expressed in milliseconds (ms). Corresponds to DICOM tag (0018,0082)." .
+
+<https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)_Receive_coil_name>
+  a owl:DatatypeProperty;
+  rdfs:label "Receive coil name";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)>;
+  rdfs:isDefinedBy <http://www.radlex.org/RID/RID10830>;
+  dc:description "The designated name of the radiofrequency (RF) receive coil used during MR acquisition, identifying the specific hardware component that detects the MR signal. Corresponds to DICOM tag (0018,1250)." .
+
+<https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)_Field_of_view> a owl:DatatypeProperty;
+  rdfs:label "Field of view";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)>;
+  rdfs:isDefinedBy obo:NCIT_C74298;
+  dc:description "The physical size of the anatomical region covered in the reconstructed image, expressed in millimetres." .
+
+<https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)_Slice_thickness> a
+    owl:DatatypeProperty;
+  rdfs:label "Slice thickness";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)>;
+  rdfs:isDefinedBy obo:NCIT_C106534;
+  dc:description "The dimension between two surfaces of an imaging plane, specified in millimetres (mm). Corresponds to DICOM tag (0018,0050)." .
+
+<https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)_Imaging_injection>
+  a owl:DatatypeProperty;
+  rdfs:label "Imaging injection";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)>;
+  rdfs:isDefinedBy obo:OBI_0000426;
+  dc:description "Administration of MR contrast medium using an injector device. Corresponds to DICOM tag (0018,0010)." .
+
+<https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)_Series_instance_identifier>
+  a owl:DatatypeProperty;
+  rdfs:label "Series instance identifier";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)>;
+  rdfs:isDefinedBy obo:NCIT_C69219;
+  dc:description "A unique identifier for series of images." .
+
+<https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)_Belongs_to_imaging_study>
+  a owl:ObjectProperty;
+  rdfs:label "Belongs to imaging study";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)>;
+  rdfs:isDefinedBy obo:NCIT_C164493;
+  dc:description "Parent study context." .
+
+<https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)_Images_count> a owl:DatatypeProperty;
+  rdfs:label "Images count";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)>;
+  rdfs:isDefinedBy obo:NCIT_C164540;
+  dc:description "The total number of discrete image instances, slices, or frames contained within this imaging series." .
+
+<https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)_Imaging_modality>
+  a owl:ObjectProperty;
+  rdfs:label "Imaging modality";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)>;
+  rdfs:isDefinedBy obo:NCIT_C17369;
+  dc:description "Any technology or method that aids in the visualization of any biological process, cell, tissue or organ for use in screening, diagnosis, surgical procedures or therapy.";
+  rdfs:range <http://purl.bioontology.org/ontology/SNOMEDCT/360037004> .
+
+<https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)_Series_date> a owl:DatatypeProperty;
+  rdfs:label "Series date";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)>;
+  rdfs:isDefinedBy obo:NCIT_C68616;
+  dc:description "The date on which a series began." .
+
+<https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)_Body_region> a owl:ObjectProperty;
+  rdfs:label "Body region";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)>;
+  rdfs:isDefinedBy obo:NCIT_C12680;
+  dc:description "The specific anatomical region, body part, or organ targeted by this imaging series.";
+  rdfs:range <http://snomed.info/id/52530000> .
+
+<https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)_Laterality> a owl:ObjectProperty;
+  rdfs:label "Laterality";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)>;
+  rdfs:isDefinedBy obo:NCIT_C25185;
+  dc:description "The side of the body or paired organ being examined (e.g. Left, Right, Bilateral, Unilateral).";
+  rdfs:range <http://snomed.info/id/106233006> .
+
+<https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)_Imaging_device> a
+    owl:ObjectProperty;
+  rdfs:label "Imaging device";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)>;
+  rdfs:isDefinedBy obo:NCIT_C19747;
+  dc:description "A device for producing a representation or picture, usually of a part of the body, to aid in diagnosis and evaluation.";
+  rdfs:range <http://snomed.info/id/314789007> .
+
+<https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)_Manufacturer_of_imaging_device>
+  a owl:ObjectProperty;
+  rdfs:label "Manufacturer of imaging device";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)>;
+  rdfs:isDefinedBy obo:NCIT_C25392;
+  dc:description "A person, enterprise, or entity that produces imaging device.";
+  rdfs:range obo:OBI_0000835 .
+
+<https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)_Software_version>
+  a owl:ObjectProperty;
+  rdfs:label "Software version";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)>;
+  rdfs:isDefinedBy obo:NCIT_C111093;
+  dc:description "A form or variant of software; one of a sequence of copies of a software program, each incorporating new modifications.";
+  rdfs:range <http://snomed.info/id/706687001> .
+
+<https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)_Color_space> a owl:ObjectProperty;
+  rdfs:label "Color space";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)>;
+  rdfs:isDefinedBy obo:NCIT_C37927;
+  dc:description "The photometric interpretation of pixel data that defines the type of colour or greyscale encoding used in the image (e.g., MONOCHROME2, RGB, YBR_FULL). Corresponds to DICOM tag (0028,0004).";
+  rdfs:range <https://w3id.org/valuesets/ColorSpaceEnum> .
+
+<https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)_Pixel_spacing> a owl:DatatypeProperty;
+  rdfs:label "Pixel spacing";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)>;
+  rdfs:isDefinedBy obo:NCIT_C45786;
+  dc:description "Physical distance between the centres of adjacent pixels in the image space, specified as row and column spacing. Expressed in millimetres (mm) according to DICOM attribute (0028,0030)." .
+
+<https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)_Image_type> a owl:ObjectProperty;
+  rdfs:label "Image type";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)>;
+  rdfs:isDefinedBy obo:NCIT_C69268;
+  dc:description "A classification of the image based on the imaging modality and acquisition characteristics. It specifies the type of image produced during the scan (e.g., T1-weighted MRI, T2-weighted MRI, CT attenuation image, PET uptake image).";
+  rdfs:range <http://snomed.info/id/363679005> .
+
+<https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)_File_format> a owl:ObjectProperty;
+  rdfs:label "File format";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)>;
+  rdfs:isDefinedBy obo:MS_1001459;
+  dc:description "The digital format used to encode and store an imaging file.";
+  rdfs:range obo:MS_1001459 .
+
+<https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)_File_size> a owl:DatatypeProperty;
+  rdfs:label "File size";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)>;
+  rdfs:isDefinedBy obo:NCIT_C171192;
+  dc:description "The size of the file in MB." .
+
+<https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)_Image_width> a owl:DatatypeProperty;
+  rdfs:label "Image width";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)>;
+  rdfs:isDefinedBy <http://purl.allotrope.org/ontologies/result#AFR_0002468>;
+  dc:description "Number of pixels in one row of the image, corresponding to the DICOM attribute Columns (0028,0011)." .
+
+<https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)_Image_height> a owl:DatatypeProperty;
+  rdfs:label "Image height";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)>;
+  rdfs:isDefinedBy <http://purl.allotrope.org/ontologies/result#AFR_0002467>;
+  dc:description "Number of pixels in one column of the image, corresponding to the DICOM attribute Rows (0028,0010)." .
+
+<https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)_Image_depth> a owl:DatatypeProperty;
+  rdfs:label "Image depth";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)>;
+  rdfs:isDefinedBy obo:NCIT_C69267;
+  dc:description "The number of distinct image planes captured during acquisition. For WSI, this represents the number of focal planes (Z-stack levels). For CT, MRI, and PET, it corresponds to the number of cross-sectional slices or frames. For DX and MG, this value is typically 1 (a single 2D projection)." .
+
+<https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)_Number_of_channels>
+  a owl:DatatypeProperty;
+  rdfs:label "Number of channels";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)>;
+  rdfs:isDefinedBy <https://w3id.org/reproduceme#SamplesPerPixel>;
+  dc:description "The number of distinct data channels stored in each pixel of the image. Channels may represent color components (e.g., RGB), grayscale intensity, or modality-specific signal dimensions." .
+
+<https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)_Channel_resolution>
+  a owl:DatatypeProperty;
+  rdfs:label "Channel resolution";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)>;
+  rdfs:isDefinedBy <https://w3id.org/reproduceme#SignificantBits>;
+  dc:description "The number of bits used to represent the stored value of each pixel channel. In DICOM, this corresponds to tag (0028,0101)." .
+
+<https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)_Compression_method>
+  a owl:DatatypeProperty;
+  rdfs:label "Compression method";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)>;
+  rdfs:isDefinedBy obo:NCIT_C64347;
+  dc:description "Indicates whether the image was lossy-compressed and which method was used, based on DICOM tags (0028,2110) and (0028,2114)." .
+
+<https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)_Annotations_available>
+  a owl:DatatypeProperty;
+  rdfs:label "Annotations available";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Magnetic_resonance_(MR)>;
+  rdfs:isDefinedBy obo:NCIT_C44272;
+  dc:description "Indicates whether annotation data associated with the image (e.g., regions of interest, labels, markup, or segmentation overlays) are present and accessible." .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)> a owl:Class;
+  rdfs:isDefinedBy obo:NCIT_C18001;
+  rdfs:label "Digital radiography (DX)";
+  dc:description "Modality-specific series metadata for projection digital radiography acquisitions, capturing patient orientation, X-ray tube potential, and exposure settings." .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_DX_identifier> a
+    owl:DatatypeProperty;
+  rdfs:label "DX identifier";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)>;
+  rdfs:isDefinedBy obo:NCIT_C69219;
+  dc:description "A unique identifier for DX series of images." .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Patient_orientation>
+  a owl:ObjectProperty;
+  rdfs:label "Patient orientation";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)>;
+  rdfs:isDefinedBy <http://www.radlex.org/RID/RID10461>;
+  dc:description "Orientation of patient relative to imaging device. Corresponds to DICOM tag (0020,0020).";
+  rdfs:range <http://www.radlex.org/RID/RID10461> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Tube_voltage_(kVp)>
+  a owl:DatatypeProperty;
+  rdfs:label "Tube voltage (kVp)";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)>;
+  rdfs:isDefinedBy obo:NCIT_C48432;
+  dc:description "The peak accelerating voltage applied in an X-ray tube between the cathode and anode, corresponding to DICOM tag (0018,0060)." .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Exposure_time_(ms)>
+  a owl:DatatypeProperty;
+  rdfs:label "Exposure time (ms)";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)>;
+  rdfs:isDefinedBy obo:NCIT_C69233;
+  dc:description "The cumulative time a subject was exposed to X-rays during image acquisition. Corresponds to DICOM tag (0018,1150)." .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Exposure_(mAs)> a
+    owl:DatatypeProperty;
+  rdfs:label "Exposure (mAs)";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)>;
+  rdfs:isDefinedBy obo:NCIT_C17941;
+  dc:description "The exposure expressed in mAs, for example calculated from Exposure Time and X-Ray Tube Current." .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Series_instance_identifier>
+  a owl:DatatypeProperty;
+  rdfs:label "Series instance identifier";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)>;
+  rdfs:isDefinedBy obo:NCIT_C69219;
+  dc:description "A unique identifier for series of images." .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Belongs_to_imaging_study>
+  a owl:ObjectProperty;
+  rdfs:label "Belongs to imaging study";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)>;
+  rdfs:isDefinedBy obo:NCIT_C164493;
+  dc:description "Parent study context." .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Images_count> a owl:DatatypeProperty;
+  rdfs:label "Images count";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)>;
+  rdfs:isDefinedBy obo:NCIT_C164540;
+  dc:description "The total number of discrete image instances, slices, or frames contained within this imaging series." .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Imaging_modality>
+  a owl:ObjectProperty;
+  rdfs:label "Imaging modality";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)>;
+  rdfs:isDefinedBy obo:NCIT_C17369;
+  dc:description "Any technology or method that aids in the visualization of any biological process, cell, tissue or organ for use in screening, diagnosis, surgical procedures or therapy.";
+  rdfs:range <http://purl.bioontology.org/ontology/SNOMEDCT/360037004> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Series_date> a owl:DatatypeProperty;
+  rdfs:label "Series date";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)>;
+  rdfs:isDefinedBy obo:NCIT_C68616;
+  dc:description "The date on which a series began." .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Body_region> a owl:ObjectProperty;
+  rdfs:label "Body region";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)>;
+  rdfs:isDefinedBy obo:NCIT_C12680;
+  dc:description "The specific anatomical region, body part, or organ targeted by this imaging series.";
+  rdfs:range <http://snomed.info/id/52530000> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Laterality> a owl:ObjectProperty;
+  rdfs:label "Laterality";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)>;
+  rdfs:isDefinedBy obo:NCIT_C25185;
+  dc:description "The side of the body or paired organ being examined (e.g. Left, Right, Bilateral, Unilateral).";
+  rdfs:range <http://snomed.info/id/106233006> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Imaging_device> a
+    owl:ObjectProperty;
+  rdfs:label "Imaging device";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)>;
+  rdfs:isDefinedBy obo:NCIT_C19747;
+  dc:description "A device for producing a representation or picture, usually of a part of the body, to aid in diagnosis and evaluation.";
+  rdfs:range <http://snomed.info/id/314789007> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Manufacturer_of_imaging_device>
+  a owl:ObjectProperty;
+  rdfs:label "Manufacturer of imaging device";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)>;
+  rdfs:isDefinedBy obo:NCIT_C25392;
+  dc:description "A person, enterprise, or entity that produces imaging device.";
+  rdfs:range obo:OBI_0000835 .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Software_version>
+  a owl:ObjectProperty;
+  rdfs:label "Software version";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)>;
+  rdfs:isDefinedBy obo:NCIT_C111093;
+  dc:description "A form or variant of software; one of a sequence of copies of a software program, each incorporating new modifications.";
+  rdfs:range <http://snomed.info/id/706687001> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Color_space> a owl:ObjectProperty;
+  rdfs:label "Color space";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)>;
+  rdfs:isDefinedBy obo:NCIT_C37927;
+  dc:description "The photometric interpretation of pixel data that defines the type of colour or greyscale encoding used in the image (e.g., MONOCHROME2, RGB, YBR_FULL). Corresponds to DICOM tag (0028,0004).";
+  rdfs:range <https://w3id.org/valuesets/ColorSpaceEnum> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Pixel_spacing> a
+    owl:DatatypeProperty;
+  rdfs:label "Pixel spacing";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)>;
+  rdfs:isDefinedBy obo:NCIT_C45786;
+  dc:description "Physical distance between the centres of adjacent pixels in the image space, specified as row and column spacing. Expressed in millimetres (mm) according to DICOM attribute (0028,0030)." .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Image_type> a owl:ObjectProperty;
+  rdfs:label "Image type";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)>;
+  rdfs:isDefinedBy obo:NCIT_C69268;
+  dc:description "A classification of the image based on the imaging modality and acquisition characteristics. It specifies the type of image produced during the scan (e.g., T1-weighted MRI, T2-weighted MRI, CT attenuation image, PET uptake image).";
+  rdfs:range <http://snomed.info/id/363679005> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_File_format> a owl:ObjectProperty;
+  rdfs:label "File format";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)>;
+  rdfs:isDefinedBy obo:MS_1001459;
+  dc:description "The digital format used to encode and store an imaging file.";
+  rdfs:range obo:MS_1001459 .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_File_size> a owl:DatatypeProperty;
+  rdfs:label "File size";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)>;
+  rdfs:isDefinedBy obo:NCIT_C171192;
+  dc:description "The size of the file in MB." .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Image_width> a owl:DatatypeProperty;
+  rdfs:label "Image width";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)>;
+  rdfs:isDefinedBy <http://purl.allotrope.org/ontologies/result#AFR_0002468>;
+  dc:description "Number of pixels in one row of the image, corresponding to the DICOM attribute Columns (0028,0011)." .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Image_height> a owl:DatatypeProperty;
+  rdfs:label "Image height";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)>;
+  rdfs:isDefinedBy <http://purl.allotrope.org/ontologies/result#AFR_0002467>;
+  dc:description "Number of pixels in one column of the image, corresponding to the DICOM attribute Rows (0028,0010)." .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Image_depth> a owl:DatatypeProperty;
+  rdfs:label "Image depth";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)>;
+  rdfs:isDefinedBy obo:NCIT_C69267;
+  dc:description "The number of distinct image planes captured during acquisition. For WSI, this represents the number of focal planes (Z-stack levels). For CT, MRI, and PET, it corresponds to the number of cross-sectional slices or frames. For DX and MG, this value is typically 1 (a single 2D projection)." .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Number_of_channels>
+  a owl:DatatypeProperty;
+  rdfs:label "Number of channels";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)>;
+  rdfs:isDefinedBy <https://w3id.org/reproduceme#SamplesPerPixel>;
+  dc:description "The number of distinct data channels stored in each pixel of the image. Channels may represent color components (e.g., RGB), grayscale intensity, or modality-specific signal dimensions." .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Channel_resolution>
+  a owl:DatatypeProperty;
+  rdfs:label "Channel resolution";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)>;
+  rdfs:isDefinedBy <https://w3id.org/reproduceme#SignificantBits>;
+  dc:description "The number of bits used to represent the stored value of each pixel channel. In DICOM, this corresponds to tag (0028,0101)." .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Compression_method>
+  a owl:DatatypeProperty;
+  rdfs:label "Compression method";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)>;
+  rdfs:isDefinedBy obo:NCIT_C64347;
+  dc:description "Indicates whether the image was lossy-compressed and which method was used, based on DICOM tags (0028,2110) and (0028,2114)." .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Annotations_available>
+  a owl:DatatypeProperty;
+  rdfs:label "Annotations available";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)>;
+  rdfs:isDefinedBy obo:NCIT_C44272;
+  dc:description "Indicates whether annotation data associated with the image (e.g., regions of interest, labels, markup, or segmentation overlays) are present and accessible." .
+
+<https://w3id.org/fair-genomes/ontology/Digital_mammography_(MG)> a owl:Class;
+  rdfs:isDefinedBy obo:NCIT_C18467;
+  rdfs:label "Digital mammography (MG)";
+  dc:description "Modality-specific series metadata for digital mammography acquisitions, capturing dedicated breast examination projections and associated radiographic parameters." .
+
+<https://w3id.org/fair-genomes/ontology/Digital_mammography_(MG)_MG_identifier> a
+    owl:DatatypeProperty;
+  rdfs:label "MG identifier";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Digital_mammography_(MG)>;
+  rdfs:isDefinedBy obo:NCIT_C69219;
+  dc:description "A unique identifier for MG series of images." .
+
+<https://w3id.org/fair-genomes/ontology/Digital_mammography_(MG)_Series_instance_identifier>
+  a owl:DatatypeProperty;
+  rdfs:label "Series instance identifier";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Digital_mammography_(MG)>;
+  rdfs:isDefinedBy obo:NCIT_C69219;
+  dc:description "A unique identifier for series of images." .
+
+<https://w3id.org/fair-genomes/ontology/Digital_mammography_(MG)_Belongs_to_imaging_study>
+  a owl:ObjectProperty;
+  rdfs:label "Belongs to imaging study";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Digital_mammography_(MG)>;
+  rdfs:isDefinedBy obo:NCIT_C164493;
+  dc:description "Parent study context." .
+
+<https://w3id.org/fair-genomes/ontology/Digital_mammography_(MG)_Images_count> a owl:DatatypeProperty;
+  rdfs:label "Images count";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Digital_mammography_(MG)>;
+  rdfs:isDefinedBy obo:NCIT_C164540;
+  dc:description "The total number of discrete image instances, slices, or frames contained within this imaging series." .
+
+<https://w3id.org/fair-genomes/ontology/Digital_mammography_(MG)_Imaging_modality>
+  a owl:ObjectProperty;
+  rdfs:label "Imaging modality";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Digital_mammography_(MG)>;
+  rdfs:isDefinedBy obo:NCIT_C17369;
+  dc:description "Any technology or method that aids in the visualization of any biological process, cell, tissue or organ for use in screening, diagnosis, surgical procedures or therapy.";
+  rdfs:range <http://purl.bioontology.org/ontology/SNOMEDCT/360037004> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_mammography_(MG)_Series_date> a owl:DatatypeProperty;
+  rdfs:label "Series date";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Digital_mammography_(MG)>;
+  rdfs:isDefinedBy obo:NCIT_C68616;
+  dc:description "The date on which a series began." .
+
+<https://w3id.org/fair-genomes/ontology/Digital_mammography_(MG)_Body_region> a owl:ObjectProperty;
+  rdfs:label "Body region";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Digital_mammography_(MG)>;
+  rdfs:isDefinedBy obo:NCIT_C12680;
+  dc:description "The specific anatomical region, body part, or organ targeted by this imaging series.";
+  rdfs:range <http://snomed.info/id/52530000> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_mammography_(MG)_Laterality> a owl:ObjectProperty;
+  rdfs:label "Laterality";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Digital_mammography_(MG)>;
+  rdfs:isDefinedBy obo:NCIT_C25185;
+  dc:description "The side of the body or paired organ being examined (e.g. Left, Right, Bilateral, Unilateral).";
+  rdfs:range <http://snomed.info/id/106233006> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_mammography_(MG)_Imaging_device> a
+    owl:ObjectProperty;
+  rdfs:label "Imaging device";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Digital_mammography_(MG)>;
+  rdfs:isDefinedBy obo:NCIT_C19747;
+  dc:description "A device for producing a representation or picture, usually of a part of the body, to aid in diagnosis and evaluation.";
+  rdfs:range <http://snomed.info/id/314789007> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_mammography_(MG)_Manufacturer_of_imaging_device>
+  a owl:ObjectProperty;
+  rdfs:label "Manufacturer of imaging device";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Digital_mammography_(MG)>;
+  rdfs:isDefinedBy obo:NCIT_C25392;
+  dc:description "A person, enterprise, or entity that produces imaging device.";
+  rdfs:range obo:OBI_0000835 .
+
+<https://w3id.org/fair-genomes/ontology/Digital_mammography_(MG)_Software_version>
+  a owl:ObjectProperty;
+  rdfs:label "Software version";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Digital_mammography_(MG)>;
+  rdfs:isDefinedBy obo:NCIT_C111093;
+  dc:description "A form or variant of software; one of a sequence of copies of a software program, each incorporating new modifications.";
+  rdfs:range <http://snomed.info/id/706687001> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_mammography_(MG)_Color_space> a owl:ObjectProperty;
+  rdfs:label "Color space";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Digital_mammography_(MG)>;
+  rdfs:isDefinedBy obo:NCIT_C37927;
+  dc:description "The photometric interpretation of pixel data that defines the type of colour or greyscale encoding used in the image (e.g., MONOCHROME2, RGB, YBR_FULL). Corresponds to DICOM tag (0028,0004).";
+  rdfs:range <https://w3id.org/valuesets/ColorSpaceEnum> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_mammography_(MG)_Pixel_spacing> a
+    owl:DatatypeProperty;
+  rdfs:label "Pixel spacing";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Digital_mammography_(MG)>;
+  rdfs:isDefinedBy obo:NCIT_C45786;
+  dc:description "Physical distance between the centres of adjacent pixels in the image space, specified as row and column spacing. Expressed in millimetres (mm) according to DICOM attribute (0028,0030)." .
+
+<https://w3id.org/fair-genomes/ontology/Digital_mammography_(MG)_Image_type> a owl:ObjectProperty;
+  rdfs:label "Image type";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Digital_mammography_(MG)>;
+  rdfs:isDefinedBy obo:NCIT_C69268;
+  dc:description "A classification of the image based on the imaging modality and acquisition characteristics. It specifies the type of image produced during the scan (e.g., T1-weighted MRI, T2-weighted MRI, CT attenuation image, PET uptake image).";
+  rdfs:range <http://snomed.info/id/363679005> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_mammography_(MG)_File_format> a owl:ObjectProperty;
+  rdfs:label "File format";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Digital_mammography_(MG)>;
+  rdfs:isDefinedBy obo:MS_1001459;
+  dc:description "The digital format used to encode and store an imaging file.";
+  rdfs:range obo:MS_1001459 .
+
+<https://w3id.org/fair-genomes/ontology/Digital_mammography_(MG)_File_size> a owl:DatatypeProperty;
+  rdfs:label "File size";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Digital_mammography_(MG)>;
+  rdfs:isDefinedBy obo:NCIT_C171192;
+  dc:description "The size of the file in MB." .
+
+<https://w3id.org/fair-genomes/ontology/Digital_mammography_(MG)_Image_width> a owl:DatatypeProperty;
+  rdfs:label "Image width";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Digital_mammography_(MG)>;
+  rdfs:isDefinedBy <http://purl.allotrope.org/ontologies/result#AFR_0002468>;
+  dc:description "Number of pixels in one row of the image, corresponding to the DICOM attribute Columns (0028,0011)." .
+
+<https://w3id.org/fair-genomes/ontology/Digital_mammography_(MG)_Image_height> a owl:DatatypeProperty;
+  rdfs:label "Image height";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Digital_mammography_(MG)>;
+  rdfs:isDefinedBy <http://purl.allotrope.org/ontologies/result#AFR_0002467>;
+  dc:description "Number of pixels in one column of the image, corresponding to the DICOM attribute Rows (0028,0010)." .
+
+<https://w3id.org/fair-genomes/ontology/Digital_mammography_(MG)_Image_depth> a owl:DatatypeProperty;
+  rdfs:label "Image depth";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Digital_mammography_(MG)>;
+  rdfs:isDefinedBy obo:NCIT_C69267;
+  dc:description "The number of distinct image planes captured during acquisition. For WSI, this represents the number of focal planes (Z-stack levels). For CT, MRI, and PET, it corresponds to the number of cross-sectional slices or frames. For DX and MG, this value is typically 1 (a single 2D projection)." .
+
+<https://w3id.org/fair-genomes/ontology/Digital_mammography_(MG)_Number_of_channels>
+  a owl:DatatypeProperty;
+  rdfs:label "Number of channels";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Digital_mammography_(MG)>;
+  rdfs:isDefinedBy <https://w3id.org/reproduceme#SamplesPerPixel>;
+  dc:description "The number of distinct data channels stored in each pixel of the image. Channels may represent color components (e.g., RGB), grayscale intensity, or modality-specific signal dimensions." .
+
+<https://w3id.org/fair-genomes/ontology/Digital_mammography_(MG)_Channel_resolution>
+  a owl:DatatypeProperty;
+  rdfs:label "Channel resolution";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Digital_mammography_(MG)>;
+  rdfs:isDefinedBy <https://w3id.org/reproduceme#SignificantBits>;
+  dc:description "The number of bits used to represent the stored value of each pixel channel. In DICOM, this corresponds to tag (0028,0101)." .
+
+<https://w3id.org/fair-genomes/ontology/Digital_mammography_(MG)_Compression_method>
+  a owl:DatatypeProperty;
+  rdfs:label "Compression method";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Digital_mammography_(MG)>;
+  rdfs:isDefinedBy obo:NCIT_C64347;
+  dc:description "Indicates whether the image was lossy-compressed and which method was used, based on DICOM tags (0028,2110) and (0028,2114)." .
+
+<https://w3id.org/fair-genomes/ontology/Digital_mammography_(MG)_Annotations_available>
+  a owl:DatatypeProperty;
+  rdfs:label "Annotations available";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Digital_mammography_(MG)>;
+  rdfs:isDefinedBy obo:NCIT_C44272;
+  dc:description "Indicates whether annotation data associated with the image (e.g., regions of interest, labels, markup, or segmentation overlays) are present and accessible." .
+
+<https://w3id.org/fair-genomes/ontology/Ultrasound_Imaging_(US)> a owl:Class;
+  rdfs:isDefinedBy obo:NCIT_C19337;
+  rdfs:label "Ultrasound Imaging (US)";
+  dc:description "Modality-specific series metadata for diagnostic ultrasonography acquisitions, capturing acoustic imaging parameters, anatomical focus, and real-time scanning geometry." .
+
+<https://w3id.org/fair-genomes/ontology/Ultrasound_Imaging_(US)_US_identifier> a owl:DatatypeProperty;
+  rdfs:label "US identifier";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Ultrasound_Imaging_(US)>;
+  rdfs:isDefinedBy obo:NCIT_C69219;
+  dc:description "A unique identifier for US series of images." .
+
+<https://w3id.org/fair-genomes/ontology/Ultrasound_Imaging_(US)_Series_instance_identifier>
+  a owl:DatatypeProperty;
+  rdfs:label "Series instance identifier";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Ultrasound_Imaging_(US)>;
+  rdfs:isDefinedBy obo:NCIT_C69219;
+  dc:description "A unique identifier for series of images." .
+
+<https://w3id.org/fair-genomes/ontology/Ultrasound_Imaging_(US)_Belongs_to_imaging_study>
+  a owl:ObjectProperty;
+  rdfs:label "Belongs to imaging study";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Ultrasound_Imaging_(US)>;
+  rdfs:isDefinedBy obo:NCIT_C164493;
+  dc:description "Parent study context." .
+
+<https://w3id.org/fair-genomes/ontology/Ultrasound_Imaging_(US)_Images_count> a owl:DatatypeProperty;
+  rdfs:label "Images count";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Ultrasound_Imaging_(US)>;
+  rdfs:isDefinedBy obo:NCIT_C164540;
+  dc:description "The total number of discrete image instances, slices, or frames contained within this imaging series." .
+
+<https://w3id.org/fair-genomes/ontology/Ultrasound_Imaging_(US)_Imaging_modality>
+  a owl:ObjectProperty;
+  rdfs:label "Imaging modality";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Ultrasound_Imaging_(US)>;
+  rdfs:isDefinedBy obo:NCIT_C17369;
+  dc:description "Any technology or method that aids in the visualization of any biological process, cell, tissue or organ for use in screening, diagnosis, surgical procedures or therapy.";
+  rdfs:range <http://purl.bioontology.org/ontology/SNOMEDCT/360037004> .
+
+<https://w3id.org/fair-genomes/ontology/Ultrasound_Imaging_(US)_Series_date> a owl:DatatypeProperty;
+  rdfs:label "Series date";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Ultrasound_Imaging_(US)>;
+  rdfs:isDefinedBy obo:NCIT_C68616;
+  dc:description "The date on which a series began." .
+
+<https://w3id.org/fair-genomes/ontology/Ultrasound_Imaging_(US)_Body_region> a owl:ObjectProperty;
+  rdfs:label "Body region";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Ultrasound_Imaging_(US)>;
+  rdfs:isDefinedBy obo:NCIT_C12680;
+  dc:description "The specific anatomical region, body part, or organ targeted by this imaging series.";
+  rdfs:range <http://snomed.info/id/52530000> .
+
+<https://w3id.org/fair-genomes/ontology/Ultrasound_Imaging_(US)_Laterality> a owl:ObjectProperty;
+  rdfs:label "Laterality";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Ultrasound_Imaging_(US)>;
+  rdfs:isDefinedBy obo:NCIT_C25185;
+  dc:description "The side of the body or paired organ being examined (e.g. Left, Right, Bilateral, Unilateral).";
+  rdfs:range <http://snomed.info/id/106233006> .
+
+<https://w3id.org/fair-genomes/ontology/Ultrasound_Imaging_(US)_Imaging_device> a
+    owl:ObjectProperty;
+  rdfs:label "Imaging device";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Ultrasound_Imaging_(US)>;
+  rdfs:isDefinedBy obo:NCIT_C19747;
+  dc:description "A device for producing a representation or picture, usually of a part of the body, to aid in diagnosis and evaluation.";
+  rdfs:range <http://snomed.info/id/314789007> .
+
+<https://w3id.org/fair-genomes/ontology/Ultrasound_Imaging_(US)_Manufacturer_of_imaging_device>
+  a owl:ObjectProperty;
+  rdfs:label "Manufacturer of imaging device";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Ultrasound_Imaging_(US)>;
+  rdfs:isDefinedBy obo:NCIT_C25392;
+  dc:description "A person, enterprise, or entity that produces imaging device.";
+  rdfs:range obo:OBI_0000835 .
+
+<https://w3id.org/fair-genomes/ontology/Ultrasound_Imaging_(US)_Software_version>
+  a owl:ObjectProperty;
+  rdfs:label "Software version";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Ultrasound_Imaging_(US)>;
+  rdfs:isDefinedBy obo:NCIT_C111093;
+  dc:description "A form or variant of software; one of a sequence of copies of a software program, each incorporating new modifications.";
+  rdfs:range <http://snomed.info/id/706687001> .
+
+<https://w3id.org/fair-genomes/ontology/Ultrasound_Imaging_(US)_Color_space> a owl:ObjectProperty;
+  rdfs:label "Color space";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Ultrasound_Imaging_(US)>;
+  rdfs:isDefinedBy obo:NCIT_C37927;
+  dc:description "The photometric interpretation of pixel data that defines the type of colour or greyscale encoding used in the image (e.g., MONOCHROME2, RGB, YBR_FULL). Corresponds to DICOM tag (0028,0004).";
+  rdfs:range <https://w3id.org/valuesets/ColorSpaceEnum> .
+
+<https://w3id.org/fair-genomes/ontology/Ultrasound_Imaging_(US)_Pixel_spacing> a owl:DatatypeProperty;
+  rdfs:label "Pixel spacing";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Ultrasound_Imaging_(US)>;
+  rdfs:isDefinedBy obo:NCIT_C45786;
+  dc:description "Physical distance between the centres of adjacent pixels in the image space, specified as row and column spacing. Expressed in millimetres (mm) according to DICOM attribute (0028,0030)." .
+
+<https://w3id.org/fair-genomes/ontology/Ultrasound_Imaging_(US)_Image_type> a owl:ObjectProperty;
+  rdfs:label "Image type";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Ultrasound_Imaging_(US)>;
+  rdfs:isDefinedBy obo:NCIT_C69268;
+  dc:description "A classification of the image based on the imaging modality and acquisition characteristics. It specifies the type of image produced during the scan (e.g., T1-weighted MRI, T2-weighted MRI, CT attenuation image, PET uptake image).";
+  rdfs:range <http://snomed.info/id/363679005> .
+
+<https://w3id.org/fair-genomes/ontology/Ultrasound_Imaging_(US)_File_format> a owl:ObjectProperty;
+  rdfs:label "File format";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Ultrasound_Imaging_(US)>;
+  rdfs:isDefinedBy obo:MS_1001459;
+  dc:description "The digital format used to encode and store an imaging file.";
+  rdfs:range obo:MS_1001459 .
+
+<https://w3id.org/fair-genomes/ontology/Ultrasound_Imaging_(US)_File_size> a owl:DatatypeProperty;
+  rdfs:label "File size";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Ultrasound_Imaging_(US)>;
+  rdfs:isDefinedBy obo:NCIT_C171192;
+  dc:description "The size of the file in MB." .
+
+<https://w3id.org/fair-genomes/ontology/Ultrasound_Imaging_(US)_Image_width> a owl:DatatypeProperty;
+  rdfs:label "Image width";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Ultrasound_Imaging_(US)>;
+  rdfs:isDefinedBy <http://purl.allotrope.org/ontologies/result#AFR_0002468>;
+  dc:description "Number of pixels in one row of the image, corresponding to the DICOM attribute Columns (0028,0011)." .
+
+<https://w3id.org/fair-genomes/ontology/Ultrasound_Imaging_(US)_Image_height> a owl:DatatypeProperty;
+  rdfs:label "Image height";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Ultrasound_Imaging_(US)>;
+  rdfs:isDefinedBy <http://purl.allotrope.org/ontologies/result#AFR_0002467>;
+  dc:description "Number of pixels in one column of the image, corresponding to the DICOM attribute Rows (0028,0010)." .
+
+<https://w3id.org/fair-genomes/ontology/Ultrasound_Imaging_(US)_Image_depth> a owl:DatatypeProperty;
+  rdfs:label "Image depth";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Ultrasound_Imaging_(US)>;
+  rdfs:isDefinedBy obo:NCIT_C69267;
+  dc:description "The number of distinct image planes captured during acquisition. For WSI, this represents the number of focal planes (Z-stack levels). For CT, MRI, and PET, it corresponds to the number of cross-sectional slices or frames. For DX and MG, this value is typically 1 (a single 2D projection)." .
+
+<https://w3id.org/fair-genomes/ontology/Ultrasound_Imaging_(US)_Number_of_channels>
+  a owl:DatatypeProperty;
+  rdfs:label "Number of channels";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Ultrasound_Imaging_(US)>;
+  rdfs:isDefinedBy <https://w3id.org/reproduceme#SamplesPerPixel>;
+  dc:description "The number of distinct data channels stored in each pixel of the image. Channels may represent color components (e.g., RGB), grayscale intensity, or modality-specific signal dimensions." .
+
+<https://w3id.org/fair-genomes/ontology/Ultrasound_Imaging_(US)_Channel_resolution>
+  a owl:DatatypeProperty;
+  rdfs:label "Channel resolution";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Ultrasound_Imaging_(US)>;
+  rdfs:isDefinedBy <https://w3id.org/reproduceme#SignificantBits>;
+  dc:description "The number of bits used to represent the stored value of each pixel channel. In DICOM, this corresponds to tag (0028,0101)." .
+
+<https://w3id.org/fair-genomes/ontology/Ultrasound_Imaging_(US)_Compression_method>
+  a owl:DatatypeProperty;
+  rdfs:label "Compression method";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Ultrasound_Imaging_(US)>;
+  rdfs:isDefinedBy obo:NCIT_C64347;
+  dc:description "Indicates whether the image was lossy-compressed and which method was used, based on DICOM tags (0028,2110) and (0028,2114)." .
+
+<https://w3id.org/fair-genomes/ontology/Ultrasound_Imaging_(US)_Annotations_available>
+  a owl:DatatypeProperty;
+  rdfs:label "Annotations available";
+  rdfs:domain <https://w3id.org/fair-genomes/ontology/Ultrasound_Imaging_(US)>;
+  rdfs:isDefinedBy obo:NCIT_C44272;
+  dc:description "Indicates whether annotation data associated with the image (e.g., regions of interest, labels, markup, or segmentation overlays) are present and accessible." .
+
+<https://w3id.org/fair-genomes/ontology/> dc:contributor <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-treatmentcategory.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-zstacking.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-anatomicfocus.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-scanningoperationmode.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-inclusioncriteria.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-countries.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-colorspace.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-institutes.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-sequencingplatform.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-datausepermissions.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-fileformat.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-dataformats.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-genomeaccessions.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-imagetype.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-treatmentresponse.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-illuminationmethods.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-fixatives.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-ancestry.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-laterality.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-biomarkerspatiallocalization.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-pathologicalstate.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-recontacting.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-biospecimentypes.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-reasonforimagingprocedure.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-diseases.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-biospecimenavailability.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-storageconditions.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-pathogentype.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-ngskits.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-biomarkertype.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-modality.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-imagingdevicesoftwareversion.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-datausemodifiers.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-genes.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-genderatbirth.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-sequencinginstrumentmodels.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-representedby.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-diseasestages.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-personalstatus.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-embeddings.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-imagingdevice.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-patientorientation.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-timepoints.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-imagingprocedure.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-anatomicalsources.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-sequencingmethods.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-assaytype.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-staintechniques.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-manufacturerofid.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-antibodyname.ttl> .

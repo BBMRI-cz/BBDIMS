@@ -1,0 +1,6 @@
+name	entity	label	dataType	idAttribute	nillable
+value	MagneticResonanceMr_ManufacturerOfImagingDevice	Value (English)	String	TRUE	FALSE
+description	MagneticResonanceMr_ManufacturerOfImagingDevice	Description (English)	Text	FALSE	TRUE
+codesystem	MagneticResonanceMr_ManufacturerOfImagingDevice	The code system (e.g. ontology) this term belongs to	String	FALSE	TRUE
+code	MagneticResonanceMr_ManufacturerOfImagingDevice	The code within the code system	String	FALSE	TRUE
+iri	MagneticResonanceMr_ManufacturerOfImagingDevice	The Internationalized Resource Identifier for this term	String	FALSE	TRUE

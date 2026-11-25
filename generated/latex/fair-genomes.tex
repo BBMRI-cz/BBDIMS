@@ -3,34 +3,37 @@
 \begin{document}
 \setlength\parindent{0pt}
 
-\textbf{FAIR Genomes metadata schema}
+\textbf{Biobank Biosample and Data Integration Metadata Schema}
 \newline
 
-The FAIR Genomes semantic metadata schema to power reuse of NGS data in research and healthcare. Version 1.3-SNAPSHOT, 2025-10-21. This model consists of 16 modules that contain 152 metadata elements and 290452 lookups in total (excluding null flavors).
+The Biobank Biosample and Data Integration Metadata Schema extends the MOLGENIS FAIR Genomes framework to standardise how biobank catalogues describe biological samples and their associated large-scale datasets. It links donor profiles, consent, and biospecimen records directly to multi-omics and imaging data using established ontologies. This structured approach facilitates seamless sample discovery, data harmonisation, and metadata exchange across biobank networks. Version 1.1-SNAPSHOT, 2026-10-15. This model consists of 19 modules that contain 307 metadata elements and 101705 lookups in total (excluding null flavors).
 
 \begin{table}[htb]
 \begin{tabular}{lll}
 Name & Ontology & Nr. of elements \\
 \hline
-Study & NCIT:C63536 & 9 \\
-Personal & NCIT:C90492 & 14 \\
-Leaflet and consent form & NCIT:C16468 & 9 \\
-Individual consent & NCIT:C16735 & 12 \\
-Clinical & NCIT:C25398 & 19 \\
-Material & NCIT:C43376 & 17 \\
-Fixed Block & NCIT:C25436 & 1 \\
-Sample preparation & OBI:0001902 & 9 \\
+Study & NCIT:C63536 & 10 \\
+Personal & NCIT:C90492 & 10 \\
+Leaflet and consent form & NCIT:C16468 & 4 \\
+Individual consent & NCIT:C16735 & 11 \\
+Clinical & NCIT:C25398 & 9 \\
+Material & NCIT:C43376 & 7 \\
+Biospecimens & NCIT:C70699 & 10 \\
+Imaging study & REPRODUCEME:ImagingStudy & 9 \\
+Slide preparation assay & OBI:0000070 & 11 \\
+Sample preparation & OBI:0001902 & 11 \\
 Sequencing & EDAM:topic\_3168 & 12 \\
-Analysis & EDAM:operation\_2945 & 11 \\
-HMD Submission & FG:0000750 & 8 \\
-Treatment & NCIT:C49236 & 3 \\
-Biomarker & NCIT:C16342 & 2 \\
-Imaging Study & DICOM:113014 & 10 \\
-Imaging Series & DICOM:113015 & 11 \\
-Image Instance & NCIT:C48179 & 5 \\
+Analysis & EDAM:operation\_2945 & 6 \\
+Imaging series & NCIT:C69225 & 22 \\
+Whole slide imaging (WSI) & NCIT:C165215 & 35 \\
+Computed tomography (CT) & NCIT:C17204 & 33 \\
+Magnetic resonance (MR) & NCIT:C16809 & 34 \\
+Digital radiography (DX) & NCIT:C18001 & 27 \\
+Digital mammography (MG) & NCIT:C18467 & 23 \\
+Ultrasound Imaging (US) & NCIT:C19337 & 23 \\
 \hline
 \end{tabular}
-\caption[Module overview]{\label{table:table1} FAIR Genomes metadata schema v1.3-SNAPSHOT overview of all modules.}
+\caption[Module overview]{\label{table:table1} Biobank Biosample and Data Integration Metadata Schema v1.1-SNAPSHOT overview of all modules.}
 \end{table}
 
 \begin{table}[htb]
@@ -40,6 +43,7 @@ Name & Ontology & Values \\
 Identifier & OMIABIS:0000006 & UniqueID \\
 Name & OMIABIS:0000037 & String \\
 Description & OMIABIS:0000036 & Text \\
+Study URL & NCIT:C42743 & String \\
 Inclusion criteria & OBI:0500027 & InclusionCriteria lookup (14 choices) \\
 Principal investigator & OMIABIS:0000100 & String \\
 Contact information & OMIABIS:0000035 & String \\
@@ -48,7 +52,7 @@ Start date & NCIT:C69208 & Date \\
 Completion date & NCIT:C142702 & Date \\
 \hline
 \end{tabular}
-\caption[Module: Study]{\label{table:table2} Module: Study. A detailed examination, analysis, or critical inspection of one or multiple subjects designed to discover facts. Ontology: NCIT:C63536. }
+\caption[Module: Study]{\label{table:table2} Module: Study. A research study, trial, or project context under which biological samples and associated datasets are collected, grouped, and managed for specific research objectives. Ontology: NCIT:C63536. }
 \end{table}
 
 \begin{table}[htb]
@@ -56,40 +60,31 @@ Completion date & NCIT:C142702 & Date \\
 Name & Ontology & Values \\
 \hline
 Personal identifier & NCIT:C164337 & UniqueID \\
-Gender identity & MESH:D005783 & GenderIdentity lookup (15 choices) \\
 Gender at birth & GSSO:009418 & GenderAtBirth lookup (13 choices) \\
-Genotypic sex & PATO:0020000 & GenotypicSex lookup (12 choices) \\
-Country of residence & NCIT:C171105 & Countries lookup (249 choices) \\
+Country of residence & NCIT:C224826 & Countries lookup (249 choices) \\
 Ancestry & NCIT:C176763 & Ancestry lookup (305 choices) \\
 Country of birth & GENEPIO:0001094 & Countries lookup (249 choices) \\
 Year of birth & NCIT:C83164 & Integer \\
-Inclusion status & NCIT:C166244 & InclusionStatus lookup (4 choices) \\
+Status & NCIT:C166244 & PersonalStatus lookup (4 choices) \\
 Age at death & NCIT:C135383 & Integer \\
-Consanguinity & OMIT:0004546 & Boolean \\
-Primary affiliated institute & NCIT:C25412 & Institutes lookup (219 choices) \\
-Resources in other institutes & NCIT:C19012 & Institutes lookup (219 choices) \\
+Primary affiliated institute & NCIT:C25412 & Institutes lookup (228 choices) \\
 Participates in study & RO:0000056 & Reference to Study \\
 \hline
 \end{tabular}
-\caption[Module: Personal]{\label{table:table3} Module: Personal. Data, facts or figures about an individual; the set of relevant items would depend on the use case. Ontology: NCIT:C90492. }
+\caption[Module: Personal]{\label{table:table3} Module: Personal. Demographic, phenotypic, and baseline characteristics of an individual study participant or patient from whom biological materials and associated research data are collected. Ontology: NCIT:C90492. }
 \end{table}
 
 \begin{table}[htb]
 \begin{tabular}{lll}
 Name & Ontology & Values \\
 \hline
-Leaflet title & DC:title & String \\
-Leaflet date & DC:date & Date \\
-Leaflet version & DC:hasVersion & String \\
 Consent form identifier & DC:identifier & UniqueID \\
 Consent form title & DC:title & String \\
-Consent form accepted date & DC:dateAccepted & Date \\
-Consent form valid until & DC:valid & Date \\
-Consent form creator & DC:creator & Institutes lookup (219 choices) \\
+Consent form creator & DC:creator & Institutes lookup (228 choices) \\
 Consent form version & DC:hasVersion & String \\
 \hline
 \end{tabular}
-\caption[Module: Leaflet and consent form]{\label{table:table4} Module: Leaflet and consent form. A document explaining all the relevant information to assist an individual in understanding the expectations and risks in making a decision about a procedure. This document is presented to and signed by the individual or guardian. Ontology: NCIT:C16468. }
+\caption[Module: Leaflet and consent form]{\label{table:table4} Module: Leaflet and consent form. Specification and metadata of the informative leaflet and blank informed consent template version approved for a study or biobank collection. Ontology: NCIT:C16468. }
 \end{table}
 
 \begin{table}[htb]
@@ -97,20 +92,19 @@ Consent form version & DC:hasVersion & String \\
 Name & Ontology & Values \\
 \hline
 Individual consent identifier & ICO:0000044 & UniqueID \\
-Person consenting & IAO:0000136 & Reference to Personal \\
-Consent form used & IAO:0000136 & Reference to Leaflet and consent form \\
-Collected by & NCIT:C45262 & Institutes lookup (219 choices) \\
+Person consenting & SIO:000132 & Reference to Personal \\
+Consent form used & DC:conformsTo & Reference to Leaflet and consent form \\
+Belongs to study & IAO:0000136 & Reference to Study \\
+Collected by & NCIT:C45262 & Institutes lookup (228 choices) \\
 Signing date & ICO:0000036 & Date \\
-Valid from & DC:valid & Date \\
 Valid until & DC:valid & Date \\
 Represented by & NCIT:C142600 & RepresentedBy lookup (3 choices) \\
 Data use permissions & DUO:0000001 & DataUsePermissions lookup (5 choices) \\
 Data use modifiers & DUO:0000017 & DataUseModifiers lookup (23 choices) \\
-Data use specification & SIO:000090 & Text \\
 Allow recontacting & NCIT:C25737 & Recontacting lookup (3 choices) \\
 \hline
 \end{tabular}
-\caption[Module: Individual consent]{\label{table:table5} Module: Individual consent. Consent given by a patient to a surgical or medical procedure or participation in a study, examination or analysis after achieving an understanding of the relevant medical facts and the risks involved. Ontology: NCIT:C16735. }
+\caption[Module: Individual consent]{\label{table:table5} Module: Individual consent. Record of a signed informed consent given by an individual or legal guardian, specifying data and sample use permissions, restrictions, and validity periods. Ontology: NCIT:C16735. }
 \end{table}
 
 \begin{table}[htb]
@@ -119,26 +113,16 @@ Name & Ontology & Values \\
 \hline
 Clinical identifier & NCIT:C87853 & UniqueID \\
 Belongs to person & IAO:0000136 & Reference to Personal \\
-Phenotype & NCIT:C16977 & Phenotypes lookup (15802 choices) \\
-Unobserved phenotype & HL7:C0442737 & Phenotypes lookup (15802 choices) \\
-Phenotypic data available & NCIT:C15783 & DCMITypes lookup (6 choices) \\
-Clinical diagnosis & NCIT:C15607 & Diseases lookup (9700 choices) \\
-Molecular diagnosis gene & NCIT:C20826 & Genes lookup (19202 choices) \\
-Molecular diagnosis other & NCIT:C20826 & Text \\
+Diagnosis & NCIT:C15607 & Diseases lookup (22026 choices) \\
 Age at diagnosis & SNOMEDCT:423493009 & Integer \\
-Age at last screening & NCIT:C81258 & Integer \\
-Medication & NCIT:C459 & Drugs lookup (5632 choices) \\
-Drug regimen & NCIT:C142516 & Text \\
-Family members affected & HP:0032320 & FamilyMembers lookup (41 choices) \\
-Family members sequenced & NCIT:C79916 & FamilyMembers lookup (41 choices) \\
-Medical history & NCIT:C18772 & MedicalHistory lookup (1154 choices) \\
-Age of onset & Orphanet:C023 & Integer \\
-First contact & LOINC:MTHU048806 & Date \\
-Functioning & NCIT:C21007 & Text \\
-Material used in diagnosis & SIO:000641 & String \\
+Clinical timepoint & NCIT:C68568 & Timepoints lookup (11 choices) \\
+Disease stage & OBI:0000278 & DiseaseStages lookup (12 choices) \\
+Molecular diagnosis gene & NCIT:C20826 & Genes lookup (19202 choices) \\
+Treatment category & NCIT:C49236 & TreatmentCategory lookup (10 choices) \\
+Response to treatment & SNOMEDCT:182985004 & TreatmentResponse lookup (5 choices) \\
 \hline
 \end{tabular}
-\caption[Module: Clinical]{\label{table:table6} Module: Clinical. Findings and circumstances relating to the examination and treatment of a patient. Ontology: NCIT:C25398. }
+\caption[Module: Clinical]{\label{table:table6} Module: Clinical. Clinical observations, diagnoses, disease staging, and longitudinal treatment responses recorded for a patient across specific disease encounters or study timepoints. Ontology: NCIT:C25398. }
 \end{table}
 
 \begin{table}[htb]
@@ -148,33 +132,70 @@ Name & Ontology & Values \\
 Material identifier & NCIT:C93400 & UniqueID \\
 Collected from person & SIO:000244 & Reference to Personal \\
 Belongs to diagnosis & SIO:000068 & Reference to Clinical \\
-Sampling timestamp & EFO:0000689 & DateTime \\
-Registration timestamp & NCIT:C25646 & DateTime \\
-Sampling protocol & EFO:0005518 & Text \\
-Sampling protocol deviation & NCIT:C50996 & String \\
-Reason for sampling protocol deviation & NCIT:C93529 & String \\
-Biospecimen type & NCIT:C70713 & BiospecimenTypes lookup (403 choices) \\
-Anatomical source & NCIT:C103264 & AnatomicalSources lookup (13827 choices) \\
+Sampling date & NCIT:C164024 & Date \\
+Material type & NCIT:C70713 & BiospecimenTypes lookup (403 choices) \\
+Anatomical source & NCIT:C13717 & AnatomicalSources lookup (13827 choices) \\
 Pathological state & NCIT:C28257 & PathologicalState lookup (4 choices) \\
-Storage conditions & NCIT:C96145 & StorageConditions lookup (26 choices) \\
-Expiration date & NCIT:C164516 & Date \\
-Percentage tumor cells & NCIT:C127771 & Decimal \\
-Physical location & GAZ:00000448 & String \\
-Analyses performed & IAO:0000702 & AnalysesPerformed lookup (20 choices) \\
-Derived from & NCIT:C28355 & String \\
 \hline
 \end{tabular}
-\caption[Module: Material]{\label{table:table7} Module: Material. A natural substance derived from living organisms such as cells, tissues, proteins, and DNA. Ontology: NCIT:C43376. }
+\caption[Module: Material]{\label{table:table7} Module: Material. Primary biological material obtained directly from a donor or patient through a collection procedure (e.g. biopsy, surgery, blood draw), defining the original anatomical source, sampling timestamp, and pathological state. Ontology: NCIT:C43376. }
 \end{table}
 
 \begin{table}[htb]
 \begin{tabular}{lll}
 Name & Ontology & Values \\
 \hline
-Block identifier & NCIT:C93400 & UniqueID \\
+Biospecimen identifier & NCIT:C93400 & UniqueID \\
+Derived from material & RO:0001000 & Reference to Material \\
+Biospecimen Form & NCIT:C70713 & BiospecimenTypes lookup (403 choices) \\
+Percentage tumor cells & NCIT:C123556 & Decimal \\
+Quantity & NCIT:C25256 & Integer \\
+Storage conditions & NCIT:C96145 & StorageConditions lookup (26 choices) \\
+Managing biobank & NCIT:C48800 & Institutes lookup (228 choices) \\
+Availability & NCIT:C25429 & BiospecimenAvailability lookup (4 choices) \\
+Name of fixative & NCIT:C128948 & Fixatives lookup (9 choices) \\
+Embedding medium & NCIT:C113307 & Embeddings lookup (2 choices) \\
 \hline
 \end{tabular}
-\caption[Module: Fixed Block]{\label{table:table8} Module: Fixed Block. Refers to preserved specimens embedded in support material. These are typically cut into thin slices for microscopic examination, with or without an enhancement such as staining. Ontology: NCIT:C25436. }
+\caption[Module: Biospecimens]{\label{table:table8} Module: Biospecimens. A specific physical unit, aliquot, or processed preparation derived from primary material (e.g. FFPE block, frozen tissue section, biofluid aliquot) managed in biobank storage under defined preservation and fixation conditions. Ontology: NCIT:C70699. }
+\end{table}
+
+\begin{table}[htb]
+\begin{tabular}{lll}
+Name & Ontology & Values \\
+\hline
+Imaging study identifier & NCIT:C164493 & UniqueID \\
+Belongs to person & NCIT:C164337 & Reference to Personal \\
+Belongs to diagnosis & SIO:000068 & Reference to Clinical \\
+Study date & NCIT:C69208 & Date \\
+Imaging procedure & NCIT:C17369 & ImagingProcedure lookup (14 choices) \\
+Reason for imaging procedure & NCIT:C69216 & ReasonForImagingProcedure lookup (9 choices) \\
+Series count & NCIT:C164492 & Integer \\
+Images count & NCIT:C164540 & Integer \\
+Affiliated institution & NCIT:C25412 & Institutes lookup (228 choices) \\
+\hline
+\end{tabular}
+\caption[Module: Imaging study]{\label{table:table9} Module: Imaging study. A diagnostic, clinical, or research imaging procedure comprising one or more imaging series (e.g. radiological scans such as CT/MRI or digital pathology whole slide images) acquired for a subject within a common clinical or study context. Ontology: REPRODUCEME:ImagingStudy. }
+\end{table}
+
+\begin{table}[htb]
+\begin{tabular}{lll}
+Name & Ontology & Values \\
+\hline
+Assay identifier & AFR:0001979 & UniqueID \\
+Assay type & NCIT:C189101 & AssayType lookup (2 choices) \\
+Belongs to biospecimen & OBI:0000293 & Reference to Biospecimens \\
+Precedes the study & SIO:000248 & Reference to Imaging study \\
+Biomarker type & NCIT:C201359 & BiomarkerType lookup (5 choices) \\
+Section thickness & NCIT:C176286 & Integer \\
+Biomarker spatial localization & GO:0051641 & BiomarkerSpatialLocalization lookup (4 choices) \\
+Pathogen type & EVORAO:pathogenType & PathogenType lookup (3 choices) \\
+Dye name & SNOMED:703857004 & StainTechniques lookup (152 choices) \\
+Counter labeling & SNOMED:703857004 & StainTechniques lookup (152 choices) \\
+Antibody name & XCO:0000194 & AntibodyName lookup (3 choices) \\
+\hline
+\end{tabular}
+\caption[Module: Slide preparation assay]{\label{table:table10} Module: Slide preparation assay. A laboratory protocol for preparing, sectioning, and staining biological specimens on glass slides (e.g. histological, special staining, or immunohistochemistry assays) prior to whole slide imaging or microscopic evaluation. Ontology: OBI:0000070. }
 \end{table}
 
 \begin{table}[htb]
@@ -182,17 +203,19 @@ Block identifier & NCIT:C93400 & UniqueID \\
 Name & Ontology & Values \\
 \hline
 Sampleprep identifier & NCIT:C132299 & UniqueID \\
-Belongs to material & NCIT:C25683 & Reference to Material \\
+Belongs to biospecimen & OBI:0000293 & Reference to Biospecimens \\
 Input amount & AFRL:0000010 & Integer \\
-Library preparation kit & GENEPIO:0000085 & NGSKits lookup (621 choices) \\
+Library preparation kit & GENEPIO:0000085 & NGSKits lookup (625 choices) \\
 PCR free & NCIT:C17003 & Boolean \\
-Target enrichment kit & NCIT:C154307 & NGSKits lookup (621 choices) \\
+Target enrichment kit & NCIT:C154307 & NGSKits lookup (625 choices) \\
+Fully sequenced genes & NCIT:C16612 & Genes lookup (19202 choices) \\
+Partially sequenced genes & NCIT:C16612 & Genes lookup (19202 choices) \\
 UMIs present & EFO:0010199 & Boolean \\
 Intended insert size & FG:0000001 & Integer \\
 Intended read length & NCIT:C153362 & Integer \\
 \hline
 \end{tabular}
-\caption[Module: Sample preparation]{\label{table:table9} Module: Sample preparation. A sample preparation for a nucleic acids sequencing assay. Ontology: OBI:0001902. }
+\caption[Module: Sample preparation]{\label{table:table11} Module: Sample preparation. The pre-analytical laboratory procedure used to extract, isolate, and prepare nucleic acids into sequencing libraries, including target enrichment, molecular barcoding, and library quality control. Ontology: OBI:0001902. }
 \end{table}
 
 \begin{table}[htb]
@@ -213,7 +236,7 @@ Percentage TR20 & FG:0000003 & Decimal \\
 Other quality metrics & EDAM:data\_3914 & Text \\
 \hline
 \end{tabular}
-\caption[Module: Sequencing]{\label{table:table10} Module: Sequencing. The determination of complete (typically nucleotide) sequences, including those of genomes (full genome sequencing, de novo sequencing and resequencing), amplicons and transcriptomes. Ontology: EDAM:topic\_3168. }
+\caption[Module: Sequencing]{\label{table:table12} Module: Sequencing. Technical execution and instrument run parameters of a high-throughput sequencing assay, including sequencer platform, read metrics, coverage depth, and sequencing quality control statistics. Ontology: EDAM:topic\_3168. }
 \end{table}
 
 \begin{table}[htb]
@@ -222,111 +245,273 @@ Name & Ontology & Values \\
 \hline
 Analysis identifier & AFR:0001979 & UniqueID \\
 Belongs to sequencing & NCIT:C25683 & Reference to Sequencing \\
-Physical data location & GAZ:00000448 & String \\
-Abstract data location & NCIT:C142494 & String \\
 Data formats stored & NCIT:C142494 & DataFormats lookup (582 choices) \\
 Algorithms used & NCIT:C16275 & Text \\
 Reference genome used & EDAM:data\_2340 & GenomeAccessions lookup (29 choices) \\
 Bioinformatic protocol used & EDAM:data\_2531 & Text \\
-Bioinformatic protocol deviation & NCIT:C50996 & String \\
-Reason for bioinformatic protocol deviation & NCIT:C93529 & String \\
-WGS guideline followed & NCIT:C17564 & String \\
 \hline
 \end{tabular}
-\caption[Module: Analysis]{\label{table:table11} Module: Analysis. An analysis applies analytical (often computational) methods to existing data of a specific type to produce some desired output. Ontology: EDAM:operation\_2945. }
+\caption[Module: Analysis]{\label{table:table13} Module: Analysis. Computational and bioinformatic processing workflows applied to primary sequencing data, including reference genome alignment, variant calling algorithms, standard pipeline guidelines, and stored output file formats. Ontology: EDAM:operation\_2945. }
 \end{table}
 
 \begin{table}[htb]
 \begin{tabular}{lll}
 Name & Ontology & Values \\
 \hline
-Submitter Role & FG:0000752 & String \\
-Data Center & FG:0000753 & String \\
-Clinical Center & FG:0000754 & String \\
-Institution Clinical & FG:0000755 & InstitutesROR lookup (102392 choices) \\
-Institution Data Center & FG:0000756 & InstitutesROR lookup (102392 choices) \\
-Publication description & FG:0000757 & String \\
-Collection & FG:0000751 & String \\
-Research Consortia & FG:0000758 & String \\
-\hline
-\end{tabular}
-\caption[Module: HMD Submission]{\label{table:table12} Module: HMD Submission. A class specific for the 1+MG GDI project containing items for metadata submission. Ontology: FG:0000750. }
-\end{table}
-
-\begin{table}[htb]
-\begin{tabular}{lll}
-Name & Ontology & Values \\
-\hline
-Dose Units & FG:0000759 & String \\
-Setting & NCIT:C124308 & TreatmentSettings lookup (3 choices) \\
-Response to Treatment & SNOMEDCT:182985004 & TreatmentResponse lookup (5 choices) \\
-\hline
-\end{tabular}
-\caption[Module: Treatment]{\label{table:table13} Module: Treatment. An action or administration of therapeutic agents to produce an effect that is intended to alter or stop a pathologic process. Ontology: NCIT:C49236. }
-\end{table}
-
-\begin{table}[htb]
-\begin{tabular}{lll}
-Name & Ontology & Values \\
-\hline
-Type & NCIT:C164707 & BiomarkerType lookup (5 choices) \\
-Subtype_Molecular & FG:0000766 & BiomarkerMolecular lookup (7 choices) \\
-\hline
-\end{tabular}
-\caption[Module: Biomarker]{\label{table:table14} Module: Biomarker. TODO Ontology: NCIT:C16342. }
-\end{table}
-
-\begin{table}[htb]
-\begin{tabular}{lll}
-Name & Ontology & Values \\
-\hline
-Imaging Study identifier & NCIT:C164493 & UniqueID \\
-Belongs to person & NCIT:C164337 & Reference to Personal \\
-Imaging Technique (Modality) & NCIT:C17369 & Modality lookup (5 choices) \\
-Body Region & NCIT:C12680 & AnatomicFocus lookup (10 choices) \\
-Imaging Procedure & NCIT:C17369 & ImagingProcedure lookup (3 choices) \\
-Reason for Imaging Procedure & NCIT:C69216 & ReasonForImagingProcedure lookup (1 choices) \\
-Study Start Date & NCIT:C69208 & Date \\
-DICOM Series Count & NCIT:C164492 & Integer \\
-DICOM Images Count & NCIT:C164540 & Integer \\
-Affiliated Institution & NCIT:C25412 & Institutes lookup (219 choices) \\
-\hline
-\end{tabular}
-\caption[Module: Imaging Study]{\label{table:table15} Module: Imaging Study. The Study IE defines the characteristics of a medical Study performed on a Patient. A Study is a collection of one or more Series of medical images, presentation states, and/or SR documents that are logically related for the purpose of diagnosing a Patient. Each Study is associated with exactly one Patient. A Study may include Composite Instances that are created by a single modality, multiple modalities or by multiple devices of the same modality. The Study IE is modality independent. Ontology: DICOM:113014. }
-\end{table}
-
-\begin{table}[htb]
-\begin{tabular}{lll}
-Name & Ontology & Values \\
-\hline
-Series Instance UID & NCIT:C69219 & UniqueID \\
-Belongs to Imaging Study & NCIT:C164493 & Reference to Imaging Study \\
-DICOM Images Count & NCIT:C164540 & Integer \\
-Imaging Technique (Modality) & NCIT:C17369 & Modality lookup (5 choices) \\
-Imaging Procedure & NCIT:C17369 & ImagingProcedure lookup (3 choices) \\
-Series Start Date & NCIT:C68616 & Date \\
-Body Region & NCIT:C12680 & AnatomicFocus lookup (10 choices) \\
+Series instance identifier & NCIT:C69219 & UniqueID \\
+Belongs to imaging study & NCIT:C164493 & Reference to Imaging study \\
+Images count & NCIT:C164540 & Integer \\
+Imaging modality & NCIT:C17369 & Modality lookup (6 choices) \\
+Series date & NCIT:C68616 & Date \\
+Body region & NCIT:C12680 & AnatomicFocus lookup (393 choices) \\
 Laterality & NCIT:C25185 & Laterality lookup (4 choices) \\
-Imaging Device & NCIT:C19747 & ImagingDevice lookup (1 choices) \\
-Manufacturer of Imaging Device & NCIT:C25392 & ManufacturerOfID lookup (14 choices) \\
-Software Version & NCIT:C111093 & ImagingDeviceSoftwareVersion lookup (1 choices) \\
+Imaging device & NCIT:C19747 & ImagingDevice lookup (1 choices) \\
+Manufacturer of imaging device & NCIT:C25392 & ManufacturerOfID lookup (14 choices) \\
+Software version & NCIT:C111093 & ImagingDeviceSoftwareVersion lookup (1 choices) \\
+Color space & NCIT:C37927 & ColorSpace lookup (5 choices) \\
+Pixel spacing & NCIT:C45786 & Decimal \\
+Image type & NCIT:C69268 & ImageType lookup (1 choices) \\
+File format & MS:1001459 & FileFormat lookup (5 choices) \\
+File size & NCIT:C171192 & Integer \\
+Image width & AFO:0002468 & Integer \\
+Image height & AFO:0002467 & Integer \\
+Image depth & NCIT:C69267 & Integer \\
+Number of channels & REPRODUCEME:SamplesPerPixel & Integer \\
+Channel resolution & REPRODUCEME:SignificantBits & Integer \\
+Compression method & NCIT:C64347 & String \\
+Annotations available & NCIT:C44272 & Boolean \\
 \hline
 \end{tabular}
-\caption[Module: Imaging Series]{\label{table:table16} Module: Imaging Series. A distinct logical set used to group composite instances. All instances within a Series are of the same modality, in the same Frame of Reference (if any), and created by the same equipment. Ontology: DICOM:113015. }
+\caption[Module: Imaging series]{\label{table:table14} Module: Imaging series. Common metadata and technical characteristics for a coherent series of biomedical image instances acquired using a single equipment, coordinate frame, and imaging modality within an imaging study. Ontology: NCIT:C69225. }
 \end{table}
 
 \begin{table}[htb]
 \begin{tabular}{lll}
 Name & Ontology & Values \\
 \hline
-Image Instance Identifier & NCIT:C81289 & UniqueID \\
-Belongs to Imaging Study & NCIT:C164493 & Reference to Imaging Study \\
-Belongs to Imaging Series & NCIT:C69219 & Reference to Imaging Series \\
-Image Instance Date & NCIT:C68616 & Date \\
-Image Type & NCIT:C69268 & ImageType lookup (1 choices) \\
+WSI identifier & NCIT:C69219 & UniqueID \\
+Z_stacking & NCIT:C182016 & Zstacking lookup (3 choices) \\
+Objective lens magnification & AFO:0002226 & Integer \\
+Illumination method & FBBI:00000268 & IlluminationMethods lookup (5 choices) \\
+Illumination wavelength & SNOMED-CT:246522008 & Integer \\
+Scanning operation mode & SNOMED-CT:246363001 & ScanningOperationMode lookup (3 choices) \\
+Tissue scan area & AFO:0003804 & Integer \\
+Number of focal planes & NCIT:C102516 & Integer \\
+Distance between focal planes & AFO:0000032 & Decimal \\
+Pyramid levels & AFO:0001619 & Integer \\
+Colour (ICC) profile & REPRODUCEME:PhotometricInterpretation & String \\
+Assay identifier & AFR:0001979 & Reference to Slide preparation assay \\
+Compression quality label & AFO:0002843 & String \\
+Series instance identifier & NCIT:C69219 & UniqueID \\
+Belongs to imaging study & NCIT:C164493 & Reference to Imaging study \\
+Images count & NCIT:C164540 & Integer \\
+Imaging modality & NCIT:C17369 & Modality lookup (6 choices) \\
+Series date & NCIT:C68616 & Date \\
+Body region & NCIT:C12680 & AnatomicFocus lookup (393 choices) \\
+Laterality & NCIT:C25185 & Laterality lookup (4 choices) \\
+Imaging device & NCIT:C19747 & ImagingDevice lookup (1 choices) \\
+Manufacturer of imaging device & NCIT:C25392 & ManufacturerOfID lookup (14 choices) \\
+Software version & NCIT:C111093 & ImagingDeviceSoftwareVersion lookup (1 choices) \\
+Color space & NCIT:C37927 & ColorSpace lookup (5 choices) \\
+Pixel spacing & NCIT:C45786 & Decimal \\
+Image type & NCIT:C69268 & ImageType lookup (1 choices) \\
+File format & MS:1001459 & FileFormat lookup (5 choices) \\
+File size & NCIT:C171192 & Integer \\
+Image width & AFO:0002468 & Integer \\
+Image height & AFO:0002467 & Integer \\
+Image depth & NCIT:C69267 & Integer \\
+Number of channels & REPRODUCEME:SamplesPerPixel & Integer \\
+Channel resolution & REPRODUCEME:SignificantBits & Integer \\
+Compression method & NCIT:C64347 & String \\
+Annotations available & NCIT:C44272 & Boolean \\
 \hline
 \end{tabular}
-\caption[Module: Image Instance]{\label{table:table17} Module: Image Instance. Any record of an imaging event whether physical or electronic. Ontology: NCIT:C48179. }
+\caption[Module: Whole slide imaging (WSI)]{\label{table:table15} Module: Whole slide imaging (WSI). Modality-specific series metadata for high-resolution digital pathology whole slide images, capturing optical scanning modes, lens magnification, illumination parameters, and focal z-stacking. Ontology: NCIT:C165215. }
+\end{table}
+
+\begin{table}[htb]
+\begin{tabular}{lll}
+Name & Ontology & Values \\
+\hline
+CT identifier & NCIT:C69219 & UniqueID \\
+Tube voltage (kVp) & NCIT:C48432 & Integer \\
+X_Ray tube current (mA) & NCIT:C69233 & Integer \\
+Exposure time (ms) & NCIT:C69233 & Integer \\
+Spiral pitch factor & NCIT:C164623 & Decimal \\
+Filter type & REPRODUCEME:FilterType & String \\
+Convolution kernel & NCIT:C41832 & String \\
+Field of view & NCIT:C74298 & Decimal \\
+Slice thickness & NCIT:C106534 & Decimal \\
+Imaging injection & OBI:0000426 & String \\
+Z_axis spacing & NCIT:C156499 & Decimal \\
+Series instance identifier & NCIT:C69219 & UniqueID \\
+Belongs to imaging study & NCIT:C164493 & Reference to Imaging study \\
+Images count & NCIT:C164540 & Integer \\
+Imaging modality & NCIT:C17369 & Modality lookup (6 choices) \\
+Series date & NCIT:C68616 & Date \\
+Body region & NCIT:C12680 & AnatomicFocus lookup (393 choices) \\
+Laterality & NCIT:C25185 & Laterality lookup (4 choices) \\
+Imaging device & NCIT:C19747 & ImagingDevice lookup (1 choices) \\
+Manufacturer of imaging device & NCIT:C25392 & ManufacturerOfID lookup (14 choices) \\
+Software version & NCIT:C111093 & ImagingDeviceSoftwareVersion lookup (1 choices) \\
+Color space & NCIT:C37927 & ColorSpace lookup (5 choices) \\
+Pixel spacing & NCIT:C45786 & Decimal \\
+Image type & NCIT:C69268 & ImageType lookup (1 choices) \\
+File format & MS:1001459 & FileFormat lookup (5 choices) \\
+File size & NCIT:C171192 & Integer \\
+Image width & AFO:0002468 & Integer \\
+Image height & AFO:0002467 & Integer \\
+Image depth & NCIT:C69267 & Integer \\
+Number of channels & REPRODUCEME:SamplesPerPixel & Integer \\
+Channel resolution & REPRODUCEME:SignificantBits & Integer \\
+Compression method & NCIT:C64347 & String \\
+Annotations available & NCIT:C44272 & Boolean \\
+\hline
+\end{tabular}
+\caption[Module: Computed tomography (CT)]{\label{table:table16} Module: Computed tomography (CT). Modality-specific series metadata for computed tomography acquisitions, capturing X-ray tube exposure parameters, spiral pitch, reconstruction convolution kernels, and slice geometry. Ontology: NCIT:C17204. }
+\end{table}
+
+\begin{table}[htb]
+\begin{tabular}{lll}
+Name & Ontology & Values \\
+\hline
+MR identifier & NCIT:C69219 & UniqueID \\
+Sequence name & NCIT:C164586 & String \\
+Magnetic field strength & NCIT:C156494 & Decimal \\
+Repetition time & NCIT:C82330 & Decimal \\
+Echo time & NCIT:C82331 & Decimal \\
+Imaging frequency & UO:0000105 & Decimal \\
+Flip angle & UO:0000122 & Integer \\
+Inversion time & NCIT:C116124 & Integer \\
+Receive coil name & RADLEX:RID10830 & String \\
+Field of view & NCIT:C74298 & Decimal \\
+Slice thickness & NCIT:C106534 & Decimal \\
+Imaging injection & OBI:0000426 & String \\
+Series instance identifier & NCIT:C69219 & UniqueID \\
+Belongs to imaging study & NCIT:C164493 & Reference to Imaging study \\
+Images count & NCIT:C164540 & Integer \\
+Imaging modality & NCIT:C17369 & Modality lookup (6 choices) \\
+Series date & NCIT:C68616 & Date \\
+Body region & NCIT:C12680 & AnatomicFocus lookup (393 choices) \\
+Laterality & NCIT:C25185 & Laterality lookup (4 choices) \\
+Imaging device & NCIT:C19747 & ImagingDevice lookup (1 choices) \\
+Manufacturer of imaging device & NCIT:C25392 & ManufacturerOfID lookup (14 choices) \\
+Software version & NCIT:C111093 & ImagingDeviceSoftwareVersion lookup (1 choices) \\
+Color space & NCIT:C37927 & ColorSpace lookup (5 choices) \\
+Pixel spacing & NCIT:C45786 & Decimal \\
+Image type & NCIT:C69268 & ImageType lookup (1 choices) \\
+File format & MS:1001459 & FileFormat lookup (5 choices) \\
+File size & NCIT:C171192 & Integer \\
+Image width & AFO:0002468 & Integer \\
+Image height & AFO:0002467 & Integer \\
+Image depth & NCIT:C69267 & Integer \\
+Number of channels & REPRODUCEME:SamplesPerPixel & Integer \\
+Channel resolution & REPRODUCEME:SignificantBits & Integer \\
+Compression method & NCIT:C64347 & String \\
+Annotations available & NCIT:C44272 & Boolean \\
+\hline
+\end{tabular}
+\caption[Module: Magnetic resonance (MR)]{\label{table:table17} Module: Magnetic resonance (MR). Modality-specific series metadata for magnetic resonance imaging acquisitions, capturing static magnetic field strength, radiofrequency pulse sequence timing (TR/TE), flip angle, and receive coil configurations. Ontology: NCIT:C16809. }
+\end{table}
+
+\begin{table}[htb]
+\begin{tabular}{lll}
+Name & Ontology & Values \\
+\hline
+DX identifier & NCIT:C69219 & UniqueID \\
+Patient orientation & RADLEX:RID10461 & PatientOrientation lookup (36 choices) \\
+Tube voltage (kVp) & NCIT:C48432 & Integer \\
+Exposure time (ms) & NCIT:C69233 & Integer \\
+Exposure (mAs) & NCIT:C17941 & Integer \\
+Series instance identifier & NCIT:C69219 & UniqueID \\
+Belongs to imaging study & NCIT:C164493 & Reference to Imaging study \\
+Images count & NCIT:C164540 & Integer \\
+Imaging modality & NCIT:C17369 & Modality lookup (6 choices) \\
+Series date & NCIT:C68616 & Date \\
+Body region & NCIT:C12680 & AnatomicFocus lookup (393 choices) \\
+Laterality & NCIT:C25185 & Laterality lookup (4 choices) \\
+Imaging device & NCIT:C19747 & ImagingDevice lookup (1 choices) \\
+Manufacturer of imaging device & NCIT:C25392 & ManufacturerOfID lookup (14 choices) \\
+Software version & NCIT:C111093 & ImagingDeviceSoftwareVersion lookup (1 choices) \\
+Color space & NCIT:C37927 & ColorSpace lookup (5 choices) \\
+Pixel spacing & NCIT:C45786 & Decimal \\
+Image type & NCIT:C69268 & ImageType lookup (1 choices) \\
+File format & MS:1001459 & FileFormat lookup (5 choices) \\
+File size & NCIT:C171192 & Integer \\
+Image width & AFO:0002468 & Integer \\
+Image height & AFO:0002467 & Integer \\
+Image depth & NCIT:C69267 & Integer \\
+Number of channels & REPRODUCEME:SamplesPerPixel & Integer \\
+Channel resolution & REPRODUCEME:SignificantBits & Integer \\
+Compression method & NCIT:C64347 & String \\
+Annotations available & NCIT:C44272 & Boolean \\
+\hline
+\end{tabular}
+\caption[Module: Digital radiography (DX)]{\label{table:table18} Module: Digital radiography (DX). Modality-specific series metadata for projection digital radiography acquisitions, capturing patient orientation, X-ray tube potential, and exposure settings. Ontology: NCIT:C18001. }
+\end{table}
+
+\begin{table}[htb]
+\begin{tabular}{lll}
+Name & Ontology & Values \\
+\hline
+MG identifier & NCIT:C69219 & UniqueID \\
+Series instance identifier & NCIT:C69219 & UniqueID \\
+Belongs to imaging study & NCIT:C164493 & Reference to Imaging study \\
+Images count & NCIT:C164540 & Integer \\
+Imaging modality & NCIT:C17369 & Modality lookup (6 choices) \\
+Series date & NCIT:C68616 & Date \\
+Body region & NCIT:C12680 & AnatomicFocus lookup (393 choices) \\
+Laterality & NCIT:C25185 & Laterality lookup (4 choices) \\
+Imaging device & NCIT:C19747 & ImagingDevice lookup (1 choices) \\
+Manufacturer of imaging device & NCIT:C25392 & ManufacturerOfID lookup (14 choices) \\
+Software version & NCIT:C111093 & ImagingDeviceSoftwareVersion lookup (1 choices) \\
+Color space & NCIT:C37927 & ColorSpace lookup (5 choices) \\
+Pixel spacing & NCIT:C45786 & Decimal \\
+Image type & NCIT:C69268 & ImageType lookup (1 choices) \\
+File format & MS:1001459 & FileFormat lookup (5 choices) \\
+File size & NCIT:C171192 & Integer \\
+Image width & AFO:0002468 & Integer \\
+Image height & AFO:0002467 & Integer \\
+Image depth & NCIT:C69267 & Integer \\
+Number of channels & REPRODUCEME:SamplesPerPixel & Integer \\
+Channel resolution & REPRODUCEME:SignificantBits & Integer \\
+Compression method & NCIT:C64347 & String \\
+Annotations available & NCIT:C44272 & Boolean \\
+\hline
+\end{tabular}
+\caption[Module: Digital mammography (MG)]{\label{table:table19} Module: Digital mammography (MG). Modality-specific series metadata for digital mammography acquisitions, capturing dedicated breast examination projections and associated radiographic parameters. Ontology: NCIT:C18467. }
+\end{table}
+
+\begin{table}[htb]
+\begin{tabular}{lll}
+Name & Ontology & Values \\
+\hline
+US identifier & NCIT:C69219 & UniqueID \\
+Series instance identifier & NCIT:C69219 & UniqueID \\
+Belongs to imaging study & NCIT:C164493 & Reference to Imaging study \\
+Images count & NCIT:C164540 & Integer \\
+Imaging modality & NCIT:C17369 & Modality lookup (6 choices) \\
+Series date & NCIT:C68616 & Date \\
+Body region & NCIT:C12680 & AnatomicFocus lookup (393 choices) \\
+Laterality & NCIT:C25185 & Laterality lookup (4 choices) \\
+Imaging device & NCIT:C19747 & ImagingDevice lookup (1 choices) \\
+Manufacturer of imaging device & NCIT:C25392 & ManufacturerOfID lookup (14 choices) \\
+Software version & NCIT:C111093 & ImagingDeviceSoftwareVersion lookup (1 choices) \\
+Color space & NCIT:C37927 & ColorSpace lookup (5 choices) \\
+Pixel spacing & NCIT:C45786 & Decimal \\
+Image type & NCIT:C69268 & ImageType lookup (1 choices) \\
+File format & MS:1001459 & FileFormat lookup (5 choices) \\
+File size & NCIT:C171192 & Integer \\
+Image width & AFO:0002468 & Integer \\
+Image height & AFO:0002467 & Integer \\
+Image depth & NCIT:C69267 & Integer \\
+Number of channels & REPRODUCEME:SamplesPerPixel & Integer \\
+Channel resolution & REPRODUCEME:SignificantBits & Integer \\
+Compression method & NCIT:C64347 & String \\
+Annotations available & NCIT:C44272 & Boolean \\
+\hline
+\end{tabular}
+\caption[Module: Ultrasound Imaging (US)]{\label{table:table20} Module: Ultrasound Imaging (US). Modality-specific series metadata for diagnostic ultrasonography acquisitions, capturing acoustic imaging parameters, anatomical focus, and real-time scanning geometry. Ontology: NCIT:C19337. }
 \end{table}
 
 \begin{table}[htb]
@@ -351,7 +536,7 @@ Sufficient quantity & HL7:QS \\
 Trace & HL7:TRC \\
 \hline
 \end{tabular}
-\caption[NullFlavors]{\label{table:table18} Overview of null flavors. Each lookup is supplemented with so-called 'null flavors' from HL7. These can be used to indicate precisely why a particular value could not be entered into the system, providing substantially more insight than simply leaving a field empty. }
+\caption[NullFlavors]{\label{table:table21} Overview of null flavors. Each lookup is supplemented with so-called 'null flavors' from HL7. These can be used to indicate precisely why a particular value could not be entered into the system, providing substantially more insight than simply leaving a field empty. }
 \end{table}
 
 \end{document}

@@ -1,0 +1,6 @@
+name	entity	label	dataType	idAttribute	nillable
+value	Clinical_DiseaseStage	Value (English)	String	TRUE	FALSE
+description	Clinical_DiseaseStage	Description (English)	Text	FALSE	TRUE
+codesystem	Clinical_DiseaseStage	The code system (e.g. ontology) this term belongs to	String	FALSE	TRUE
+code	Clinical_DiseaseStage	The code within the code system	String	FALSE	TRUE
+iri	Clinical_DiseaseStage	The Internationalized Resource Identifier for this term	String	FALSE	TRUE

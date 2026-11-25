@@ -1,0 +1,6 @@
+name	entity	label	dataType	idAttribute	nillable
+value	Clinical_ResponseToTreatment	Value (English)	String	TRUE	FALSE
+description	Clinical_ResponseToTreatment	Description (English)	Text	FALSE	TRUE
+codesystem	Clinical_ResponseToTreatment	The code system (e.g. ontology) this term belongs to	String	FALSE	TRUE
+code	Clinical_ResponseToTreatment	The code within the code system	String	FALSE	TRUE
+iri	Clinical_ResponseToTreatment	The Internationalized Resource Identifier for this term	String	FALSE	TRUE

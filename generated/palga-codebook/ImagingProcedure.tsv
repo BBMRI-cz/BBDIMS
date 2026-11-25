@@ -2,6 +2,17 @@ value_en	description_en	codesystem	code	description_code
 Histopathology	Histopathology	SNOMED_CT	http://snomed.info/id/252416005	Histopathology
 Photomicrography	Photomicrography	SNOMED_CT	http://snomed.info/id/60287000	Photomicrography
 Microscopy	Microscopy	SNOMED_CT	http://snomed.info/id/117259009	Microscopy
+Ultrasonography	Ultrasonography	SNOMED_CT	http://snomed.info/id/16310003	Ultrasonography
+Magnetic resonance imaging	Magnetic resonance imaging	SNOMED_CT	http://snomed.info/id/113091000	Magnetic resonance imaging
+Computed tomography	Computed tomography	SNOMED_CT	http://snomed.info/id/77477000	Computed tomography
+Biopsy	Biopsy	SNOMED_CT	http://snomed.info/id/86273004	Biopsy
+Colonoscopy	Colonoscopy	SNOMED_CT	http://snomed.info/id/73761001	Colonoscopy
+Gastroscopy	Gastroscopy	SNOMED_CT	http://snomed.info/id/46833009	Gastroscopy
+Endoscopic retrograde cholangiopancreatography	Endoscopic retrograde cholangiopancreatography	SNOMED_CT	http://snomed.info/id/86049001	Endoscopic retrograde cholangiopancreatography
+Plain chest X-ray	Plain chest X-ray	SNOMED_CT	http://snomed.info/id/399208008	Plain chest X-ray
+Mammography	Mammography	SNOMED_CT	http://snomed.info/id/71651007	Mammography
+Screening mammography	Screening mammography	SNOMED_CT	http://snomed.info/id/24623002	Screening mammography
+Percutaneous nephrostomy	Percutaneous nephrostomy	SNOMED_CT	http://snomed.info/id/395073009	Percutaneous nephrostomy
 NoInformation (NI, nullflavor)	The value is exceptional (missing, omitted, incomplete, improper). No information as to the reason for being an exceptional value is provided. This is the most general exceptional value. It is also the default exceptional value.	HL7	http://terminology.hl7.org/CodeSystem/v3-NullFlavor#NI	NoInformation (NI, nullflavor)
 Invalid (INV, nullflavor)	The value as represented in the instance is not a member of the set of permitted data values in the constrained value domain of a variable.	HL7	http://terminology.hl7.org/CodeSystem/v3-NullFlavor#INV	Invalid (INV, nullflavor)
 Derived (DER, nullflavor)	An actual value may exist, but it must be derived from the provided information (usually an EXPR generic data type extension will be used to convey the derivation expression .	HL7	http://terminology.hl7.org/CodeSystem/v3-NullFlavor#DER	Derived (DER, nullflavor)

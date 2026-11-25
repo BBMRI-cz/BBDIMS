@@ -1,0 +1,6 @@
+name	entity	label	dataType	idAttribute	nillable
+value	WholeSlideImagingWsi_ScanningOperationMode	Value (English)	String	TRUE	FALSE
+description	WholeSlideImagingWsi_ScanningOperationMode	Description (English)	Text	FALSE	TRUE
+codesystem	WholeSlideImagingWsi_ScanningOperationMode	The code system (e.g. ontology) this term belongs to	String	FALSE	TRUE
+code	WholeSlideImagingWsi_ScanningOperationMode	The code within the code system	String	FALSE	TRUE
+iri	WholeSlideImagingWsi_ScanningOperationMode	The Internationalized Resource Identifier for this term	String	FALSE	TRUE

@@ -1,0 +1,53 @@
+value	description	codesystem	code	iri
+A/A	Anterior to Anterior; Anterior to Anterior.	FG	0000788	https://w3id.org/fair-genomes/resource/0000788
+A/P	Anterior to Posterior; Posterior to Anterior.	FG	0000789	https://w3id.org/fair-genomes/resource/0000789
+A/L	Anterior to Left; Left to Anterior.	FG	0000790	https://w3id.org/fair-genomes/resource/0000790
+A/R	Anterior to Right; Right to Anterior.	FG	0000791	https://w3id.org/fair-genomes/resource/0000791
+A/H	Anterior to Superior; Superior to Anterior.	FG	0000792	https://w3id.org/fair-genomes/resource/0000792
+A/F	Anterior to Inferior; Inferior to Anterior.	FG	0000793	https://w3id.org/fair-genomes/resource/0000793
+P/A	Posterior to Anterior; Anterior to Posterior.	FG	0000794	https://w3id.org/fair-genomes/resource/0000794
+P/P	Posterior to Posterior; Posterior to Posterior.	FG	0000795	https://w3id.org/fair-genomes/resource/0000795
+P/L	Posterior to Left; Left to Posterior.	FG	0000796	https://w3id.org/fair-genomes/resource/0000796
+P/R	Posterior to Right; Right to Posterior.	FG	0000797	https://w3id.org/fair-genomes/resource/0000797
+P/H	Posterior to Superior; Superior to Posterior.	FG	0000798	https://w3id.org/fair-genomes/resource/0000798
+P/F	Posterior to Inferior; Inferior to Posterior.	FG	0000799	https://w3id.org/fair-genomes/resource/0000799
+L/A	Left to Anterior; Anterior to Left.	FG	0000800	https://w3id.org/fair-genomes/resource/0000800
+L/P	Left to Posterior; Posterior to Left.	FG	0000801	https://w3id.org/fair-genomes/resource/0000801
+L/L	Left to Left; Left to Left.	FG	0000802	https://w3id.org/fair-genomes/resource/0000802
+L/R	Left to Right; Right to Left.	FG	0000803	https://w3id.org/fair-genomes/resource/0000803
+L/H	Left to Superior; Superior to Left.	FG	0000804	https://w3id.org/fair-genomes/resource/0000804
+L/F	Left to Inferior; Inferior to Left.	FG	0000805	https://w3id.org/fair-genomes/resource/0000805
+R/A	Right to Anterior; Anterior to Right.	FG	0000806	https://w3id.org/fair-genomes/resource/0000806
+R/P	Right to Posterior; Posterior to Right.	FG	0000807	https://w3id.org/fair-genomes/resource/0000807
+R/L	Right to Left; Left to Right.	FG	0000808	https://w3id.org/fair-genomes/resource/0000808
+R/R	Right to Right; Right to Right.	FG	0000809	https://w3id.org/fair-genomes/resource/0000809
+R/H	Right to Superior; Superior to Right.	FG	0000810	https://w3id.org/fair-genomes/resource/0000810
+R/F	Right to Inferior; Inferior to Right.	FG	0000811	https://w3id.org/fair-genomes/resource/0000811
+H/A	Superior to Anterior; Anterior to Superior.	FG	0000812	https://w3id.org/fair-genomes/resource/0000812
+H/P	Superior to Posterior; Posterior to Superior.	FG	0000813	https://w3id.org/fair-genomes/resource/0000813
+H/L	Superior to Left; Left to Superior.	FG	0000814	https://w3id.org/fair-genomes/resource/0000814
+H/R	Superior to Right; Right to Superior.	FG	0000815	https://w3id.org/fair-genomes/resource/0000815
+H/H	Superior to Superior; Superior to Superior.	FG	0000816	https://w3id.org/fair-genomes/resource/0000816
+H/F	Superior to Inferior; Inferior to Superior.	FG	0000817	https://w3id.org/fair-genomes/resource/0000817
+F/A	Inferior to Anterior; Anterior to Inferior.	FG	0000818	https://w3id.org/fair-genomes/resource/0000818
+F/P	Inferior to Posterior; Posterior to Inferior.	FG	0000819	https://w3id.org/fair-genomes/resource/0000819
+F/L	Inferior to Left; Left to Inferior.	FG	0000820	https://w3id.org/fair-genomes/resource/0000820
+F/R	Inferior to Right; Right to Inferior.	FG	0000821	https://w3id.org/fair-genomes/resource/0000821
+F/H	Inferior to Superior; Superior to Inferior.	FG	0000822	https://w3id.org/fair-genomes/resource/0000822
+F/F	Inferior to Inferior; Inferior to Inferior.	FG	0000823	https://w3id.org/fair-genomes/resource/0000823
+NoInformation (NI, nullflavor)	The value is exceptional (missing, omitted, incomplete, improper). No information as to the reason for being an exceptional value is provided. This is the most general exceptional value. It is also the default exceptional value.	HL7	NI	http://terminology.hl7.org/CodeSystem/v3-NullFlavor#NI
+Invalid (INV, nullflavor)	The value as represented in the instance is not a member of the set of permitted data values in the constrained value domain of a variable.	HL7	INV	http://terminology.hl7.org/CodeSystem/v3-NullFlavor#INV
+Derived (DER, nullflavor)	An actual value may exist, but it must be derived from the provided information (usually an EXPR generic data type extension will be used to convey the derivation expression .	HL7	DER	http://terminology.hl7.org/CodeSystem/v3-NullFlavor#DER
+Other (OTH, nullflavor)	The actual value is not a member of the set of permitted data values in the constrained value domain of a variable.The actual value is not a member of the set of permitted data values in the constrained value domain of a variable. (e.g., concept not provided by required code system).	HL7	OTH	http://terminology.hl7.org/CodeSystem/v3-NullFlavor#OTH
+Negative infinity (NINF, nullflavor)	Negative infinity of numbers.	HL7	NINF	http://terminology.hl7.org/CodeSystem/v3-NullFlavor#NINF
+Positive infinity (PINF, nullflavor)	Positive infinity of numbers.	HL7	PINF	http://terminology.hl7.org/CodeSystem/v3-NullFlavor#PINF
+Un-encoded (UNC, nullflavor)	The actual value has not yet been encoded within the approved value domain.	HL7	UNC	http://terminology.hl7.org/CodeSystem/v3-NullFlavor#UNC
+Masked (MSK, nullflavor)	There is information on this item available but it has not been provided by the sender due to security, privacy or other reasons. There may be an alternate mechanism for gaining access to this information.	HL7	MSK	http://terminology.hl7.org/CodeSystem/v3-NullFlavor#MSK
+Not applicable (NA, nullflavor)	Known to have no proper value (e.g., last menstrual period for a male).	HL7	NA	http://terminology.hl7.org/CodeSystem/v3-NullFlavor#NA
+Unknown (UNK, nullflavor)	A proper value is applicable, but not known.	HL7	UNK	http://terminology.hl7.org/CodeSystem/v3-NullFlavor#UNK
+Asked but unknown (ASKU, nullflavor)	Information was sought but not found (e.g., patient was asked but didn't know)	HL7	ASKU	http://terminology.hl7.org/CodeSystem/v3-NullFlavor#ASKU
+Temporarily unavailable (NAV, nullflavor)	Information is not available at this time but it is expected that it will be available later.	HL7	NAV	http://terminology.hl7.org/CodeSystem/v3-NullFlavor#NAV
+Not asked (NASK, nullflavor)	This information has not been sought. (e.g., patient was not asked)	HL7	NASK	http://terminology.hl7.org/CodeSystem/v3-NullFlavor#NASK
+Not available (NAVU, nullflavor)	Information is not available at this time (with no expectation regarding whether it will or will not be available in the future).	HL7	NAVU	http://terminology.hl7.org/CodeSystem/v3-NullFlavor#NAVU
+Sufficient quantity (QS, nullflavor)	The specific quantity is not known, but is known to be non-zero and is not specified because it makes up the bulk of the material. e.g. 'Add 10mg of ingredient X, 50mg of ingredient Y, and sufficient quantity of water to 100mL.' The null flavor would be used to express the quantity of water.	HL7	QS	http://terminology.hl7.org/CodeSystem/v3-NullFlavor#QS
+Trace (TRC, nullflavor)	The content is greater than zero, but too small to be quantified.	HL7	TRC	http://terminology.hl7.org/CodeSystem/v3-NullFlavor#TRC

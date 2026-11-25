@@ -1,0 +1,6 @@
+name	entity	label	dataType	idAttribute	nillable
+value	DigitalRadiographyDx_FileFormat	Value (English)	String	TRUE	FALSE
+description	DigitalRadiographyDx_FileFormat	Description (English)	Text	FALSE	TRUE
+codesystem	DigitalRadiographyDx_FileFormat	The code system (e.g. ontology) this term belongs to	String	FALSE	TRUE
+code	DigitalRadiographyDx_FileFormat	The code within the code system	String	FALSE	TRUE
+iri	DigitalRadiographyDx_FileFormat	The Internationalized Resource Identifier for this term	String	FALSE	TRUE

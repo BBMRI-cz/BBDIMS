@@ -1,0 +1,6 @@
+name	entity	label	dataType	idAttribute	nillable
+value	SlidePreparationAssay_AssayType	Value (English)	String	TRUE	FALSE
+description	SlidePreparationAssay_AssayType	Description (English)	Text	FALSE	TRUE
+codesystem	SlidePreparationAssay_AssayType	The code system (e.g. ontology) this term belongs to	String	FALSE	TRUE
+code	SlidePreparationAssay_AssayType	The code within the code system	String	FALSE	TRUE
+iri	SlidePreparationAssay_AssayType	The Internationalized Resource Identifier for this term	String	FALSE	TRUE

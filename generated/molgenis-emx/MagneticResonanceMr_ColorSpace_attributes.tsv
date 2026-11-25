@@ -1,0 +1,6 @@
+name	entity	label	dataType	idAttribute	nillable
+value	MagneticResonanceMr_ColorSpace	Value (English)	String	TRUE	FALSE
+description	MagneticResonanceMr_ColorSpace	Description (English)	Text	FALSE	TRUE
+codesystem	MagneticResonanceMr_ColorSpace	The code system (e.g. ontology) this term belongs to	String	FALSE	TRUE
+code	MagneticResonanceMr_ColorSpace	The code within the code system	String	FALSE	TRUE
+iri	MagneticResonanceMr_ColorSpace	The Internationalized Resource Identifier for this term	String	FALSE	TRUE

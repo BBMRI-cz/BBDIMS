@@ -1,0 +1,6 @@
+name	entity	label	dataType	idAttribute	nillable
+value	WholeSlideImagingWsi_ImagingModality	Value (English)	String	TRUE	FALSE
+description	WholeSlideImagingWsi_ImagingModality	Description (English)	Text	FALSE	TRUE
+codesystem	WholeSlideImagingWsi_ImagingModality	The code system (e.g. ontology) this term belongs to	String	FALSE	TRUE
+code	WholeSlideImagingWsi_ImagingModality	The code within the code system	String	FALSE	TRUE
+iri	WholeSlideImagingWsi_ImagingModality	The Internationalized Resource Identifier for this term	String	FALSE	TRUE

@@ -1,0 +1,6 @@
+name	entity	label	dataType	idAttribute	nillable
+value	SamplePreparation_FullySequencedGenes	Value (English)	String	TRUE	FALSE
+description	SamplePreparation_FullySequencedGenes	Description (English)	Text	FALSE	TRUE
+codesystem	SamplePreparation_FullySequencedGenes	The code system (e.g. ontology) this term belongs to	String	FALSE	TRUE
+code	SamplePreparation_FullySequencedGenes	The code within the code system	String	FALSE	TRUE
+iri	SamplePreparation_FullySequencedGenes	The Internationalized Resource Identifier for this term	String	FALSE	TRUE

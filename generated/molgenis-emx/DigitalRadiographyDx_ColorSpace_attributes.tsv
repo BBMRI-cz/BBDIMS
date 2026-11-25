@@ -1,0 +1,6 @@
+name	entity	label	dataType	idAttribute	nillable
+value	DigitalRadiographyDx_ColorSpace	Value (English)	String	TRUE	FALSE
+description	DigitalRadiographyDx_ColorSpace	Description (English)	Text	FALSE	TRUE
+codesystem	DigitalRadiographyDx_ColorSpace	The code system (e.g. ontology) this term belongs to	String	FALSE	TRUE
+code	DigitalRadiographyDx_ColorSpace	The code within the code system	String	FALSE	TRUE
+iri	DigitalRadiographyDx_ColorSpace	The Internationalized Resource Identifier for this term	String	FALSE	TRUE

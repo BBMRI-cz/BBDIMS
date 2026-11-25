@@ -1,2 +1,2 @@
 id	label	description
-fair-genomes	FAIR Genomes metadata schema	The FAIR Genomes semantic metadata schema to power reuse of NGS data in research and healthcare. Version 1.3-SNAPSHOT (2025-10-21)
+fair-genomes	Biobank Biosample and Data Integration Metadata Schema	The Biobank Biosample and Data Integration Metadata Schema extends the MOLGENIS FAIR Genomes framework to standardise how biobank catalogues describe biological samples and their associated large-scale datasets. It links donor profiles, consent, and biospecimen records directly to multi-omics and imaging data using established ontologies. This structured approach facilitates seamless sample discovery, data harmonisation, and metadata exchange across biobank networks. Version 1.1-SNAPSHOT (2026-10-15)

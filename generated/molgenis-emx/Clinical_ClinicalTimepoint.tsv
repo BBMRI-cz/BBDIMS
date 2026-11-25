@@ -1,0 +1,28 @@
+value	description	codesystem	code	iri
+Baseline	Initial assessment or sampling performed at the time of primary diagnosis prior to any treatment	NCIT	C25213	http://purl.obolibrary.org/obo/NCIT_C25213
+Pre-treatment	Assessment or sample collection performed immediately before initiating a specific therapeutic regimen	NCIT	C160920	http://purl.obolibrary.org/obo/NCIT_C160920
+Post-treatment	Assessment or sample collection performed after completing or during a specific treatment interval	NCIT	C160921	http://purl.obolibrary.org/obo/NCIT_C160921
+Interim	Mid-treatment assessment performed to evaluate early therapeutic response or toxicity	NCIT	C156557	http://purl.obolibrary.org/obo/NCIT_C156557
+Follow-up	Routine monitoring assessment performed at defined intervals during the post-treatment period	NCIT	C16033	http://purl.obolibrary.org/obo/NCIT_C16033
+Relapse / Progression	Assessment or sampling performed upon clinical, radiological, or molecular disease recurrence or progression	NCIT	C15681	http://purl.obolibrary.org/obo/NCIT_C15681
+Day 0	The baseline reference day, typically marking the start of treatment or trial enrollment	NCIT	C142664	http://purl.obolibrary.org/obo/NCIT_C142664
+Month 3	Assessment performed approximately 3 months after baseline or treatment initiation	NCIT	C142669	http://purl.obolibrary.org/obo/NCIT_C142669
+Month 6	Assessment performed approximately 6 months after baseline or treatment initiation	NCIT	C142670	http://purl.obolibrary.org/obo/NCIT_C142670
+Year 1	Assessment performed approximately 1 year after baseline or treatment initiation	NCIT	C142672	http://purl.obolibrary.org/obo/NCIT_C142672
+End of study	Final clinical evaluation or sampling at the completion of a patient's participation in a study or protocol	NCIT	C142698	http://purl.obolibrary.org/obo/NCIT_C142698
+NoInformation (NI, nullflavor)	The value is exceptional (missing, omitted, incomplete, improper). No information as to the reason for being an exceptional value is provided. This is the most general exceptional value. It is also the default exceptional value.	HL7	NI	http://terminology.hl7.org/CodeSystem/v3-NullFlavor#NI
+Invalid (INV, nullflavor)	The value as represented in the instance is not a member of the set of permitted data values in the constrained value domain of a variable.	HL7	INV	http://terminology.hl7.org/CodeSystem/v3-NullFlavor#INV
+Derived (DER, nullflavor)	An actual value may exist, but it must be derived from the provided information (usually an EXPR generic data type extension will be used to convey the derivation expression .	HL7	DER	http://terminology.hl7.org/CodeSystem/v3-NullFlavor#DER
+Other (OTH, nullflavor)	The actual value is not a member of the set of permitted data values in the constrained value domain of a variable.The actual value is not a member of the set of permitted data values in the constrained value domain of a variable. (e.g., concept not provided by required code system).	HL7	OTH	http://terminology.hl7.org/CodeSystem/v3-NullFlavor#OTH
+Negative infinity (NINF, nullflavor)	Negative infinity of numbers.	HL7	NINF	http://terminology.hl7.org/CodeSystem/v3-NullFlavor#NINF
+Positive infinity (PINF, nullflavor)	Positive infinity of numbers.	HL7	PINF	http://terminology.hl7.org/CodeSystem/v3-NullFlavor#PINF
+Un-encoded (UNC, nullflavor)	The actual value has not yet been encoded within the approved value domain.	HL7	UNC	http://terminology.hl7.org/CodeSystem/v3-NullFlavor#UNC
+Masked (MSK, nullflavor)	There is information on this item available but it has not been provided by the sender due to security, privacy or other reasons. There may be an alternate mechanism for gaining access to this information.	HL7	MSK	http://terminology.hl7.org/CodeSystem/v3-NullFlavor#MSK
+Not applicable (NA, nullflavor)	Known to have no proper value (e.g., last menstrual period for a male).	HL7	NA	http://terminology.hl7.org/CodeSystem/v3-NullFlavor#NA
+Unknown (UNK, nullflavor)	A proper value is applicable, but not known.	HL7	UNK	http://terminology.hl7.org/CodeSystem/v3-NullFlavor#UNK
+Asked but unknown (ASKU, nullflavor)	Information was sought but not found (e.g., patient was asked but didn't know)	HL7	ASKU	http://terminology.hl7.org/CodeSystem/v3-NullFlavor#ASKU
+Temporarily unavailable (NAV, nullflavor)	Information is not available at this time but it is expected that it will be available later.	HL7	NAV	http://terminology.hl7.org/CodeSystem/v3-NullFlavor#NAV
+Not asked (NASK, nullflavor)	This information has not been sought. (e.g., patient was not asked)	HL7	NASK	http://terminology.hl7.org/CodeSystem/v3-NullFlavor#NASK
+Not available (NAVU, nullflavor)	Information is not available at this time (with no expectation regarding whether it will or will not be available in the future).	HL7	NAVU	http://terminology.hl7.org/CodeSystem/v3-NullFlavor#NAVU
+Sufficient quantity (QS, nullflavor)	The specific quantity is not known, but is known to be non-zero and is not specified because it makes up the bulk of the material. e.g. 'Add 10mg of ingredient X, 50mg of ingredient Y, and sufficient quantity of water to 100mL.' The null flavor would be used to express the quantity of water.	HL7	QS	http://terminology.hl7.org/CodeSystem/v3-NullFlavor#QS
+Trace (TRC, nullflavor)	The content is greater than zero, but too small to be quantified.	HL7	TRC	http://terminology.hl7.org/CodeSystem/v3-NullFlavor#TRC

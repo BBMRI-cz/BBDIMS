@@ -1,0 +1,6 @@
+name	entity	label	dataType	idAttribute	nillable
+value	UltrasoundImagingUs_ImagingDevice	Value (English)	String	TRUE	FALSE
+description	UltrasoundImagingUs_ImagingDevice	Description (English)	Text	FALSE	TRUE
+codesystem	UltrasoundImagingUs_ImagingDevice	The code system (e.g. ontology) this term belongs to	String	FALSE	TRUE
+code	UltrasoundImagingUs_ImagingDevice	The code within the code system	String	FALSE	TRUE
+iri	UltrasoundImagingUs_ImagingDevice	The Internationalized Resource Identifier for this term	String	FALSE	TRUE

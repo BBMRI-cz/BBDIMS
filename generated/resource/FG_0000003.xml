@@ -8,7 +8,7 @@
   xmlns:owl="http://www.w3.org/2002/07/owl#">
 
   <rdf:Description rdf:about="http://edamontology.org/topic_3168">
-    <rdfs:label xml:lang="en">The determination of complete (typically nucleotide) sequences, including those of genomes (full genome sequencing, de novo sequencing and resequencing), amplicons and transcriptomes.</rdfs:label>
+    <rdfs:label xml:lang="en">Technical execution and instrument run parameters of a high-throughput sequencing assay, including sequencer platform, read metrics, coverage depth, and sequencing quality control statistics.</rdfs:label>
   </rdf:Description>
 
   <rdf:Description rdf:about="https://w3id.org/fair-genomes/resource/FG_0000003">

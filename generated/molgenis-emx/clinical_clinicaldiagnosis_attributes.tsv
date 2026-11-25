@@ -1,6 +1,0 @@
-name	entity	label	dataType	idAttribute	nillable
-value	Clinical_ClinicalDiagnosis	Value (English)	String	TRUE	FALSE
-description	Clinical_ClinicalDiagnosis	Description (English)	Text	FALSE	TRUE
-codesystem	Clinical_ClinicalDiagnosis	The code system (e.g. ontology) this term belongs to	String	FALSE	TRUE
-code	Clinical_ClinicalDiagnosis	The code within the code system	String	FALSE	TRUE
-iri	Clinical_ClinicalDiagnosis	The Internationalized Resource Identifier for this term	String	FALSE	TRUE

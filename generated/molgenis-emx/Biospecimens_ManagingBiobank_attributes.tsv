@@ -1,0 +1,6 @@
+name	entity	label	dataType	idAttribute	nillable
+value	Biospecimens_ManagingBiobank	Value (English)	String	TRUE	FALSE
+description	Biospecimens_ManagingBiobank	Description (English)	Text	FALSE	TRUE
+codesystem	Biospecimens_ManagingBiobank	The code system (e.g. ontology) this term belongs to	String	FALSE	TRUE
+code	Biospecimens_ManagingBiobank	The code within the code system	String	FALSE	TRUE
+iri	Biospecimens_ManagingBiobank	The Internationalized Resource Identifier for this term	String	FALSE	TRUE

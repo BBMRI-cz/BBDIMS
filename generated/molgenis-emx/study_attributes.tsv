@@ -1,10 +1,11 @@
 name	label	description	entity	dataType	idAttribute	labelAttribute	visible	nillable	refEntity
-Identifier	Identifier	A unique proper name or character sequence that identifies this particular study. (OMIABIS:0000006)	Study	string	TRUE	TRUE	TRUE	FALSE	
-Name	Name	A name that designates this study. (OMIABIS:0000037)	Study	string	FALSE	FALSE	TRUE	TRUE	
-Description	Description	A statement or piece of writing that provides details on this study. (OMIABIS:0000036)	Study	text	FALSE	FALSE	TRUE	TRUE	
-InclusionCriteria	Inclusion criteria	The conditions which, if met, make an person eligible for participation in this study. (OBI:0500027)	Study	mref	FALSE	FALSE	TRUE	TRUE	fair-genomes_Study_InclusionCriteria
-PrincipalInvestigator	Principal investigator	The principal investigator or responsible person for this study. (OMIABIS:0000100)	Study	string	FALSE	FALSE	TRUE	TRUE	
+Identifier	Identifier	A unique character string or persistent identifier that unambiguously distinguishes this study. (OMIABIS:0000006)	Study	string	TRUE	TRUE	TRUE	FALSE	
+Name	Name	The official title, full name, or public label designating this study or research project. (OMIABIS:0000037)	Study	string	FALSE	FALSE	TRUE	TRUE	
+Description	Description	A narrative summary outlining the scientific background, main objectives, and overall scope of the study. (OMIABIS:0000036)	Study	text	FALSE	FALSE	TRUE	TRUE	
+StudyUrl	Study URL	A resolvable web address, digital object identifier (DOI) link, or persistent public repository URL pointing to the study documentation, trial registration, or associated online publication. (NCIT:C42743)	Study	string	FALSE	FALSE	TRUE	TRUE	
+InclusionCriteria	Inclusion criteria	The primary medical, demographic, or genetic eligibility criteria required for a participant to be enrolled in this study. (OBI:0500027)	Study	mref	FALSE	FALSE	TRUE	TRUE	fair-genomes_Study_InclusionCriteria
+PrincipalInvestigator	Principal investigator	The primary scientific leader, lead researcher, or designated contact person responsible for the design, execution, and integrity of the study. (OMIABIS:0000100)	Study	string	FALSE	FALSE	TRUE	TRUE	
 ContactInformation	Contact information	An email address for the purpose of contacting the study contact person. (OMIABIS:0000035)	Study	string	FALSE	FALSE	TRUE	TRUE	
-StudyDesign	Study design	A plan specification comprised of protocols (which may specify how and what kinds of data will be gathered) that are executed as part of this study. (OBI:0500000)	Study	text	FALSE	FALSE	TRUE	TRUE	
+StudyDesign	Study design	The methodological framework and operational protocol specification describing how subjects, biospecimens, and data are structured and collected (e.g. cohort, case-control, longitudinal, cross-sectional). (OBI:0500000)	Study	text	FALSE	FALSE	TRUE	TRUE	
 StartDate	Start date	The date on which this study began. (NCIT:C69208)	Study	date	FALSE	FALSE	TRUE	TRUE	
-CompletionDate	Completion date	The date on which the concluding information for this study is completed. Usually, this is when the last subject has a final visit, or the main analysis has finished, or any other protocol-defined completion date. (NCIT:C142702)	Study	date	FALSE	FALSE	TRUE	TRUE	
+CompletionDate	Completion date	The date on which all study protocols are finalized, participant follow-ups conclude, or the primary research objectives are fully met. (NCIT:C142702)	Study	date	FALSE	FALSE	TRUE	TRUE	

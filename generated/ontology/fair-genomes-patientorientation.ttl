@@ -1,0 +1,321 @@
+@prefix fg: <https://w3id.org/fair-genomes/ontology/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sio: <https://semanticscience.org/resource/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ordo: <http://www.orpha.net/ORDO/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Patient_orientation_A/A>
+  a <http://www.radlex.org/RID/RID10461>;
+  rdfs:label "A/A";
+  dc:description "Anterior to Anterior; Anterior to Anterior.";
+  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/0000788> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Patient_orientation_A/P>
+  a <http://www.radlex.org/RID/RID10461>;
+  rdfs:label "A/P";
+  dc:description "Anterior to Posterior; Posterior to Anterior.";
+  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/0000789> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Patient_orientation_A/L>
+  a <http://www.radlex.org/RID/RID10461>;
+  rdfs:label "A/L";
+  dc:description "Anterior to Left; Left to Anterior.";
+  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/0000790> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Patient_orientation_A/R>
+  a <http://www.radlex.org/RID/RID10461>;
+  rdfs:label "A/R";
+  dc:description "Anterior to Right; Right to Anterior.";
+  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/0000791> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Patient_orientation_A/H>
+  a <http://www.radlex.org/RID/RID10461>;
+  rdfs:label "A/H";
+  dc:description "Anterior to Superior; Superior to Anterior.";
+  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/0000792> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Patient_orientation_A/F>
+  a <http://www.radlex.org/RID/RID10461>;
+  rdfs:label "A/F";
+  dc:description "Anterior to Inferior; Inferior to Anterior.";
+  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/0000793> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Patient_orientation_P/A>
+  a <http://www.radlex.org/RID/RID10461>;
+  rdfs:label "P/A";
+  dc:description "Posterior to Anterior; Anterior to Posterior.";
+  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/0000794> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Patient_orientation_P/P>
+  a <http://www.radlex.org/RID/RID10461>;
+  rdfs:label "P/P";
+  dc:description "Posterior to Posterior; Posterior to Posterior.";
+  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/0000795> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Patient_orientation_P/L>
+  a <http://www.radlex.org/RID/RID10461>;
+  rdfs:label "P/L";
+  dc:description "Posterior to Left; Left to Posterior.";
+  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/0000796> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Patient_orientation_P/R>
+  a <http://www.radlex.org/RID/RID10461>;
+  rdfs:label "P/R";
+  dc:description "Posterior to Right; Right to Posterior.";
+  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/0000797> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Patient_orientation_P/H>
+  a <http://www.radlex.org/RID/RID10461>;
+  rdfs:label "P/H";
+  dc:description "Posterior to Superior; Superior to Posterior.";
+  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/0000798> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Patient_orientation_P/F>
+  a <http://www.radlex.org/RID/RID10461>;
+  rdfs:label "P/F";
+  dc:description "Posterior to Inferior; Inferior to Posterior.";
+  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/0000799> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Patient_orientation_L/A>
+  a <http://www.radlex.org/RID/RID10461>;
+  rdfs:label "L/A";
+  dc:description "Left to Anterior; Anterior to Left.";
+  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/0000800> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Patient_orientation_L/P>
+  a <http://www.radlex.org/RID/RID10461>;
+  rdfs:label "L/P";
+  dc:description "Left to Posterior; Posterior to Left.";
+  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/0000801> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Patient_orientation_L/L>
+  a <http://www.radlex.org/RID/RID10461>;
+  rdfs:label "L/L";
+  dc:description "Left to Left; Left to Left.";
+  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/0000802> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Patient_orientation_L/R>
+  a <http://www.radlex.org/RID/RID10461>;
+  rdfs:label "L/R";
+  dc:description "Left to Right; Right to Left.";
+  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/0000803> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Patient_orientation_L/H>
+  a <http://www.radlex.org/RID/RID10461>;
+  rdfs:label "L/H";
+  dc:description "Left to Superior; Superior to Left.";
+  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/0000804> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Patient_orientation_L/F>
+  a <http://www.radlex.org/RID/RID10461>;
+  rdfs:label "L/F";
+  dc:description "Left to Inferior; Inferior to Left.";
+  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/0000805> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Patient_orientation_R/A>
+  a <http://www.radlex.org/RID/RID10461>;
+  rdfs:label "R/A";
+  dc:description "Right to Anterior; Anterior to Right.";
+  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/0000806> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Patient_orientation_R/P>
+  a <http://www.radlex.org/RID/RID10461>;
+  rdfs:label "R/P";
+  dc:description "Right to Posterior; Posterior to Right.";
+  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/0000807> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Patient_orientation_R/L>
+  a <http://www.radlex.org/RID/RID10461>;
+  rdfs:label "R/L";
+  dc:description "Right to Left; Left to Right.";
+  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/0000808> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Patient_orientation_R/R>
+  a <http://www.radlex.org/RID/RID10461>;
+  rdfs:label "R/R";
+  dc:description "Right to Right; Right to Right.";
+  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/0000809> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Patient_orientation_R/H>
+  a <http://www.radlex.org/RID/RID10461>;
+  rdfs:label "R/H";
+  dc:description "Right to Superior; Superior to Right.";
+  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/0000810> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Patient_orientation_R/F>
+  a <http://www.radlex.org/RID/RID10461>;
+  rdfs:label "R/F";
+  dc:description "Right to Inferior; Inferior to Right.";
+  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/0000811> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Patient_orientation_H/A>
+  a <http://www.radlex.org/RID/RID10461>;
+  rdfs:label "H/A";
+  dc:description "Superior to Anterior; Anterior to Superior.";
+  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/0000812> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Patient_orientation_H/P>
+  a <http://www.radlex.org/RID/RID10461>;
+  rdfs:label "H/P";
+  dc:description "Superior to Posterior; Posterior to Superior.";
+  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/0000813> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Patient_orientation_H/L>
+  a <http://www.radlex.org/RID/RID10461>;
+  rdfs:label "H/L";
+  dc:description "Superior to Left; Left to Superior.";
+  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/0000814> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Patient_orientation_H/R>
+  a <http://www.radlex.org/RID/RID10461>;
+  rdfs:label "H/R";
+  dc:description "Superior to Right; Right to Superior.";
+  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/0000815> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Patient_orientation_H/H>
+  a <http://www.radlex.org/RID/RID10461>;
+  rdfs:label "H/H";
+  dc:description "Superior to Superior; Superior to Superior.";
+  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/0000816> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Patient_orientation_H/F>
+  a <http://www.radlex.org/RID/RID10461>;
+  rdfs:label "H/F";
+  dc:description "Superior to Inferior; Inferior to Superior.";
+  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/0000817> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Patient_orientation_F/A>
+  a <http://www.radlex.org/RID/RID10461>;
+  rdfs:label "F/A";
+  dc:description "Inferior to Anterior; Anterior to Inferior.";
+  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/0000818> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Patient_orientation_F/P>
+  a <http://www.radlex.org/RID/RID10461>;
+  rdfs:label "F/P";
+  dc:description "Inferior to Posterior; Posterior to Inferior.";
+  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/0000819> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Patient_orientation_F/L>
+  a <http://www.radlex.org/RID/RID10461>;
+  rdfs:label "F/L";
+  dc:description "Inferior to Left; Left to Inferior.";
+  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/0000820> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Patient_orientation_F/R>
+  a <http://www.radlex.org/RID/RID10461>;
+  rdfs:label "F/R";
+  dc:description "Inferior to Right; Right to Inferior.";
+  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/0000821> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Patient_orientation_F/H>
+  a <http://www.radlex.org/RID/RID10461>;
+  rdfs:label "F/H";
+  dc:description "Inferior to Superior; Superior to Inferior.";
+  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/0000822> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Patient_orientation_F/F>
+  a <http://www.radlex.org/RID/RID10461>;
+  rdfs:label "F/F";
+  dc:description "Inferior to Inferior; Inferior to Inferior.";
+  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/0000823> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Patient_orientation_NoInformation_(NI,_nullflavor)>
+  a <http://www.radlex.org/RID/RID10461>;
+  rdfs:label "NoInformation (NI, nullflavor)";
+  dc:description "The value is exceptional (missing, omitted, incomplete, improper). No information as to the reason for being an exceptional value is provided. This is the most general exceptional value. It is also the default exceptional value.";
+  rdfs:isDefinedBy <http://terminology.hl7.org/CodeSystem/v3-NullFlavor#NI> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Patient_orientation_Invalid_(INV,_nullflavor)>
+  a <http://www.radlex.org/RID/RID10461>;
+  rdfs:label "Invalid (INV, nullflavor)";
+  dc:description "The value as represented in the instance is not a member of the set of permitted data values in the constrained value domain of a variable.";
+  rdfs:isDefinedBy <http://terminology.hl7.org/CodeSystem/v3-NullFlavor#INV> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Patient_orientation_Derived_(DER,_nullflavor)>
+  a <http://www.radlex.org/RID/RID10461>;
+  rdfs:label "Derived (DER, nullflavor)";
+  dc:description "An actual value may exist, but it must be derived from the provided information (usually an EXPR generic data type extension will be used to convey the derivation expression .";
+  rdfs:isDefinedBy <http://terminology.hl7.org/CodeSystem/v3-NullFlavor#DER> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Patient_orientation_Other_(OTH,_nullflavor)>
+  a <http://www.radlex.org/RID/RID10461>;
+  rdfs:label "Other (OTH, nullflavor)";
+  dc:description "The actual value is not a member of the set of permitted data values in the constrained value domain of a variable.The actual value is not a member of the set of permitted data values in the constrained value domain of a variable. (e.g., concept not provided by required code system).";
+  rdfs:isDefinedBy <http://terminology.hl7.org/CodeSystem/v3-NullFlavor#OTH> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Patient_orientation_Negative_infinity_(NINF,_nullflavor)>
+  a <http://www.radlex.org/RID/RID10461>;
+  rdfs:label "Negative infinity (NINF, nullflavor)";
+  dc:description "Negative infinity of numbers.";
+  rdfs:isDefinedBy <http://terminology.hl7.org/CodeSystem/v3-NullFlavor#NINF> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Patient_orientation_Positive_infinity_(PINF,_nullflavor)>
+  a <http://www.radlex.org/RID/RID10461>;
+  rdfs:label "Positive infinity (PINF, nullflavor)";
+  dc:description "Positive infinity of numbers.";
+  rdfs:isDefinedBy <http://terminology.hl7.org/CodeSystem/v3-NullFlavor#PINF> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Patient_orientation_Un-encoded_(UNC,_nullflavor)>
+  a <http://www.radlex.org/RID/RID10461>;
+  rdfs:label "Un-encoded (UNC, nullflavor)";
+  dc:description "The actual value has not yet been encoded within the approved value domain.";
+  rdfs:isDefinedBy <http://terminology.hl7.org/CodeSystem/v3-NullFlavor#UNC> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Patient_orientation_Masked_(MSK,_nullflavor)>
+  a <http://www.radlex.org/RID/RID10461>;
+  rdfs:label "Masked (MSK, nullflavor)";
+  dc:description "There is information on this item available but it has not been provided by the sender due to security, privacy or other reasons. There may be an alternate mechanism for gaining access to this information.";
+  rdfs:isDefinedBy <http://terminology.hl7.org/CodeSystem/v3-NullFlavor#MSK> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Patient_orientation_Not_applicable_(NA,_nullflavor)>
+  a <http://www.radlex.org/RID/RID10461>;
+  rdfs:label "Not applicable (NA, nullflavor)";
+  dc:description "Known to have no proper value (e.g., last menstrual period for a male).";
+  rdfs:isDefinedBy <http://terminology.hl7.org/CodeSystem/v3-NullFlavor#NA> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Patient_orientation_Unknown_(UNK,_nullflavor)>
+  a <http://www.radlex.org/RID/RID10461>;
+  rdfs:label "Unknown (UNK, nullflavor)";
+  dc:description "A proper value is applicable, but not known.";
+  rdfs:isDefinedBy <http://terminology.hl7.org/CodeSystem/v3-NullFlavor#UNK> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Patient_orientation_Asked_but_unknown_(ASKU,_nullflavor)>
+  a <http://www.radlex.org/RID/RID10461>;
+  rdfs:label "Asked but unknown (ASKU, nullflavor)";
+  dc:description "Information was sought but not found (e.g., patient was asked but didn't know)";
+  rdfs:isDefinedBy <http://terminology.hl7.org/CodeSystem/v3-NullFlavor#ASKU> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Patient_orientation_Temporarily_unavailable_(NAV,_nullflavor)>
+  a <http://www.radlex.org/RID/RID10461>;
+  rdfs:label "Temporarily unavailable (NAV, nullflavor)";
+  dc:description "Information is not available at this time but it is expected that it will be available later.";
+  rdfs:isDefinedBy <http://terminology.hl7.org/CodeSystem/v3-NullFlavor#NAV> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Patient_orientation_Not_asked_(NASK,_nullflavor)>
+  a <http://www.radlex.org/RID/RID10461>;
+  rdfs:label "Not asked (NASK, nullflavor)";
+  dc:description "This information has not been sought. (e.g., patient was not asked)";
+  rdfs:isDefinedBy <http://terminology.hl7.org/CodeSystem/v3-NullFlavor#NASK> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Patient_orientation_Not_available_(NAVU,_nullflavor)>
+  a <http://www.radlex.org/RID/RID10461>;
+  rdfs:label "Not available (NAVU, nullflavor)";
+  dc:description "Information is not available at this time (with no expectation regarding whether it will or will not be available in the future).";
+  rdfs:isDefinedBy <http://terminology.hl7.org/CodeSystem/v3-NullFlavor#NAVU> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Patient_orientation_Sufficient_quantity_(QS,_nullflavor)>
+  a <http://www.radlex.org/RID/RID10461>;
+  rdfs:label "Sufficient quantity (QS, nullflavor)";
+  dc:description "The specific quantity is not known, but is known to be non-zero and is not specified because it makes up the bulk of the material. e.g. 'Add 10mg of ingredient X, 50mg of ingredient Y, and sufficient quantity of water to 100mL.' The null flavor would be used to express the quantity of water.";
+  rdfs:isDefinedBy <http://terminology.hl7.org/CodeSystem/v3-NullFlavor#QS> .
+
+<https://w3id.org/fair-genomes/ontology/Digital_radiography_(DX)_Patient_orientation_Trace_(TRC,_nullflavor)>
+  a <http://www.radlex.org/RID/RID10461>;
+  rdfs:label "Trace (TRC, nullflavor)";
+  dc:description "The content is greater than zero, but too small to be quantified.";
+  rdfs:isDefinedBy <http://terminology.hl7.org/CodeSystem/v3-NullFlavor#TRC> .

@@ -1,0 +1,6 @@
+name	entity	label	dataType	idAttribute	nillable
+value	ComputedTomographyCt_ImageType	Value (English)	String	TRUE	FALSE
+description	ComputedTomographyCt_ImageType	Description (English)	Text	FALSE	TRUE
+codesystem	ComputedTomographyCt_ImageType	The code system (e.g. ontology) this term belongs to	String	FALSE	TRUE
+code	ComputedTomographyCt_ImageType	The code within the code system	String	FALSE	TRUE
+iri	ComputedTomographyCt_ImageType	The Internationalized Resource Identifier for this term	String	FALSE	TRUE

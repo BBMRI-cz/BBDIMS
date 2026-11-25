@@ -1,0 +1,6 @@
+name	entity	label	dataType	idAttribute	nillable
+value	SamplePreparation_PartiallySequencedGenes	Value (English)	String	TRUE	FALSE
+description	SamplePreparation_PartiallySequencedGenes	Description (English)	Text	FALSE	TRUE
+codesystem	SamplePreparation_PartiallySequencedGenes	The code system (e.g. ontology) this term belongs to	String	FALSE	TRUE
+code	SamplePreparation_PartiallySequencedGenes	The code within the code system	String	FALSE	TRUE
+iri	SamplePreparation_PartiallySequencedGenes	The Internationalized Resource Identifier for this term	String	FALSE	TRUE

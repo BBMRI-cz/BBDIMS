@@ -1,0 +1,6 @@
+name	entity	label	dataType	idAttribute	nillable
+value	DigitalMammographyMg_ManufacturerOfImagingDevice	Value (English)	String	TRUE	FALSE
+description	DigitalMammographyMg_ManufacturerOfImagingDevice	Description (English)	Text	FALSE	TRUE
+codesystem	DigitalMammographyMg_ManufacturerOfImagingDevice	The code system (e.g. ontology) this term belongs to	String	FALSE	TRUE
+code	DigitalMammographyMg_ManufacturerOfImagingDevice	The code within the code system	String	FALSE	TRUE
+iri	DigitalMammographyMg_ManufacturerOfImagingDevice	The Internationalized Resource Identifier for this term	String	FALSE	TRUE

@@ -1,6 +1,0 @@
-name	entity	label	dataType	idAttribute	nillable
-value	Personal_InclusionStatus	Value (English)	String	TRUE	FALSE
-description	Personal_InclusionStatus	Description (English)	Text	FALSE	TRUE
-codesystem	Personal_InclusionStatus	The code system (e.g. ontology) this term belongs to	String	FALSE	TRUE
-code	Personal_InclusionStatus	The code within the code system	String	FALSE	TRUE
-iri	Personal_InclusionStatus	The Internationalized Resource Identifier for this term	String	FALSE	TRUE

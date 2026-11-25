@@ -1,0 +1,6 @@
+name	entity	label	dataType	idAttribute	nillable
+value	SlidePreparationAssay_BiomarkerSpatialLocalization	Value (English)	String	TRUE	FALSE
+description	SlidePreparationAssay_BiomarkerSpatialLocalization	Description (English)	Text	FALSE	TRUE
+codesystem	SlidePreparationAssay_BiomarkerSpatialLocalization	The code system (e.g. ontology) this term belongs to	String	FALSE	TRUE
+code	SlidePreparationAssay_BiomarkerSpatialLocalization	The code within the code system	String	FALSE	TRUE
+iri	SlidePreparationAssay_BiomarkerSpatialLocalization	The Internationalized Resource Identifier for this term	String	FALSE	TRUE

@@ -1,0 +1,6 @@
+name	entity	label	dataType	idAttribute	nillable
+value	WholeSlideImagingWsi_Z_stacking	Value (English)	String	TRUE	FALSE
+description	WholeSlideImagingWsi_Z_stacking	Description (English)	Text	FALSE	TRUE
+codesystem	WholeSlideImagingWsi_Z_stacking	The code system (e.g. ontology) this term belongs to	String	FALSE	TRUE
+code	WholeSlideImagingWsi_Z_stacking	The code within the code system	String	FALSE	TRUE
+iri	WholeSlideImagingWsi_Z_stacking	The Internationalized Resource Identifier for this term	String	FALSE	TRUE

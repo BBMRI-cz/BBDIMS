@@ -6,6 +6,7 @@ public class Study {
 	public String Identifier;
 	public String Name;
 	public String Description;
+	public String StudyUrl;
 	public List<String> InclusionCriteria;
 	public String PrincipalInvestigator;
 	public String ContactInformation;

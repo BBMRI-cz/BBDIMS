@@ -1,0 +1,6 @@
+name	entity	label	dataType	idAttribute	nillable
+value	Biospecimens_Availability	Value (English)	String	TRUE	FALSE
+description	Biospecimens_Availability	Description (English)	Text	FALSE	TRUE
+codesystem	Biospecimens_Availability	The code system (e.g. ontology) this term belongs to	String	FALSE	TRUE
+code	Biospecimens_Availability	The code within the code system	String	FALSE	TRUE
+iri	Biospecimens_Availability	The Internationalized Resource Identifier for this term	String	FALSE	TRUE

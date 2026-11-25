@@ -5,21 +5,11 @@ import java.util.List;
 public class Clinical {
 	public String ClinicalIdentifier;
 	public Personal BelongsToPerson;
-	public List<String> Phenotype;
-	public List<String> UnobservedPhenotype;
-	public List<String> PhenotypicDataAvailable;
-	public List<String> ClinicalDiagnosis;
-	public List<String> MolecularDiagnosisGene;
-	public String MolecularDiagnosisOther;
+	public List<String> Diagnosis;
 	public int AgeAtDiagnosis;
-	public int AgeAtLastScreening;
-	public List<String> Medication;
-	public String DrugRegimen;
-	public List<String> FamilyMembersAffected;
-	public List<String> FamilyMembersSequenced;
-	public List<String> MedicalHistory;
-	public int AgeOfOnset;
-	public String FirstContact;
-	public String Functioning;
-	public String MaterialUsedInDiagnosis;
+	public String ClinicalTimepoint;
+	public List<String> DiseaseStage;
+	public List<String> MolecularDiagnosisGene;
+	public List<String> TreatmentCategory;
+	public List<String> ResponseToTreatment;
 }

@@ -3720,6 +3720,28 @@ fg:Sample_preparation_Library_preparation_kit_Accel_Amplicon_Custom_Core_Kit a o
   dc:description "Accel Amplicon Custom Core Kit";
   rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/FG_0000779> .
 
+fg:Sample_preparation_Library_preparation_kit_TruSight_Oncology_Enrichment_by_Illumina
+  a obo:GENEPIO_0000081;
+  rdfs:label "TruSight Oncology Enrichment by Illumina";
+  dc:description "TruSight Oncology Enrichment by Illumina";
+  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/FG_0000827> .
+
+fg:Sample_preparation_Library_preparation_kit_ElIGene_NGS_Kits a obo:GENEPIO_0000081;
+  rdfs:label "ElIGene NGS Kits";
+  dc:description "ElIGene NGS Kits";
+  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/FG_0000828> .
+
+fg:Sample_preparation_Library_preparation_kit_TruSight_Oncology_500_Assay_by_Illumina
+  a obo:GENEPIO_0000081;
+  rdfs:label "TruSight Oncology 500 Assay by Illumina";
+  dc:description "TruSight Oncology 500 Assay by Illumina";
+  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/FG_0000829> .
+
+fg:Sample_preparation_Library_preparation_kit_EliGene_Adaptor-IL_NGS a obo:GENEPIO_0000081;
+  rdfs:label "EliGene Adaptor-IL NGS";
+  dc:description "EliGene Adaptor-IL NGS";
+  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/FG_0000830> .
+
 <https://w3id.org/fair-genomes/ontology/Sample_preparation_Library_preparation_kit_NoInformation_(NI,_nullflavor)>
   a obo:GENEPIO_0000081;
   rdfs:label "NoInformation (NI, nullflavor)";
@@ -7524,6 +7546,28 @@ fg:Sample_preparation_Target_enrichment_kit_Accel_Amplicon_Custom_Core_Kit a obo
   rdfs:label "Accel Amplicon Custom Core Kit";
   dc:description "Accel Amplicon Custom Core Kit";
   rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/FG_0000779> .
+
+fg:Sample_preparation_Target_enrichment_kit_TruSight_Oncology_Enrichment_by_Illumina
+  a obo:GENEPIO_0000081;
+  rdfs:label "TruSight Oncology Enrichment by Illumina";
+  dc:description "TruSight Oncology Enrichment by Illumina";
+  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/FG_0000827> .
+
+fg:Sample_preparation_Target_enrichment_kit_ElIGene_NGS_Kits a obo:GENEPIO_0000081;
+  rdfs:label "ElIGene NGS Kits";
+  dc:description "ElIGene NGS Kits";
+  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/FG_0000828> .
+
+fg:Sample_preparation_Target_enrichment_kit_TruSight_Oncology_500_Assay_by_Illumina
+  a obo:GENEPIO_0000081;
+  rdfs:label "TruSight Oncology 500 Assay by Illumina";
+  dc:description "TruSight Oncology 500 Assay by Illumina";
+  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/FG_0000829> .
+
+fg:Sample_preparation_Target_enrichment_kit_EliGene_Adaptor-IL_NGS a obo:GENEPIO_0000081;
+  rdfs:label "EliGene Adaptor-IL NGS";
+  dc:description "EliGene Adaptor-IL NGS";
+  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/FG_0000830> .
 
 <https://w3id.org/fair-genomes/ontology/Sample_preparation_Target_enrichment_kit_NoInformation_(NI,_nullflavor)>
   a obo:GENEPIO_0000081;

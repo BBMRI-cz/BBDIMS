@@ -1,0 +1,6 @@
+name	entity	label	dataType	idAttribute	nillable
+value	ComputedTomographyCt_ColorSpace	Value (English)	String	TRUE	FALSE
+description	ComputedTomographyCt_ColorSpace	Description (English)	Text	FALSE	TRUE
+codesystem	ComputedTomographyCt_ColorSpace	The code system (e.g. ontology) this term belongs to	String	FALSE	TRUE
+code	ComputedTomographyCt_ColorSpace	The code within the code system	String	FALSE	TRUE
+iri	ComputedTomographyCt_ColorSpace	The Internationalized Resource Identifier for this term	String	FALSE	TRUE

@@ -1,0 +1,6 @@
+name	entity	label	dataType	idAttribute	nillable
+value	Biospecimens_NameOfFixative	Value (English)	String	TRUE	FALSE
+description	Biospecimens_NameOfFixative	Description (English)	Text	FALSE	TRUE
+codesystem	Biospecimens_NameOfFixative	The code system (e.g. ontology) this term belongs to	String	FALSE	TRUE
+code	Biospecimens_NameOfFixative	The code within the code system	String	FALSE	TRUE
+iri	Biospecimens_NameOfFixative	The Internationalized Resource Identifier for this term	String	FALSE	TRUE

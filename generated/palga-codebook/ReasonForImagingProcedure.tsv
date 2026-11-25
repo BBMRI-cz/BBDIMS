@@ -1,5 +1,13 @@
 value_en	description_en	codesystem	code	description_code
 Clinical finding	Clinical finding	SNOMED_CT	http://snomed.info/id/404684003	Clinical finding
+Screening for malignant neoplasm of breast	Screening for malignant neoplasm of breast	SNOMED_CT	http://snomed.info/id/254651000	Screening for malignant neoplasm of breast
+Neoplasm, uncertain behavior	Neoplasm, uncertain behavior (suspected tumor / suspected malignancy)	SNOMED_CT	http://snomed.info/id/196088003	Neoplasm, uncertain behavior
+Sarcoma (suspected / follow-up)	Sarcoma	SNOMED_CT	http://snomed.info/id/196013005	Sarcoma (suspected / follow-up)
+Infection (suspected)	Suspected infection / inflammation	SNOMED_CT	http://snomed.info/id/233607000	Infection (suspected)
+Demyelinating disease (suspected)	Demyelinating disease of central nervous system	SNOMED_CT	http://snomed.info/id/24700007	Demyelinating disease (suspected)
+Epilepsy (known / follow-up)	Epilepsy	SNOMED_CT	http://snomed.info/id/84757009	Epilepsy (known / follow-up)
+Cerebral ischemia (suspected)	Cerebral ischemia	SNOMED_CT	http://snomed.info/id/41114007	Cerebral ischemia (suspected)
+Li-Fraumeni syndrome (genetic risk – WB-MRI screening)	Li-Fraumeni syndrome	SNOMED_CT	http://snomed.info/id/428592006	Li-Fraumeni syndrome (genetic risk – WB-MRI screening)
 NoInformation (NI, nullflavor)	The value is exceptional (missing, omitted, incomplete, improper). No information as to the reason for being an exceptional value is provided. This is the most general exceptional value. It is also the default exceptional value.	HL7	http://terminology.hl7.org/CodeSystem/v3-NullFlavor#NI	NoInformation (NI, nullflavor)
 Invalid (INV, nullflavor)	The value as represented in the instance is not a member of the set of permitted data values in the constrained value domain of a variable.	HL7	http://terminology.hl7.org/CodeSystem/v3-NullFlavor#INV	Invalid (INV, nullflavor)
 Derived (DER, nullflavor)	An actual value may exist, but it must be derived from the provided information (usually an EXPR generic data type extension will be used to convey the derivation expression .	HL7	http://terminology.hl7.org/CodeSystem/v3-NullFlavor#DER	Derived (DER, nullflavor)

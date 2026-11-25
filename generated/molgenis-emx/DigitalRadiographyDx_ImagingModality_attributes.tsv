@@ -1,0 +1,6 @@
+name	entity	label	dataType	idAttribute	nillable
+value	DigitalRadiographyDx_ImagingModality	Value (English)	String	TRUE	FALSE
+description	DigitalRadiographyDx_ImagingModality	Description (English)	Text	FALSE	TRUE
+codesystem	DigitalRadiographyDx_ImagingModality	The code system (e.g. ontology) this term belongs to	String	FALSE	TRUE
+code	DigitalRadiographyDx_ImagingModality	The code within the code system	String	FALSE	TRUE
+iri	DigitalRadiographyDx_ImagingModality	The Internationalized Resource Identifier for this term	String	FALSE	TRUE

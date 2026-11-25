@@ -1,0 +1,1732 @@
+@prefix fg: <https://w3id.org/fair-genomes/ontology/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sio: <https://semanticscience.org/resource/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ordo: <http://www.orpha.net/ORDO/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+fg:Slide_preparation_assay_Dye_name_acid_phosphatase_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "acid phosphatase stain";
+  dc:description "acid phosphatase stain";
+  rdfs:isDefinedBy <http://snomed.info/id/255792001> .
+
+<https://w3id.org/fair-genomes/ontology/Slide_preparation_assay_Dye_name_Albert's_stain>
+  a <http://snomed.info/id/703857004>;
+  rdfs:label "Albert's stain";
+  dc:description "Albert's stain";
+  rdfs:isDefinedBy <http://snomed.info/id/255793006> .
+
+fg:Slide_preparation_assay_Dye_name_alcian_blue_8GX_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "alcian blue 8GX stain";
+  dc:description "alcian blue 8GX stain";
+  rdfs:isDefinedBy <http://snomed.info/id/4656000> .
+
+fg:Slide_preparation_assay_Dye_name_alcohol_soluble_nigrosine_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "alcohol soluble nigrosine stain";
+  dc:description "alcohol soluble nigrosine stain";
+  rdfs:isDefinedBy <http://snomed.info/id/47795002> .
+
+fg:Slide_preparation_assay_Dye_name_aldehyde_fuchsin_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "aldehyde fuchsin stain";
+  dc:description "aldehyde fuchsin stain";
+  rdfs:isDefinedBy <http://snomed.info/id/406981005> .
+
+fg:Slide_preparation_assay_Dye_name_alizarin_blue_S_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "alizarin blue S stain";
+  dc:description "alizarin blue S stain";
+  rdfs:isDefinedBy <http://snomed.info/id/54432009> .
+
+fg:Slide_preparation_assay_Dye_name_alizarin_cyanine_green_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "alizarin cyanine green stain";
+  dc:description "alizarin cyanine green stain";
+  rdfs:isDefinedBy <http://snomed.info/id/21951008> .
+
+fg:Slide_preparation_assay_Dye_name_alizarin_red_S_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "alizarin red S stain";
+  dc:description "alizarin red S stain";
+  rdfs:isDefinedBy <http://snomed.info/id/65580004> .
+
+fg:Slide_preparation_assay_Dye_name_alizarin_yellow_GG_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "alizarin yellow GG stain";
+  dc:description "alizarin yellow GG stain";
+  rdfs:isDefinedBy <http://snomed.info/id/27016007> .
+
+fg:Slide_preparation_assay_Dye_name_alizarin_yellow_R_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "alizarin yellow R stain";
+  dc:description "alizarin yellow R stain";
+  rdfs:isDefinedBy <http://snomed.info/id/28622002> .
+
+fg:Slide_preparation_assay_Dye_name_alkaline_phosphatase_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "alkaline phosphatase stain";
+  dc:description "alkaline phosphatase stain";
+  rdfs:isDefinedBy <http://snomed.info/id/406971006> .
+
+fg:Slide_preparation_assay_Dye_name_aniline_blue_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "aniline blue stain";
+  dc:description "aniline blue stain";
+  rdfs:isDefinedBy <http://snomed.info/id/406990003> .
+
+fg:Slide_preparation_assay_Dye_name_auramine_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "auramine stain";
+  dc:description "auramine stain";
+  rdfs:isDefinedBy <http://snomed.info/id/255794000> .
+
+fg:Slide_preparation_assay_Dye_name_azo_black_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "azo black stain";
+  dc:description "azo black stain";
+  rdfs:isDefinedBy <http://snomed.info/id/85066006> .
+
+fg:Slide_preparation_assay_Dye_name_azocarmine_G_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "azocarmine G stain";
+  dc:description "azocarmine G stain";
+  rdfs:isDefinedBy <http://snomed.info/id/76048000> .
+
+fg:Slide_preparation_assay_Dye_name_azophloxin_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "azophloxin stain";
+  dc:description "azophloxin stain";
+  rdfs:isDefinedBy <http://snomed.info/id/35609001> .
+
+fg:Slide_preparation_assay_Dye_name_azorubin_S_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "azorubin S stain";
+  dc:description "azorubin S stain";
+  rdfs:isDefinedBy <http://snomed.info/id/2159007> .
+
+fg:Slide_preparation_assay_Dye_name_azure_A_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "azure A stain";
+  dc:description "azure A stain";
+  rdfs:isDefinedBy <http://snomed.info/id/16836001> .
+
+fg:Slide_preparation_assay_Dye_name_azure_B_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "azure B stain";
+  dc:description "azure B stain";
+  rdfs:isDefinedBy <http://snomed.info/id/8926000> .
+
+fg:Slide_preparation_assay_Dye_name_azure_C_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "azure C stain";
+  dc:description "azure C stain";
+  rdfs:isDefinedBy <http://snomed.info/id/11069001> .
+
+fg:Slide_preparation_assay_Dye_name_bauers_chromic_acid_leucofuchsin_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "bauers chromic acid leucofuchsin stain";
+  dc:description "bauers chromic acid leucofuchsin stain";
+  rdfs:isDefinedBy <http://snomed.info/id/406982003> .
+
+fg:Slide_preparation_assay_Dye_name_benzo_fast_scarlet_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "benzo fast scarlet stain";
+  dc:description "benzo fast scarlet stain";
+  rdfs:isDefinedBy <http://snomed.info/id/27844007> .
+
+fg:Slide_preparation_assay_Dye_name_beta-glucuronidase_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "beta-glucuronidase stain";
+  dc:description "beta-glucuronidase stain";
+  rdfs:isDefinedBy <http://snomed.info/id/255795004> .
+
+fg:Slide_preparation_assay_Dye_name_biebrich_scarlet_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "biebrich scarlet stain";
+  dc:description "biebrich scarlet stain";
+  rdfs:isDefinedBy <http://snomed.info/id/76605005> .
+
+fg:Slide_preparation_assay_Dye_name_bismark_brown_R_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "bismark brown R stain";
+  dc:description "bismark brown R stain";
+  rdfs:isDefinedBy <http://snomed.info/id/41448008> .
+
+fg:Slide_preparation_assay_Dye_name_bismark_brown_Y_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "bismark brown Y stain";
+  dc:description "bismark brown Y stain";
+  rdfs:isDefinedBy <http://snomed.info/id/85190005> .
+
+fg:Slide_preparation_assay_Dye_name_blue_shade_eosin_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "blue shade eosin stain";
+  dc:description "blue shade eosin stain";
+  rdfs:isDefinedBy <http://snomed.info/id/1346008> .
+
+fg:Slide_preparation_assay_Dye_name_brazilin_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "brazilin stain";
+  dc:description "brazilin stain";
+  rdfs:isDefinedBy <http://snomed.info/id/41750006> .
+
+fg:Slide_preparation_assay_Dye_name_brilliant_cresyl_blue_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "brilliant cresyl blue stain";
+  dc:description "brilliant cresyl blue stain";
+  rdfs:isDefinedBy <http://snomed.info/id/8342001> .
+
+fg:Slide_preparation_assay_Dye_name_brilliant_crocein_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "brilliant crocein stain";
+  dc:description "brilliant crocein stain";
+  rdfs:isDefinedBy <http://snomed.info/id/86541009> .
+
+fg:Slide_preparation_assay_Dye_name_brilliant_orange_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "brilliant orange stain";
+  dc:description "brilliant orange stain";
+  rdfs:isDefinedBy <http://snomed.info/id/8429000> .
+
+fg:Slide_preparation_assay_Dye_name_brilliant_yellow_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "brilliant yellow stain";
+  dc:description "brilliant yellow stain";
+  rdfs:isDefinedBy <http://snomed.info/id/57753006> .
+
+fg:Slide_preparation_assay_Dye_name_butyrate_esterase_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "butyrate esterase stain";
+  dc:description "butyrate esterase stain";
+  rdfs:isDefinedBy <http://snomed.info/id/406955006> .
+
+fg:Slide_preparation_assay_Dye_name_carbol_fuchsin_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "carbol fuchsin stain";
+  dc:description "carbol fuchsin stain";
+  rdfs:isDefinedBy <http://snomed.info/id/764166003> .
+
+fg:Slide_preparation_assay_Dye_name_carmine_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "carmine stain";
+  dc:description "carmine stain";
+  rdfs:isDefinedBy <http://snomed.info/id/73892005> .
+
+fg:Slide_preparation_assay_Dye_name_carmimic_acid_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "carmimic acid stain";
+  dc:description "carmimic acid stain";
+  rdfs:isDefinedBy <http://snomed.info/id/432003> .
+
+fg:Slide_preparation_assay_Dye_name_carmoisine_A_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "carmoisine A stain";
+  dc:description "carmoisine A stain";
+  rdfs:isDefinedBy <http://snomed.info/id/37575004> .
+
+fg:Slide_preparation_assay_Dye_name_celestine_blue_B_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "celestine blue B stain";
+  dc:description "celestine blue B stain";
+  rdfs:isDefinedBy <http://snomed.info/id/38707008> .
+
+fg:Slide_preparation_assay_Dye_name_chloroacetate_esterase_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "chloroacetate esterase stain";
+  dc:description "chloroacetate esterase stain";
+  rdfs:isDefinedBy <http://snomed.info/id/255796003> .
+
+fg:Slide_preparation_assay_Dye_name_chromic_acid_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "chromic acid stain";
+  dc:description "chromic acid stain";
+  rdfs:isDefinedBy <http://snomed.info/id/406986000> .
+
+fg:Slide_preparation_assay_Dye_name_chromotrope_2R_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "chromotrope 2R stain";
+  dc:description "chromotrope 2R stain";
+  rdfs:isDefinedBy <http://snomed.info/id/85981002> .
+
+fg:Slide_preparation_assay_Dye_name_chrysoidine_R_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "chrysoidine R stain";
+  dc:description "chrysoidine R stain";
+  rdfs:isDefinedBy <http://snomed.info/id/10247008> .
+
+fg:Slide_preparation_assay_Dye_name_chrysoidine_Y_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "chrysoidine Y stain";
+  dc:description "chrysoidine Y stain";
+  rdfs:isDefinedBy <http://snomed.info/id/16943008> .
+
+fg:Slide_preparation_assay_Dye_name_colloidal_iron_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "colloidal iron stain";
+  dc:description "colloidal iron stain";
+  rdfs:isDefinedBy <http://snomed.info/id/406952009> .
+
+fg:Slide_preparation_assay_Dye_name_Congo_red_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "Congo red stain";
+  dc:description "Congo red stain";
+  rdfs:isDefinedBy <http://snomed.info/id/45106005> .
+
+fg:Slide_preparation_assay_Dye_name_cresyl_echt_violet_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "cresyl echt violet stain";
+  dc:description "cresyl echt violet stain";
+  rdfs:isDefinedBy <http://snomed.info/id/406960005> .
+
+fg:Slide_preparation_assay_Dye_name_cresyl_violet_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "cresyl violet stain";
+  dc:description "cresyl violet stain";
+  rdfs:isDefinedBy <http://snomed.info/id/406959000> .
+
+fg:Slide_preparation_assay_Dye_name_crystal_ponceau_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "crystal ponceau stain";
+  dc:description "crystal ponceau stain";
+  rdfs:isDefinedBy <http://snomed.info/id/68459007> .
+
+fg:Slide_preparation_assay_Dye_name_curcumin_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "curcumin stain";
+  dc:description "curcumin stain";
+  rdfs:isDefinedBy <http://snomed.info/id/89082002> .
+
+fg:Slide_preparation_assay_Dye_name_diamond_black_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "diamond black stain";
+  dc:description "diamond black stain";
+  rdfs:isDefinedBy <http://snomed.info/id/72572003> .
+
+fg:Slide_preparation_assay_Dye_name_durazol_red_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "durazol red stain";
+  dc:description "durazol red stain";
+  rdfs:isDefinedBy <http://snomed.info/id/11780008> .
+
+fg:Slide_preparation_assay_Dye_name_erie_garnet_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "erie garnet stain";
+  dc:description "erie garnet stain";
+  rdfs:isDefinedBy <http://snomed.info/id/40076005> .
+
+fg:Slide_preparation_assay_Dye_name_eriochrome_blue_black_SE_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "eriochrome blue black SE stain";
+  dc:description "eriochrome blue black SE stain";
+  rdfs:isDefinedBy <http://snomed.info/id/58631000> .
+
+fg:Slide_preparation_assay_Dye_name_erythrosin_B_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "erythrosin B stain";
+  dc:description "erythrosin B stain";
+  rdfs:isDefinedBy <http://snomed.info/id/7434003> .
+
+fg:Slide_preparation_assay_Dye_name_erythrosin_Y_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "erythrosin Y stain";
+  dc:description "erythrosin Y stain";
+  rdfs:isDefinedBy <http://snomed.info/id/5043000> .
+
+fg:Slide_preparation_assay_Dye_name_Evans_blue_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "Evans blue stain";
+  dc:description "Evans blue stain";
+  rdfs:isDefinedBy <http://snomed.info/id/22931006> .
+
+fg:Slide_preparation_assay_Dye_name_fast_blue_B_salt_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "fast blue B salt stain";
+  dc:description "fast blue B salt stain";
+  rdfs:isDefinedBy <http://snomed.info/id/34700000> .
+
+fg:Slide_preparation_assay_Dye_name_fast_blue_BB_salt_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "fast blue BB salt stain";
+  dc:description "fast blue BB salt stain";
+  rdfs:isDefinedBy <http://snomed.info/id/91295002> .
+
+fg:Slide_preparation_assay_Dye_name_fast_blue_RR_salt_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "fast blue RR salt stain";
+  dc:description "fast blue RR salt stain";
+  rdfs:isDefinedBy <http://snomed.info/id/64112001> .
+
+fg:Slide_preparation_assay_Dye_name_fast_garnet_GBC_salt_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "fast garnet GBC salt stain";
+  dc:description "fast garnet GBC salt stain";
+  rdfs:isDefinedBy <http://snomed.info/id/89148006> .
+
+fg:Slide_preparation_assay_Dye_name_fast_green_FCF_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "fast green FCF stain";
+  dc:description "fast green FCF stain";
+  rdfs:isDefinedBy <http://snomed.info/id/24167004> .
+
+fg:Slide_preparation_assay_Dye_name_fast_red_B_salt_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "fast red B salt stain";
+  dc:description "fast red B salt stain";
+  rdfs:isDefinedBy <http://snomed.info/id/40718007> .
+
+fg:Slide_preparation_assay_Dye_name_fast_red_ITR_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "fast red ITR stain";
+  dc:description "fast red ITR stain";
+  rdfs:isDefinedBy <http://snomed.info/id/47486002> .
+
+fg:Slide_preparation_assay_Dye_name_fast_red_TR_salt_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "fast red TR salt stain";
+  dc:description "fast red TR salt stain";
+  rdfs:isDefinedBy <http://snomed.info/id/76633005> .
+
+fg:Slide_preparation_assay_Dye_name_fast_sulfon_black_F_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "fast sulfon black F stain";
+  dc:description "fast sulfon black F stain";
+  rdfs:isDefinedBy <http://snomed.info/id/88660000> .
+
+fg:Slide_preparation_assay_Dye_name_fast_violet_B_salt_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "fast violet B salt stain";
+  dc:description "fast violet B salt stain";
+  rdfs:isDefinedBy <http://snomed.info/id/72371006> .
+
+fg:Slide_preparation_assay_Dye_name_fat_red_7B_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "fat red 7B stain";
+  dc:description "fat red 7B stain";
+  rdfs:isDefinedBy <http://snomed.info/id/76439002> .
+
+fg:Slide_preparation_assay_Dye_name_Feulgen_reaction_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "Feulgen reaction stain";
+  dc:description "Feulgen reaction stain";
+  rdfs:isDefinedBy <http://snomed.info/id/255797007> .
+
+<https://w3id.org/fair-genomes/ontology/Slide_preparation_assay_Dye_name_field's_stain>
+  a <http://snomed.info/id/703857004>;
+  rdfs:label "field's stain";
+  dc:description "field's stain";
+  rdfs:isDefinedBy <http://snomed.info/id/255798002> .
+
+fg:Slide_preparation_assay_Dye_name_Flagellar_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "Flagellar stain";
+  dc:description "Flagellar stain";
+  rdfs:isDefinedBy <http://snomed.info/id/255799005> .
+
+fg:Slide_preparation_assay_Dye_name_fluorescent_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "fluorescent stain";
+  dc:description "fluorescent stain";
+  rdfs:isDefinedBy <http://snomed.info/id/35352008> .
+
+fg:Slide_preparation_assay_Dye_name_fouchet_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "fouchet stain";
+  dc:description "fouchet stain";
+  rdfs:isDefinedBy <http://snomed.info/id/406980006> .
+
+fg:Slide_preparation_assay_Dye_name_fuchsin_acid_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "fuchsin acid stain";
+  dc:description "fuchsin acid stain";
+  rdfs:isDefinedBy <http://snomed.info/id/60920007> .
+
+fg:Slide_preparation_assay_Dye_name_fuchsin_basic_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "fuchsin basic stain";
+  dc:description "fuchsin basic stain";
+  rdfs:isDefinedBy <http://snomed.info/id/50062004> .
+
+fg:Slide_preparation_assay_Dye_name_gallocyanine_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "gallocyanine stain";
+  dc:description "gallocyanine stain";
+  rdfs:isDefinedBy <http://snomed.info/id/8836009> .
+
+fg:Slide_preparation_assay_Dye_name_giemsa_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "giemsa stain";
+  dc:description "giemsa stain";
+  rdfs:isDefinedBy <http://snomed.info/id/373646006> .
+
+fg:Slide_preparation_assay_Dye_name_gram_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "gram stain";
+  dc:description "gram stain";
+  rdfs:isDefinedBy <http://snomed.info/id/385484003> .
+
+fg:Slide_preparation_assay_Dye_name_hansel_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "hansel stain";
+  dc:description "hansel stain";
+  rdfs:isDefinedBy <http://snomed.info/id/406983008> .
+
+fg:Slide_preparation_assay_Dye_name_hematein_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "hematein stain";
+  dc:description "hematein stain";
+  rdfs:isDefinedBy <http://snomed.info/id/75956008> .
+
+fg:Slide_preparation_assay_Dye_name_hematoxylin_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "hematoxylin stain";
+  dc:description "hematoxylin stain";
+  rdfs:isDefinedBy <http://snomed.info/id/12710003> .
+
+fg:Slide_preparation_assay_Dye_name_immunofluorescent_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "immunofluorescent stain";
+  dc:description "immunofluorescent stain";
+  rdfs:isDefinedBy <http://snomed.info/id/255800009> .
+
+fg:Slide_preparation_assay_Dye_name_India_ink_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "India ink stain";
+  dc:description "India ink stain";
+  rdfs:isDefinedBy <http://snomed.info/id/406972004> .
+
+fg:Slide_preparation_assay_Dye_name_indigo_carmine a <http://snomed.info/id/703857004>;
+  rdfs:label "indigo carmine";
+  dc:description "indigo carmine";
+  rdfs:isDefinedBy <http://snomed.info/id/412548006> .
+
+fg:Slide_preparation_assay_Dye_name_indophenol_from_naphthol_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "indophenol from naphthol stain";
+  dc:description "indophenol from naphthol stain";
+  rdfs:isDefinedBy <http://snomed.info/id/11727009> .
+
+fg:Slide_preparation_assay_Dye_name_insoluble_berlin_blue_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "insoluble berlin blue stain";
+  dc:description "insoluble berlin blue stain";
+  rdfs:isDefinedBy <http://snomed.info/id/47030008> .
+
+fg:Slide_preparation_assay_Dye_name_janus_green_B_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "janus green B stain";
+  dc:description "janus green B stain";
+  rdfs:isDefinedBy <http://snomed.info/id/68263003> .
+
+fg:Slide_preparation_assay_Dye_name_Jenner-Giemsa_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "Jenner-Giemsa stain";
+  dc:description "Jenner-Giemsa stain";
+  rdfs:isDefinedBy <http://snomed.info/id/255801008> .
+
+fg:Slide_preparation_assay_Dye_name_kenacid_blue_R_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "kenacid blue R stain";
+  dc:description "kenacid blue R stain";
+  rdfs:isDefinedBy <http://snomed.info/id/29342009> .
+
+fg:Slide_preparation_assay_Dye_name_lacmoid_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "lacmoid stain";
+  dc:description "lacmoid stain";
+  rdfs:isDefinedBy <http://snomed.info/id/35724001> .
+
+fg:Slide_preparation_assay_Dye_name_Leishman_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "Leishman stain";
+  dc:description "Leishman stain";
+  rdfs:isDefinedBy <http://snomed.info/id/255802001> .
+
+fg:Slide_preparation_assay_Dye_name_light_green_SF_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "light green SF stain";
+  dc:description "light green SF stain";
+  rdfs:isDefinedBy <http://snomed.info/id/89139001> .
+
+fg:Slide_preparation_assay_Dye_name_lissamine_fast_red_B_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "lissamine fast red B stain";
+  dc:description "lissamine fast red B stain";
+  rdfs:isDefinedBy <http://snomed.info/id/6701008> .
+
+fg:Slide_preparation_assay_Dye_name_lissamine_fast_yellow_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "lissamine fast yellow stain";
+  dc:description "lissamine fast yellow stain";
+  rdfs:isDefinedBy <http://snomed.info/id/25079009> .
+
+fg:Slide_preparation_assay_Dye_name_lissamine_green_B_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "lissamine green B stain";
+  dc:description "lissamine green B stain";
+  rdfs:isDefinedBy <http://snomed.info/id/38543004> .
+
+fg:Slide_preparation_assay_Dye_name_lissamine_rhodamine_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "lissamine rhodamine stain";
+  dc:description "lissamine rhodamine stain";
+  rdfs:isDefinedBy <http://snomed.info/id/111102009> .
+
+fg:Slide_preparation_assay_Dye_name_luxol_fast_blue_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "luxol fast blue stain";
+  dc:description "luxol fast blue stain";
+  rdfs:isDefinedBy <http://snomed.info/id/406958008> .
+
+fg:Slide_preparation_assay_Dye_name_malachite_green_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "malachite green stain";
+  dc:description "malachite green stain";
+  rdfs:isDefinedBy <http://snomed.info/id/27120008> .
+
+fg:Slide_preparation_assay_Dye_name_Mallory_bleach_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "Mallory bleach stain";
+  dc:description "Mallory bleach stain";
+  rdfs:isDefinedBy <http://snomed.info/id/406953004> .
+
+fg:Slide_preparation_assay_Dye_name_martius_yellow_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "martius yellow stain";
+  dc:description "martius yellow stain";
+  rdfs:isDefinedBy <http://snomed.info/id/46139004> .
+
+fg:Slide_preparation_assay_Dye_name_may-Grunwald_giemsa_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "may-Grunwald giemsa stain";
+  dc:description "may-Grunwald giemsa stain";
+  rdfs:isDefinedBy <http://snomed.info/id/255803006> .
+
+fg:Slide_preparation_assay_Dye_name_meldola_blue_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "meldola blue stain";
+  dc:description "meldola blue stain";
+  rdfs:isDefinedBy <http://snomed.info/id/24516006> .
+
+fg:Slide_preparation_assay_Dye_name_metanil_yellow_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "metanil yellow stain";
+  dc:description "metanil yellow stain";
+  rdfs:isDefinedBy <http://snomed.info/id/54791001> .
+
+fg:Slide_preparation_assay_Dye_name_methyl_blue_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "methyl blue stain";
+  dc:description "methyl blue stain";
+  rdfs:isDefinedBy <http://snomed.info/id/9010006> .
+
+fg:Slide_preparation_assay_Dye_name_methyl_green_pyronin_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "methyl green pyronin stain";
+  dc:description "methyl green pyronin stain";
+  rdfs:isDefinedBy <http://snomed.info/id/255804000> .
+
+fg:Slide_preparation_assay_Dye_name_methyl_orange_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "methyl orange stain";
+  dc:description "methyl orange stain";
+  rdfs:isDefinedBy <http://snomed.info/id/42248000> .
+
+fg:Slide_preparation_assay_Dye_name_methyl_red_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "methyl red stain";
+  dc:description "methyl red stain";
+  rdfs:isDefinedBy <http://snomed.info/id/13744001> .
+
+fg:Slide_preparation_assay_Dye_name_methyl_violet_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "methyl violet stain";
+  dc:description "methyl violet stain";
+  rdfs:isDefinedBy <http://snomed.info/id/387239001> .
+
+fg:Slide_preparation_assay_Dye_name_methylene_blue_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "methylene blue stain";
+  dc:description "methylene blue stain";
+  rdfs:isDefinedBy <http://snomed.info/id/6725000> .
+
+fg:Slide_preparation_assay_Dye_name_methylene_violet_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "methylene violet stain";
+  dc:description "methylene violet stain";
+  rdfs:isDefinedBy <http://snomed.info/id/406961009> .
+
+<https://w3id.org/fair-genomes/ontology/Slide_preparation_assay_Dye_name_methylene_violet_stain_(Bernthsen)>
+  a <http://snomed.info/id/703857004>;
+  rdfs:label "methylene violet stain (Bernthsen)";
+  dc:description "methylene violet stain (Bernthsen)";
+  rdfs:isDefinedBy <http://snomed.info/id/31260003> .
+
+fg:Slide_preparation_assay_Dye_name_modified_trichrome_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "modified trichrome stain";
+  dc:description "modified trichrome stain";
+  rdfs:isDefinedBy <http://snomed.info/id/406991004> .
+
+fg:Slide_preparation_assay_Dye_name_mucicarmine_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "mucicarmine stain";
+  dc:description "mucicarmine stain";
+  rdfs:isDefinedBy <http://snomed.info/id/406964001> .
+
+fg:Slide_preparation_assay_Dye_name_myeloperoxidase_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "myeloperoxidase stain";
+  dc:description "myeloperoxidase stain";
+  rdfs:isDefinedBy <http://snomed.info/id/255805004> .
+
+fg:Slide_preparation_assay_Dye_name_naphthalene_black_12B_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "naphthalene black 12B stain";
+  dc:description "naphthalene black 12B stain";
+  rdfs:isDefinedBy <http://snomed.info/id/16788000> .
+
+fg:Slide_preparation_assay_Dye_name_naphthol_green_B_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "naphthol green B stain";
+  dc:description "naphthol green B stain";
+  rdfs:isDefinedBy <http://snomed.info/id/14958002> .
+
+fg:Slide_preparation_assay_Dye_name_naphthol_yellow_S_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "naphthol yellow S stain";
+  dc:description "naphthol yellow S stain";
+  rdfs:isDefinedBy <http://snomed.info/id/111101002> .
+
+fg:Slide_preparation_assay_Dye_name_naphthol-AS-D-chloracetate_esterase_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "naphthol-AS-D-chloracetate esterase stain";
+  dc:description "naphthol-AS-D-chloracetate esterase stain";
+  rdfs:isDefinedBy <http://snomed.info/id/406973009> .
+
+fg:Slide_preparation_assay_Dye_name_neutral_red_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "neutral red stain";
+  dc:description "neutral red stain";
+  rdfs:isDefinedBy <http://snomed.info/id/67956008> .
+
+fg:Slide_preparation_assay_Dye_name_neutrophil_alkaline_phosphatase_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "neutrophil alkaline phosphatase stain";
+  dc:description "neutrophil alkaline phosphatase stain";
+  rdfs:isDefinedBy <http://snomed.info/id/255806003> .
+
+fg:Slide_preparation_assay_Dye_name_new_fuchsin_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "new fuchsin stain";
+  dc:description "new fuchsin stain";
+  rdfs:isDefinedBy <http://snomed.info/id/37174001> .
+
+fg:Slide_preparation_assay_Dye_name_night_blue_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "night blue stain";
+  dc:description "night blue stain";
+  rdfs:isDefinedBy <http://snomed.info/id/406965000> .
+
+fg:Slide_preparation_assay_Dye_name_nile_blue_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "nile blue stain";
+  dc:description "nile blue stain";
+  rdfs:isDefinedBy <http://snomed.info/id/77073008> .
+
+fg:Slide_preparation_assay_Dye_name_nitrazine_yellow_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "nitrazine yellow stain";
+  dc:description "nitrazine yellow stain";
+  rdfs:isDefinedBy <http://snomed.info/id/86750008> .
+
+fg:Slide_preparation_assay_Dye_name_nonspecific_esterase_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "nonspecific esterase stain";
+  dc:description "nonspecific esterase stain";
+  rdfs:isDefinedBy <http://snomed.info/id/255807007> .
+
+fg:Slide_preparation_assay_Dye_name_nuclear_fast_red_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "nuclear fast red stain";
+  dc:description "nuclear fast red stain";
+  rdfs:isDefinedBy <http://snomed.info/id/78869007> .
+
+fg:Slide_preparation_assay_Dye_name_oil_red_O_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "oil red O stain";
+  dc:description "oil red O stain";
+  rdfs:isDefinedBy <http://snomed.info/id/408008006> .
+
+fg:Slide_preparation_assay_Dye_name_orange_G_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "orange G stain";
+  dc:description "orange G stain";
+  rdfs:isDefinedBy <http://snomed.info/id/54221006> .
+
+fg:Slide_preparation_assay_Dye_name_orcein_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "orcein stain";
+  dc:description "orcein stain";
+  rdfs:isDefinedBy <http://snomed.info/id/406966004> .
+
+fg:Slide_preparation_assay_Dye_name_paraldehyde_fuchsin_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "paraldehyde fuchsin stain";
+  dc:description "paraldehyde fuchsin stain";
+  rdfs:isDefinedBy <http://snomed.info/id/38542001> .
+
+fg:Slide_preparation_assay_Dye_name_pararosaniline_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "pararosaniline stain";
+  dc:description "pararosaniline stain";
+  rdfs:isDefinedBy <http://snomed.info/id/41755001> .
+
+fg:Slide_preparation_assay_Dye_name_PAS_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "PAS stain";
+  dc:description "PAS stain (Periodic Acid–Schiff)";
+  rdfs:isDefinedBy <http://snomed.info/id/10490007> .
+
+fg:Slide_preparation_assay_Dye_name_pentachrome_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "pentachrome stain";
+  dc:description "pentachrome stain";
+  rdfs:isDefinedBy <http://snomed.info/id/16736000> .
+
+<https://w3id.org/fair-genomes/ontology/Slide_preparation_assay_Dye_name_perls’_Prussian_blue_stain>
+  a <http://snomed.info/id/703857004>;
+  rdfs:label "perls’ Prussian blue stain";
+  dc:description "perls’ Prussian blue stain";
+  rdfs:isDefinedBy <http://snomed.info/id/30874003> .
+
+fg:Slide_preparation_assay_Dye_name_Ponceau_S_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "Ponceau S stain";
+  dc:description "Ponceau S stain";
+  rdfs:isDefinedBy <http://snomed.info/id/39859004> .
+
+fg:Slide_preparation_assay_Dye_name_papanicolaou_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "papanicolaou stain";
+  dc:description "papanicolaou stain";
+  rdfs:isDefinedBy <http://snomed.info/id/16798007> .
+
+fg:Slide_preparation_assay_Dye_name_pyronin_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "pyronin stain";
+  dc:description "pyronin stain";
+  rdfs:isDefinedBy <http://snomed.info/id/27412003> .
+
+fg:Slide_preparation_assay_Dye_name_resorcin_fuchsin_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "resorcin fuchsin stain";
+  dc:description "resorcin fuchsin stain";
+  rdfs:isDefinedBy <http://snomed.info/id/38453007> .
+
+fg:Slide_preparation_assay_Dye_name_rhodamine_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "rhodamine stain";
+  dc:description "rhodamine stain";
+  rdfs:isDefinedBy <http://snomed.info/id/86399001> .
+
+fg:Slide_preparation_assay_Dye_name_Romanowsky_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "Romanowsky stain";
+  dc:description "Romanowsky stain";
+  rdfs:isDefinedBy <http://snomed.info/id/12278009> .
+
+fg:Slide_preparation_assay_Dye_name_Safranin_O_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "Safranin O stain";
+  dc:description "Safranin O stain";
+  rdfs:isDefinedBy <http://snomed.info/id/37254005> .
+
+fg:Slide_preparation_assay_Dye_name_Sirius_red_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "Sirius red stain";
+  dc:description "Sirius red stain";
+  rdfs:isDefinedBy <http://snomed.info/id/67314006> .
+
+fg:Slide_preparation_assay_Dye_name_silver_nitrate_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "silver nitrate stain";
+  dc:description "silver nitrate stain";
+  rdfs:isDefinedBy <http://snomed.info/id/90963000> .
+
+fg:Slide_preparation_assay_Dye_name_Sudan_black_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "Sudan black stain";
+  dc:description "Sudan black stain";
+  rdfs:isDefinedBy <http://snomed.info/id/16178005> .
+
+fg:Slide_preparation_assay_Dye_name_Sudan_III_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "Sudan III stain";
+  dc:description "Sudan III stain";
+  rdfs:isDefinedBy <http://snomed.info/id/15945005> .
+
+fg:Slide_preparation_assay_Dye_name_Sudan_IV_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "Sudan IV stain";
+  dc:description "Sudan IV stain";
+  rdfs:isDefinedBy <http://snomed.info/id/31389005> .
+
+fg:Slide_preparation_assay_Dye_name_Sudan_red_7B_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "Sudan red 7B stain";
+  dc:description "Sudan red 7B stain";
+  rdfs:isDefinedBy <http://snomed.info/id/76439002> .
+
+fg:Slide_preparation_assay_Dye_name_toluidine_blue_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "toluidine blue stain";
+  dc:description "toluidine blue stain";
+  rdfs:isDefinedBy <http://snomed.info/id/38543005> .
+
+fg:Slide_preparation_assay_Dye_name_trichrome_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "trichrome stain";
+  dc:description "trichrome stain";
+  rdfs:isDefinedBy <http://snomed.info/id/6410008> .
+
+fg:Slide_preparation_assay_Dye_name_van_Gieson_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "van Gieson stain";
+  dc:description "van Gieson stain";
+  rdfs:isDefinedBy <http://snomed.info/id/85525005> .
+
+fg:Slide_preparation_assay_Dye_name_Victoria_blue_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "Victoria blue stain";
+  dc:description "Victoria blue stain";
+  rdfs:isDefinedBy <http://snomed.info/id/38585005> .
+
+fg:Slide_preparation_assay_Dye_name_Wright_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "Wright stain";
+  dc:description "Wright stain";
+  rdfs:isDefinedBy <http://snomed.info/id/38620003> .
+
+fg:Slide_preparation_assay_Dye_name_Ziehl-Neelsen_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "Ziehl-Neelsen stain";
+  dc:description "Ziehl-Neelsen stain";
+  rdfs:isDefinedBy <http://snomed.info/id/65520002> .
+
+<https://w3id.org/fair-genomes/ontology/Slide_preparation_assay_Dye_name_NoInformation_(NI,_nullflavor)>
+  a <http://snomed.info/id/703857004>;
+  rdfs:label "NoInformation (NI, nullflavor)";
+  dc:description "The value is exceptional (missing, omitted, incomplete, improper). No information as to the reason for being an exceptional value is provided. This is the most general exceptional value. It is also the default exceptional value.";
+  rdfs:isDefinedBy <http://terminology.hl7.org/CodeSystem/v3-NullFlavor#NI> .
+
+<https://w3id.org/fair-genomes/ontology/Slide_preparation_assay_Dye_name_Invalid_(INV,_nullflavor)>
+  a <http://snomed.info/id/703857004>;
+  rdfs:label "Invalid (INV, nullflavor)";
+  dc:description "The value as represented in the instance is not a member of the set of permitted data values in the constrained value domain of a variable.";
+  rdfs:isDefinedBy <http://terminology.hl7.org/CodeSystem/v3-NullFlavor#INV> .
+
+<https://w3id.org/fair-genomes/ontology/Slide_preparation_assay_Dye_name_Derived_(DER,_nullflavor)>
+  a <http://snomed.info/id/703857004>;
+  rdfs:label "Derived (DER, nullflavor)";
+  dc:description "An actual value may exist, but it must be derived from the provided information (usually an EXPR generic data type extension will be used to convey the derivation expression .";
+  rdfs:isDefinedBy <http://terminology.hl7.org/CodeSystem/v3-NullFlavor#DER> .
+
+<https://w3id.org/fair-genomes/ontology/Slide_preparation_assay_Dye_name_Other_(OTH,_nullflavor)>
+  a <http://snomed.info/id/703857004>;
+  rdfs:label "Other (OTH, nullflavor)";
+  dc:description "The actual value is not a member of the set of permitted data values in the constrained value domain of a variable.The actual value is not a member of the set of permitted data values in the constrained value domain of a variable. (e.g., concept not provided by required code system).";
+  rdfs:isDefinedBy <http://terminology.hl7.org/CodeSystem/v3-NullFlavor#OTH> .
+
+<https://w3id.org/fair-genomes/ontology/Slide_preparation_assay_Dye_name_Negative_infinity_(NINF,_nullflavor)>
+  a <http://snomed.info/id/703857004>;
+  rdfs:label "Negative infinity (NINF, nullflavor)";
+  dc:description "Negative infinity of numbers.";
+  rdfs:isDefinedBy <http://terminology.hl7.org/CodeSystem/v3-NullFlavor#NINF> .
+
+<https://w3id.org/fair-genomes/ontology/Slide_preparation_assay_Dye_name_Positive_infinity_(PINF,_nullflavor)>
+  a <http://snomed.info/id/703857004>;
+  rdfs:label "Positive infinity (PINF, nullflavor)";
+  dc:description "Positive infinity of numbers.";
+  rdfs:isDefinedBy <http://terminology.hl7.org/CodeSystem/v3-NullFlavor#PINF> .
+
+<https://w3id.org/fair-genomes/ontology/Slide_preparation_assay_Dye_name_Un-encoded_(UNC,_nullflavor)>
+  a <http://snomed.info/id/703857004>;
+  rdfs:label "Un-encoded (UNC, nullflavor)";
+  dc:description "The actual value has not yet been encoded within the approved value domain.";
+  rdfs:isDefinedBy <http://terminology.hl7.org/CodeSystem/v3-NullFlavor#UNC> .
+
+<https://w3id.org/fair-genomes/ontology/Slide_preparation_assay_Dye_name_Masked_(MSK,_nullflavor)>
+  a <http://snomed.info/id/703857004>;
+  rdfs:label "Masked (MSK, nullflavor)";
+  dc:description "There is information on this item available but it has not been provided by the sender due to security, privacy or other reasons. There may be an alternate mechanism for gaining access to this information.";
+  rdfs:isDefinedBy <http://terminology.hl7.org/CodeSystem/v3-NullFlavor#MSK> .
+
+<https://w3id.org/fair-genomes/ontology/Slide_preparation_assay_Dye_name_Not_applicable_(NA,_nullflavor)>
+  a <http://snomed.info/id/703857004>;
+  rdfs:label "Not applicable (NA, nullflavor)";
+  dc:description "Known to have no proper value (e.g., last menstrual period for a male).";
+  rdfs:isDefinedBy <http://terminology.hl7.org/CodeSystem/v3-NullFlavor#NA> .
+
+<https://w3id.org/fair-genomes/ontology/Slide_preparation_assay_Dye_name_Unknown_(UNK,_nullflavor)>
+  a <http://snomed.info/id/703857004>;
+  rdfs:label "Unknown (UNK, nullflavor)";
+  dc:description "A proper value is applicable, but not known.";
+  rdfs:isDefinedBy <http://terminology.hl7.org/CodeSystem/v3-NullFlavor#UNK> .
+
+<https://w3id.org/fair-genomes/ontology/Slide_preparation_assay_Dye_name_Asked_but_unknown_(ASKU,_nullflavor)>
+  a <http://snomed.info/id/703857004>;
+  rdfs:label "Asked but unknown (ASKU, nullflavor)";
+  dc:description "Information was sought but not found (e.g., patient was asked but didn't know)";
+  rdfs:isDefinedBy <http://terminology.hl7.org/CodeSystem/v3-NullFlavor#ASKU> .
+
+<https://w3id.org/fair-genomes/ontology/Slide_preparation_assay_Dye_name_Temporarily_unavailable_(NAV,_nullflavor)>
+  a <http://snomed.info/id/703857004>;
+  rdfs:label "Temporarily unavailable (NAV, nullflavor)";
+  dc:description "Information is not available at this time but it is expected that it will be available later.";
+  rdfs:isDefinedBy <http://terminology.hl7.org/CodeSystem/v3-NullFlavor#NAV> .
+
+<https://w3id.org/fair-genomes/ontology/Slide_preparation_assay_Dye_name_Not_asked_(NASK,_nullflavor)>
+  a <http://snomed.info/id/703857004>;
+  rdfs:label "Not asked (NASK, nullflavor)";
+  dc:description "This information has not been sought. (e.g., patient was not asked)";
+  rdfs:isDefinedBy <http://terminology.hl7.org/CodeSystem/v3-NullFlavor#NASK> .
+
+<https://w3id.org/fair-genomes/ontology/Slide_preparation_assay_Dye_name_Not_available_(NAVU,_nullflavor)>
+  a <http://snomed.info/id/703857004>;
+  rdfs:label "Not available (NAVU, nullflavor)";
+  dc:description "Information is not available at this time (with no expectation regarding whether it will or will not be available in the future).";
+  rdfs:isDefinedBy <http://terminology.hl7.org/CodeSystem/v3-NullFlavor#NAVU> .
+
+<https://w3id.org/fair-genomes/ontology/Slide_preparation_assay_Dye_name_Sufficient_quantity_(QS,_nullflavor)>
+  a <http://snomed.info/id/703857004>;
+  rdfs:label "Sufficient quantity (QS, nullflavor)";
+  dc:description "The specific quantity is not known, but is known to be non-zero and is not specified because it makes up the bulk of the material. e.g. 'Add 10mg of ingredient X, 50mg of ingredient Y, and sufficient quantity of water to 100mL.' The null flavor would be used to express the quantity of water.";
+  rdfs:isDefinedBy <http://terminology.hl7.org/CodeSystem/v3-NullFlavor#QS> .
+
+<https://w3id.org/fair-genomes/ontology/Slide_preparation_assay_Dye_name_Trace_(TRC,_nullflavor)>
+  a <http://snomed.info/id/703857004>;
+  rdfs:label "Trace (TRC, nullflavor)";
+  dc:description "The content is greater than zero, but too small to be quantified.";
+  rdfs:isDefinedBy <http://terminology.hl7.org/CodeSystem/v3-NullFlavor#TRC> .
+
+fg:Slide_preparation_assay_Counter_labeling_acid_phosphatase_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "acid phosphatase stain";
+  dc:description "acid phosphatase stain";
+  rdfs:isDefinedBy <http://snomed.info/id/255792001> .
+
+<https://w3id.org/fair-genomes/ontology/Slide_preparation_assay_Counter_labeling_Albert's_stain>
+  a <http://snomed.info/id/703857004>;
+  rdfs:label "Albert's stain";
+  dc:description "Albert's stain";
+  rdfs:isDefinedBy <http://snomed.info/id/255793006> .
+
+fg:Slide_preparation_assay_Counter_labeling_alcian_blue_8GX_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "alcian blue 8GX stain";
+  dc:description "alcian blue 8GX stain";
+  rdfs:isDefinedBy <http://snomed.info/id/4656000> .
+
+fg:Slide_preparation_assay_Counter_labeling_alcohol_soluble_nigrosine_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "alcohol soluble nigrosine stain";
+  dc:description "alcohol soluble nigrosine stain";
+  rdfs:isDefinedBy <http://snomed.info/id/47795002> .
+
+fg:Slide_preparation_assay_Counter_labeling_aldehyde_fuchsin_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "aldehyde fuchsin stain";
+  dc:description "aldehyde fuchsin stain";
+  rdfs:isDefinedBy <http://snomed.info/id/406981005> .
+
+fg:Slide_preparation_assay_Counter_labeling_alizarin_blue_S_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "alizarin blue S stain";
+  dc:description "alizarin blue S stain";
+  rdfs:isDefinedBy <http://snomed.info/id/54432009> .
+
+fg:Slide_preparation_assay_Counter_labeling_alizarin_cyanine_green_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "alizarin cyanine green stain";
+  dc:description "alizarin cyanine green stain";
+  rdfs:isDefinedBy <http://snomed.info/id/21951008> .
+
+fg:Slide_preparation_assay_Counter_labeling_alizarin_red_S_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "alizarin red S stain";
+  dc:description "alizarin red S stain";
+  rdfs:isDefinedBy <http://snomed.info/id/65580004> .
+
+fg:Slide_preparation_assay_Counter_labeling_alizarin_yellow_GG_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "alizarin yellow GG stain";
+  dc:description "alizarin yellow GG stain";
+  rdfs:isDefinedBy <http://snomed.info/id/27016007> .
+
+fg:Slide_preparation_assay_Counter_labeling_alizarin_yellow_R_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "alizarin yellow R stain";
+  dc:description "alizarin yellow R stain";
+  rdfs:isDefinedBy <http://snomed.info/id/28622002> .
+
+fg:Slide_preparation_assay_Counter_labeling_alkaline_phosphatase_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "alkaline phosphatase stain";
+  dc:description "alkaline phosphatase stain";
+  rdfs:isDefinedBy <http://snomed.info/id/406971006> .
+
+fg:Slide_preparation_assay_Counter_labeling_aniline_blue_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "aniline blue stain";
+  dc:description "aniline blue stain";
+  rdfs:isDefinedBy <http://snomed.info/id/406990003> .
+
+fg:Slide_preparation_assay_Counter_labeling_auramine_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "auramine stain";
+  dc:description "auramine stain";
+  rdfs:isDefinedBy <http://snomed.info/id/255794000> .
+
+fg:Slide_preparation_assay_Counter_labeling_azo_black_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "azo black stain";
+  dc:description "azo black stain";
+  rdfs:isDefinedBy <http://snomed.info/id/85066006> .
+
+fg:Slide_preparation_assay_Counter_labeling_azocarmine_G_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "azocarmine G stain";
+  dc:description "azocarmine G stain";
+  rdfs:isDefinedBy <http://snomed.info/id/76048000> .
+
+fg:Slide_preparation_assay_Counter_labeling_azophloxin_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "azophloxin stain";
+  dc:description "azophloxin stain";
+  rdfs:isDefinedBy <http://snomed.info/id/35609001> .
+
+fg:Slide_preparation_assay_Counter_labeling_azorubin_S_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "azorubin S stain";
+  dc:description "azorubin S stain";
+  rdfs:isDefinedBy <http://snomed.info/id/2159007> .
+
+fg:Slide_preparation_assay_Counter_labeling_azure_A_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "azure A stain";
+  dc:description "azure A stain";
+  rdfs:isDefinedBy <http://snomed.info/id/16836001> .
+
+fg:Slide_preparation_assay_Counter_labeling_azure_B_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "azure B stain";
+  dc:description "azure B stain";
+  rdfs:isDefinedBy <http://snomed.info/id/8926000> .
+
+fg:Slide_preparation_assay_Counter_labeling_azure_C_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "azure C stain";
+  dc:description "azure C stain";
+  rdfs:isDefinedBy <http://snomed.info/id/11069001> .
+
+fg:Slide_preparation_assay_Counter_labeling_bauers_chromic_acid_leucofuchsin_stain
+  a <http://snomed.info/id/703857004>;
+  rdfs:label "bauers chromic acid leucofuchsin stain";
+  dc:description "bauers chromic acid leucofuchsin stain";
+  rdfs:isDefinedBy <http://snomed.info/id/406982003> .
+
+fg:Slide_preparation_assay_Counter_labeling_benzo_fast_scarlet_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "benzo fast scarlet stain";
+  dc:description "benzo fast scarlet stain";
+  rdfs:isDefinedBy <http://snomed.info/id/27844007> .
+
+fg:Slide_preparation_assay_Counter_labeling_beta-glucuronidase_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "beta-glucuronidase stain";
+  dc:description "beta-glucuronidase stain";
+  rdfs:isDefinedBy <http://snomed.info/id/255795004> .
+
+fg:Slide_preparation_assay_Counter_labeling_biebrich_scarlet_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "biebrich scarlet stain";
+  dc:description "biebrich scarlet stain";
+  rdfs:isDefinedBy <http://snomed.info/id/76605005> .
+
+fg:Slide_preparation_assay_Counter_labeling_bismark_brown_R_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "bismark brown R stain";
+  dc:description "bismark brown R stain";
+  rdfs:isDefinedBy <http://snomed.info/id/41448008> .
+
+fg:Slide_preparation_assay_Counter_labeling_bismark_brown_Y_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "bismark brown Y stain";
+  dc:description "bismark brown Y stain";
+  rdfs:isDefinedBy <http://snomed.info/id/85190005> .
+
+fg:Slide_preparation_assay_Counter_labeling_blue_shade_eosin_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "blue shade eosin stain";
+  dc:description "blue shade eosin stain";
+  rdfs:isDefinedBy <http://snomed.info/id/1346008> .
+
+fg:Slide_preparation_assay_Counter_labeling_brazilin_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "brazilin stain";
+  dc:description "brazilin stain";
+  rdfs:isDefinedBy <http://snomed.info/id/41750006> .
+
+fg:Slide_preparation_assay_Counter_labeling_brilliant_cresyl_blue_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "brilliant cresyl blue stain";
+  dc:description "brilliant cresyl blue stain";
+  rdfs:isDefinedBy <http://snomed.info/id/8342001> .
+
+fg:Slide_preparation_assay_Counter_labeling_brilliant_crocein_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "brilliant crocein stain";
+  dc:description "brilliant crocein stain";
+  rdfs:isDefinedBy <http://snomed.info/id/86541009> .
+
+fg:Slide_preparation_assay_Counter_labeling_brilliant_orange_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "brilliant orange stain";
+  dc:description "brilliant orange stain";
+  rdfs:isDefinedBy <http://snomed.info/id/8429000> .
+
+fg:Slide_preparation_assay_Counter_labeling_brilliant_yellow_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "brilliant yellow stain";
+  dc:description "brilliant yellow stain";
+  rdfs:isDefinedBy <http://snomed.info/id/57753006> .
+
+fg:Slide_preparation_assay_Counter_labeling_butyrate_esterase_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "butyrate esterase stain";
+  dc:description "butyrate esterase stain";
+  rdfs:isDefinedBy <http://snomed.info/id/406955006> .
+
+fg:Slide_preparation_assay_Counter_labeling_carbol_fuchsin_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "carbol fuchsin stain";
+  dc:description "carbol fuchsin stain";
+  rdfs:isDefinedBy <http://snomed.info/id/764166003> .
+
+fg:Slide_preparation_assay_Counter_labeling_carmine_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "carmine stain";
+  dc:description "carmine stain";
+  rdfs:isDefinedBy <http://snomed.info/id/73892005> .
+
+fg:Slide_preparation_assay_Counter_labeling_carmimic_acid_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "carmimic acid stain";
+  dc:description "carmimic acid stain";
+  rdfs:isDefinedBy <http://snomed.info/id/432003> .
+
+fg:Slide_preparation_assay_Counter_labeling_carmoisine_A_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "carmoisine A stain";
+  dc:description "carmoisine A stain";
+  rdfs:isDefinedBy <http://snomed.info/id/37575004> .
+
+fg:Slide_preparation_assay_Counter_labeling_celestine_blue_B_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "celestine blue B stain";
+  dc:description "celestine blue B stain";
+  rdfs:isDefinedBy <http://snomed.info/id/38707008> .
+
+fg:Slide_preparation_assay_Counter_labeling_chloroacetate_esterase_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "chloroacetate esterase stain";
+  dc:description "chloroacetate esterase stain";
+  rdfs:isDefinedBy <http://snomed.info/id/255796003> .
+
+fg:Slide_preparation_assay_Counter_labeling_chromic_acid_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "chromic acid stain";
+  dc:description "chromic acid stain";
+  rdfs:isDefinedBy <http://snomed.info/id/406986000> .
+
+fg:Slide_preparation_assay_Counter_labeling_chromotrope_2R_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "chromotrope 2R stain";
+  dc:description "chromotrope 2R stain";
+  rdfs:isDefinedBy <http://snomed.info/id/85981002> .
+
+fg:Slide_preparation_assay_Counter_labeling_chrysoidine_R_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "chrysoidine R stain";
+  dc:description "chrysoidine R stain";
+  rdfs:isDefinedBy <http://snomed.info/id/10247008> .
+
+fg:Slide_preparation_assay_Counter_labeling_chrysoidine_Y_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "chrysoidine Y stain";
+  dc:description "chrysoidine Y stain";
+  rdfs:isDefinedBy <http://snomed.info/id/16943008> .
+
+fg:Slide_preparation_assay_Counter_labeling_colloidal_iron_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "colloidal iron stain";
+  dc:description "colloidal iron stain";
+  rdfs:isDefinedBy <http://snomed.info/id/406952009> .
+
+fg:Slide_preparation_assay_Counter_labeling_Congo_red_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "Congo red stain";
+  dc:description "Congo red stain";
+  rdfs:isDefinedBy <http://snomed.info/id/45106005> .
+
+fg:Slide_preparation_assay_Counter_labeling_cresyl_echt_violet_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "cresyl echt violet stain";
+  dc:description "cresyl echt violet stain";
+  rdfs:isDefinedBy <http://snomed.info/id/406960005> .
+
+fg:Slide_preparation_assay_Counter_labeling_cresyl_violet_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "cresyl violet stain";
+  dc:description "cresyl violet stain";
+  rdfs:isDefinedBy <http://snomed.info/id/406959000> .
+
+fg:Slide_preparation_assay_Counter_labeling_crystal_ponceau_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "crystal ponceau stain";
+  dc:description "crystal ponceau stain";
+  rdfs:isDefinedBy <http://snomed.info/id/68459007> .
+
+fg:Slide_preparation_assay_Counter_labeling_curcumin_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "curcumin stain";
+  dc:description "curcumin stain";
+  rdfs:isDefinedBy <http://snomed.info/id/89082002> .
+
+fg:Slide_preparation_assay_Counter_labeling_diamond_black_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "diamond black stain";
+  dc:description "diamond black stain";
+  rdfs:isDefinedBy <http://snomed.info/id/72572003> .
+
+fg:Slide_preparation_assay_Counter_labeling_durazol_red_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "durazol red stain";
+  dc:description "durazol red stain";
+  rdfs:isDefinedBy <http://snomed.info/id/11780008> .
+
+fg:Slide_preparation_assay_Counter_labeling_erie_garnet_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "erie garnet stain";
+  dc:description "erie garnet stain";
+  rdfs:isDefinedBy <http://snomed.info/id/40076005> .
+
+fg:Slide_preparation_assay_Counter_labeling_eriochrome_blue_black_SE_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "eriochrome blue black SE stain";
+  dc:description "eriochrome blue black SE stain";
+  rdfs:isDefinedBy <http://snomed.info/id/58631000> .
+
+fg:Slide_preparation_assay_Counter_labeling_erythrosin_B_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "erythrosin B stain";
+  dc:description "erythrosin B stain";
+  rdfs:isDefinedBy <http://snomed.info/id/7434003> .
+
+fg:Slide_preparation_assay_Counter_labeling_erythrosin_Y_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "erythrosin Y stain";
+  dc:description "erythrosin Y stain";
+  rdfs:isDefinedBy <http://snomed.info/id/5043000> .
+
+fg:Slide_preparation_assay_Counter_labeling_Evans_blue_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "Evans blue stain";
+  dc:description "Evans blue stain";
+  rdfs:isDefinedBy <http://snomed.info/id/22931006> .
+
+fg:Slide_preparation_assay_Counter_labeling_fast_blue_B_salt_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "fast blue B salt stain";
+  dc:description "fast blue B salt stain";
+  rdfs:isDefinedBy <http://snomed.info/id/34700000> .
+
+fg:Slide_preparation_assay_Counter_labeling_fast_blue_BB_salt_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "fast blue BB salt stain";
+  dc:description "fast blue BB salt stain";
+  rdfs:isDefinedBy <http://snomed.info/id/91295002> .
+
+fg:Slide_preparation_assay_Counter_labeling_fast_blue_RR_salt_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "fast blue RR salt stain";
+  dc:description "fast blue RR salt stain";
+  rdfs:isDefinedBy <http://snomed.info/id/64112001> .
+
+fg:Slide_preparation_assay_Counter_labeling_fast_garnet_GBC_salt_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "fast garnet GBC salt stain";
+  dc:description "fast garnet GBC salt stain";
+  rdfs:isDefinedBy <http://snomed.info/id/89148006> .
+
+fg:Slide_preparation_assay_Counter_labeling_fast_green_FCF_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "fast green FCF stain";
+  dc:description "fast green FCF stain";
+  rdfs:isDefinedBy <http://snomed.info/id/24167004> .
+
+fg:Slide_preparation_assay_Counter_labeling_fast_red_B_salt_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "fast red B salt stain";
+  dc:description "fast red B salt stain";
+  rdfs:isDefinedBy <http://snomed.info/id/40718007> .
+
+fg:Slide_preparation_assay_Counter_labeling_fast_red_ITR_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "fast red ITR stain";
+  dc:description "fast red ITR stain";
+  rdfs:isDefinedBy <http://snomed.info/id/47486002> .
+
+fg:Slide_preparation_assay_Counter_labeling_fast_red_TR_salt_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "fast red TR salt stain";
+  dc:description "fast red TR salt stain";
+  rdfs:isDefinedBy <http://snomed.info/id/76633005> .
+
+fg:Slide_preparation_assay_Counter_labeling_fast_sulfon_black_F_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "fast sulfon black F stain";
+  dc:description "fast sulfon black F stain";
+  rdfs:isDefinedBy <http://snomed.info/id/88660000> .
+
+fg:Slide_preparation_assay_Counter_labeling_fast_violet_B_salt_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "fast violet B salt stain";
+  dc:description "fast violet B salt stain";
+  rdfs:isDefinedBy <http://snomed.info/id/72371006> .
+
+fg:Slide_preparation_assay_Counter_labeling_fat_red_7B_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "fat red 7B stain";
+  dc:description "fat red 7B stain";
+  rdfs:isDefinedBy <http://snomed.info/id/76439002> .
+
+fg:Slide_preparation_assay_Counter_labeling_Feulgen_reaction_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "Feulgen reaction stain";
+  dc:description "Feulgen reaction stain";
+  rdfs:isDefinedBy <http://snomed.info/id/255797007> .
+
+<https://w3id.org/fair-genomes/ontology/Slide_preparation_assay_Counter_labeling_field's_stain>
+  a <http://snomed.info/id/703857004>;
+  rdfs:label "field's stain";
+  dc:description "field's stain";
+  rdfs:isDefinedBy <http://snomed.info/id/255798002> .
+
+fg:Slide_preparation_assay_Counter_labeling_Flagellar_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "Flagellar stain";
+  dc:description "Flagellar stain";
+  rdfs:isDefinedBy <http://snomed.info/id/255799005> .
+
+fg:Slide_preparation_assay_Counter_labeling_fluorescent_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "fluorescent stain";
+  dc:description "fluorescent stain";
+  rdfs:isDefinedBy <http://snomed.info/id/35352008> .
+
+fg:Slide_preparation_assay_Counter_labeling_fouchet_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "fouchet stain";
+  dc:description "fouchet stain";
+  rdfs:isDefinedBy <http://snomed.info/id/406980006> .
+
+fg:Slide_preparation_assay_Counter_labeling_fuchsin_acid_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "fuchsin acid stain";
+  dc:description "fuchsin acid stain";
+  rdfs:isDefinedBy <http://snomed.info/id/60920007> .
+
+fg:Slide_preparation_assay_Counter_labeling_fuchsin_basic_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "fuchsin basic stain";
+  dc:description "fuchsin basic stain";
+  rdfs:isDefinedBy <http://snomed.info/id/50062004> .
+
+fg:Slide_preparation_assay_Counter_labeling_gallocyanine_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "gallocyanine stain";
+  dc:description "gallocyanine stain";
+  rdfs:isDefinedBy <http://snomed.info/id/8836009> .
+
+fg:Slide_preparation_assay_Counter_labeling_giemsa_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "giemsa stain";
+  dc:description "giemsa stain";
+  rdfs:isDefinedBy <http://snomed.info/id/373646006> .
+
+fg:Slide_preparation_assay_Counter_labeling_gram_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "gram stain";
+  dc:description "gram stain";
+  rdfs:isDefinedBy <http://snomed.info/id/385484003> .
+
+fg:Slide_preparation_assay_Counter_labeling_hansel_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "hansel stain";
+  dc:description "hansel stain";
+  rdfs:isDefinedBy <http://snomed.info/id/406983008> .
+
+fg:Slide_preparation_assay_Counter_labeling_hematein_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "hematein stain";
+  dc:description "hematein stain";
+  rdfs:isDefinedBy <http://snomed.info/id/75956008> .
+
+fg:Slide_preparation_assay_Counter_labeling_hematoxylin_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "hematoxylin stain";
+  dc:description "hematoxylin stain";
+  rdfs:isDefinedBy <http://snomed.info/id/12710003> .
+
+fg:Slide_preparation_assay_Counter_labeling_immunofluorescent_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "immunofluorescent stain";
+  dc:description "immunofluorescent stain";
+  rdfs:isDefinedBy <http://snomed.info/id/255800009> .
+
+fg:Slide_preparation_assay_Counter_labeling_India_ink_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "India ink stain";
+  dc:description "India ink stain";
+  rdfs:isDefinedBy <http://snomed.info/id/406972004> .
+
+fg:Slide_preparation_assay_Counter_labeling_indigo_carmine a <http://snomed.info/id/703857004>;
+  rdfs:label "indigo carmine";
+  dc:description "indigo carmine";
+  rdfs:isDefinedBy <http://snomed.info/id/412548006> .
+
+fg:Slide_preparation_assay_Counter_labeling_indophenol_from_naphthol_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "indophenol from naphthol stain";
+  dc:description "indophenol from naphthol stain";
+  rdfs:isDefinedBy <http://snomed.info/id/11727009> .
+
+fg:Slide_preparation_assay_Counter_labeling_insoluble_berlin_blue_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "insoluble berlin blue stain";
+  dc:description "insoluble berlin blue stain";
+  rdfs:isDefinedBy <http://snomed.info/id/47030008> .
+
+fg:Slide_preparation_assay_Counter_labeling_janus_green_B_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "janus green B stain";
+  dc:description "janus green B stain";
+  rdfs:isDefinedBy <http://snomed.info/id/68263003> .
+
+fg:Slide_preparation_assay_Counter_labeling_Jenner-Giemsa_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "Jenner-Giemsa stain";
+  dc:description "Jenner-Giemsa stain";
+  rdfs:isDefinedBy <http://snomed.info/id/255801008> .
+
+fg:Slide_preparation_assay_Counter_labeling_kenacid_blue_R_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "kenacid blue R stain";
+  dc:description "kenacid blue R stain";
+  rdfs:isDefinedBy <http://snomed.info/id/29342009> .
+
+fg:Slide_preparation_assay_Counter_labeling_lacmoid_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "lacmoid stain";
+  dc:description "lacmoid stain";
+  rdfs:isDefinedBy <http://snomed.info/id/35724001> .
+
+fg:Slide_preparation_assay_Counter_labeling_Leishman_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "Leishman stain";
+  dc:description "Leishman stain";
+  rdfs:isDefinedBy <http://snomed.info/id/255802001> .
+
+fg:Slide_preparation_assay_Counter_labeling_light_green_SF_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "light green SF stain";
+  dc:description "light green SF stain";
+  rdfs:isDefinedBy <http://snomed.info/id/89139001> .
+
+fg:Slide_preparation_assay_Counter_labeling_lissamine_fast_red_B_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "lissamine fast red B stain";
+  dc:description "lissamine fast red B stain";
+  rdfs:isDefinedBy <http://snomed.info/id/6701008> .
+
+fg:Slide_preparation_assay_Counter_labeling_lissamine_fast_yellow_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "lissamine fast yellow stain";
+  dc:description "lissamine fast yellow stain";
+  rdfs:isDefinedBy <http://snomed.info/id/25079009> .
+
+fg:Slide_preparation_assay_Counter_labeling_lissamine_green_B_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "lissamine green B stain";
+  dc:description "lissamine green B stain";
+  rdfs:isDefinedBy <http://snomed.info/id/38543004> .
+
+fg:Slide_preparation_assay_Counter_labeling_lissamine_rhodamine_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "lissamine rhodamine stain";
+  dc:description "lissamine rhodamine stain";
+  rdfs:isDefinedBy <http://snomed.info/id/111102009> .
+
+fg:Slide_preparation_assay_Counter_labeling_luxol_fast_blue_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "luxol fast blue stain";
+  dc:description "luxol fast blue stain";
+  rdfs:isDefinedBy <http://snomed.info/id/406958008> .
+
+fg:Slide_preparation_assay_Counter_labeling_malachite_green_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "malachite green stain";
+  dc:description "malachite green stain";
+  rdfs:isDefinedBy <http://snomed.info/id/27120008> .
+
+fg:Slide_preparation_assay_Counter_labeling_Mallory_bleach_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "Mallory bleach stain";
+  dc:description "Mallory bleach stain";
+  rdfs:isDefinedBy <http://snomed.info/id/406953004> .
+
+fg:Slide_preparation_assay_Counter_labeling_martius_yellow_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "martius yellow stain";
+  dc:description "martius yellow stain";
+  rdfs:isDefinedBy <http://snomed.info/id/46139004> .
+
+fg:Slide_preparation_assay_Counter_labeling_may-Grunwald_giemsa_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "may-Grunwald giemsa stain";
+  dc:description "may-Grunwald giemsa stain";
+  rdfs:isDefinedBy <http://snomed.info/id/255803006> .
+
+fg:Slide_preparation_assay_Counter_labeling_meldola_blue_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "meldola blue stain";
+  dc:description "meldola blue stain";
+  rdfs:isDefinedBy <http://snomed.info/id/24516006> .
+
+fg:Slide_preparation_assay_Counter_labeling_metanil_yellow_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "metanil yellow stain";
+  dc:description "metanil yellow stain";
+  rdfs:isDefinedBy <http://snomed.info/id/54791001> .
+
+fg:Slide_preparation_assay_Counter_labeling_methyl_blue_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "methyl blue stain";
+  dc:description "methyl blue stain";
+  rdfs:isDefinedBy <http://snomed.info/id/9010006> .
+
+fg:Slide_preparation_assay_Counter_labeling_methyl_green_pyronin_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "methyl green pyronin stain";
+  dc:description "methyl green pyronin stain";
+  rdfs:isDefinedBy <http://snomed.info/id/255804000> .
+
+fg:Slide_preparation_assay_Counter_labeling_methyl_orange_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "methyl orange stain";
+  dc:description "methyl orange stain";
+  rdfs:isDefinedBy <http://snomed.info/id/42248000> .
+
+fg:Slide_preparation_assay_Counter_labeling_methyl_red_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "methyl red stain";
+  dc:description "methyl red stain";
+  rdfs:isDefinedBy <http://snomed.info/id/13744001> .
+
+fg:Slide_preparation_assay_Counter_labeling_methyl_violet_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "methyl violet stain";
+  dc:description "methyl violet stain";
+  rdfs:isDefinedBy <http://snomed.info/id/387239001> .
+
+fg:Slide_preparation_assay_Counter_labeling_methylene_blue_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "methylene blue stain";
+  dc:description "methylene blue stain";
+  rdfs:isDefinedBy <http://snomed.info/id/6725000> .
+
+fg:Slide_preparation_assay_Counter_labeling_methylene_violet_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "methylene violet stain";
+  dc:description "methylene violet stain";
+  rdfs:isDefinedBy <http://snomed.info/id/406961009> .
+
+<https://w3id.org/fair-genomes/ontology/Slide_preparation_assay_Counter_labeling_methylene_violet_stain_(Bernthsen)>
+  a <http://snomed.info/id/703857004>;
+  rdfs:label "methylene violet stain (Bernthsen)";
+  dc:description "methylene violet stain (Bernthsen)";
+  rdfs:isDefinedBy <http://snomed.info/id/31260003> .
+
+fg:Slide_preparation_assay_Counter_labeling_modified_trichrome_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "modified trichrome stain";
+  dc:description "modified trichrome stain";
+  rdfs:isDefinedBy <http://snomed.info/id/406991004> .
+
+fg:Slide_preparation_assay_Counter_labeling_mucicarmine_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "mucicarmine stain";
+  dc:description "mucicarmine stain";
+  rdfs:isDefinedBy <http://snomed.info/id/406964001> .
+
+fg:Slide_preparation_assay_Counter_labeling_myeloperoxidase_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "myeloperoxidase stain";
+  dc:description "myeloperoxidase stain";
+  rdfs:isDefinedBy <http://snomed.info/id/255805004> .
+
+fg:Slide_preparation_assay_Counter_labeling_naphthalene_black_12B_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "naphthalene black 12B stain";
+  dc:description "naphthalene black 12B stain";
+  rdfs:isDefinedBy <http://snomed.info/id/16788000> .
+
+fg:Slide_preparation_assay_Counter_labeling_naphthol_green_B_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "naphthol green B stain";
+  dc:description "naphthol green B stain";
+  rdfs:isDefinedBy <http://snomed.info/id/14958002> .
+
+fg:Slide_preparation_assay_Counter_labeling_naphthol_yellow_S_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "naphthol yellow S stain";
+  dc:description "naphthol yellow S stain";
+  rdfs:isDefinedBy <http://snomed.info/id/111101002> .
+
+fg:Slide_preparation_assay_Counter_labeling_naphthol-AS-D-chloracetate_esterase_stain
+  a <http://snomed.info/id/703857004>;
+  rdfs:label "naphthol-AS-D-chloracetate esterase stain";
+  dc:description "naphthol-AS-D-chloracetate esterase stain";
+  rdfs:isDefinedBy <http://snomed.info/id/406973009> .
+
+fg:Slide_preparation_assay_Counter_labeling_neutral_red_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "neutral red stain";
+  dc:description "neutral red stain";
+  rdfs:isDefinedBy <http://snomed.info/id/67956008> .
+
+fg:Slide_preparation_assay_Counter_labeling_neutrophil_alkaline_phosphatase_stain
+  a <http://snomed.info/id/703857004>;
+  rdfs:label "neutrophil alkaline phosphatase stain";
+  dc:description "neutrophil alkaline phosphatase stain";
+  rdfs:isDefinedBy <http://snomed.info/id/255806003> .
+
+fg:Slide_preparation_assay_Counter_labeling_new_fuchsin_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "new fuchsin stain";
+  dc:description "new fuchsin stain";
+  rdfs:isDefinedBy <http://snomed.info/id/37174001> .
+
+fg:Slide_preparation_assay_Counter_labeling_night_blue_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "night blue stain";
+  dc:description "night blue stain";
+  rdfs:isDefinedBy <http://snomed.info/id/406965000> .
+
+fg:Slide_preparation_assay_Counter_labeling_nile_blue_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "nile blue stain";
+  dc:description "nile blue stain";
+  rdfs:isDefinedBy <http://snomed.info/id/77073008> .
+
+fg:Slide_preparation_assay_Counter_labeling_nitrazine_yellow_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "nitrazine yellow stain";
+  dc:description "nitrazine yellow stain";
+  rdfs:isDefinedBy <http://snomed.info/id/86750008> .
+
+fg:Slide_preparation_assay_Counter_labeling_nonspecific_esterase_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "nonspecific esterase stain";
+  dc:description "nonspecific esterase stain";
+  rdfs:isDefinedBy <http://snomed.info/id/255807007> .
+
+fg:Slide_preparation_assay_Counter_labeling_nuclear_fast_red_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "nuclear fast red stain";
+  dc:description "nuclear fast red stain";
+  rdfs:isDefinedBy <http://snomed.info/id/78869007> .
+
+fg:Slide_preparation_assay_Counter_labeling_oil_red_O_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "oil red O stain";
+  dc:description "oil red O stain";
+  rdfs:isDefinedBy <http://snomed.info/id/408008006> .
+
+fg:Slide_preparation_assay_Counter_labeling_orange_G_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "orange G stain";
+  dc:description "orange G stain";
+  rdfs:isDefinedBy <http://snomed.info/id/54221006> .
+
+fg:Slide_preparation_assay_Counter_labeling_orcein_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "orcein stain";
+  dc:description "orcein stain";
+  rdfs:isDefinedBy <http://snomed.info/id/406966004> .
+
+fg:Slide_preparation_assay_Counter_labeling_paraldehyde_fuchsin_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "paraldehyde fuchsin stain";
+  dc:description "paraldehyde fuchsin stain";
+  rdfs:isDefinedBy <http://snomed.info/id/38542001> .
+
+fg:Slide_preparation_assay_Counter_labeling_pararosaniline_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "pararosaniline stain";
+  dc:description "pararosaniline stain";
+  rdfs:isDefinedBy <http://snomed.info/id/41755001> .
+
+fg:Slide_preparation_assay_Counter_labeling_PAS_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "PAS stain";
+  dc:description "PAS stain (Periodic Acid–Schiff)";
+  rdfs:isDefinedBy <http://snomed.info/id/10490007> .
+
+fg:Slide_preparation_assay_Counter_labeling_pentachrome_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "pentachrome stain";
+  dc:description "pentachrome stain";
+  rdfs:isDefinedBy <http://snomed.info/id/16736000> .
+
+<https://w3id.org/fair-genomes/ontology/Slide_preparation_assay_Counter_labeling_perls’_Prussian_blue_stain>
+  a <http://snomed.info/id/703857004>;
+  rdfs:label "perls’ Prussian blue stain";
+  dc:description "perls’ Prussian blue stain";
+  rdfs:isDefinedBy <http://snomed.info/id/30874003> .
+
+fg:Slide_preparation_assay_Counter_labeling_Ponceau_S_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "Ponceau S stain";
+  dc:description "Ponceau S stain";
+  rdfs:isDefinedBy <http://snomed.info/id/39859004> .
+
+fg:Slide_preparation_assay_Counter_labeling_papanicolaou_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "papanicolaou stain";
+  dc:description "papanicolaou stain";
+  rdfs:isDefinedBy <http://snomed.info/id/16798007> .
+
+fg:Slide_preparation_assay_Counter_labeling_pyronin_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "pyronin stain";
+  dc:description "pyronin stain";
+  rdfs:isDefinedBy <http://snomed.info/id/27412003> .
+
+fg:Slide_preparation_assay_Counter_labeling_resorcin_fuchsin_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "resorcin fuchsin stain";
+  dc:description "resorcin fuchsin stain";
+  rdfs:isDefinedBy <http://snomed.info/id/38453007> .
+
+fg:Slide_preparation_assay_Counter_labeling_rhodamine_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "rhodamine stain";
+  dc:description "rhodamine stain";
+  rdfs:isDefinedBy <http://snomed.info/id/86399001> .
+
+fg:Slide_preparation_assay_Counter_labeling_Romanowsky_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "Romanowsky stain";
+  dc:description "Romanowsky stain";
+  rdfs:isDefinedBy <http://snomed.info/id/12278009> .
+
+fg:Slide_preparation_assay_Counter_labeling_Safranin_O_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "Safranin O stain";
+  dc:description "Safranin O stain";
+  rdfs:isDefinedBy <http://snomed.info/id/37254005> .
+
+fg:Slide_preparation_assay_Counter_labeling_Sirius_red_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "Sirius red stain";
+  dc:description "Sirius red stain";
+  rdfs:isDefinedBy <http://snomed.info/id/67314006> .
+
+fg:Slide_preparation_assay_Counter_labeling_silver_nitrate_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "silver nitrate stain";
+  dc:description "silver nitrate stain";
+  rdfs:isDefinedBy <http://snomed.info/id/90963000> .
+
+fg:Slide_preparation_assay_Counter_labeling_Sudan_black_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "Sudan black stain";
+  dc:description "Sudan black stain";
+  rdfs:isDefinedBy <http://snomed.info/id/16178005> .
+
+fg:Slide_preparation_assay_Counter_labeling_Sudan_III_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "Sudan III stain";
+  dc:description "Sudan III stain";
+  rdfs:isDefinedBy <http://snomed.info/id/15945005> .
+
+fg:Slide_preparation_assay_Counter_labeling_Sudan_IV_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "Sudan IV stain";
+  dc:description "Sudan IV stain";
+  rdfs:isDefinedBy <http://snomed.info/id/31389005> .
+
+fg:Slide_preparation_assay_Counter_labeling_Sudan_red_7B_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "Sudan red 7B stain";
+  dc:description "Sudan red 7B stain";
+  rdfs:isDefinedBy <http://snomed.info/id/76439002> .
+
+fg:Slide_preparation_assay_Counter_labeling_toluidine_blue_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "toluidine blue stain";
+  dc:description "toluidine blue stain";
+  rdfs:isDefinedBy <http://snomed.info/id/38543005> .
+
+fg:Slide_preparation_assay_Counter_labeling_trichrome_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "trichrome stain";
+  dc:description "trichrome stain";
+  rdfs:isDefinedBy <http://snomed.info/id/6410008> .
+
+fg:Slide_preparation_assay_Counter_labeling_van_Gieson_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "van Gieson stain";
+  dc:description "van Gieson stain";
+  rdfs:isDefinedBy <http://snomed.info/id/85525005> .
+
+fg:Slide_preparation_assay_Counter_labeling_Victoria_blue_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "Victoria blue stain";
+  dc:description "Victoria blue stain";
+  rdfs:isDefinedBy <http://snomed.info/id/38585005> .
+
+fg:Slide_preparation_assay_Counter_labeling_Wright_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "Wright stain";
+  dc:description "Wright stain";
+  rdfs:isDefinedBy <http://snomed.info/id/38620003> .
+
+fg:Slide_preparation_assay_Counter_labeling_Ziehl-Neelsen_stain a <http://snomed.info/id/703857004>;
+  rdfs:label "Ziehl-Neelsen stain";
+  dc:description "Ziehl-Neelsen stain";
+  rdfs:isDefinedBy <http://snomed.info/id/65520002> .
+
+<https://w3id.org/fair-genomes/ontology/Slide_preparation_assay_Counter_labeling_NoInformation_(NI,_nullflavor)>
+  a <http://snomed.info/id/703857004>;
+  rdfs:label "NoInformation (NI, nullflavor)";
+  dc:description "The value is exceptional (missing, omitted, incomplete, improper). No information as to the reason for being an exceptional value is provided. This is the most general exceptional value. It is also the default exceptional value.";
+  rdfs:isDefinedBy <http://terminology.hl7.org/CodeSystem/v3-NullFlavor#NI> .
+
+<https://w3id.org/fair-genomes/ontology/Slide_preparation_assay_Counter_labeling_Invalid_(INV,_nullflavor)>
+  a <http://snomed.info/id/703857004>;
+  rdfs:label "Invalid (INV, nullflavor)";
+  dc:description "The value as represented in the instance is not a member of the set of permitted data values in the constrained value domain of a variable.";
+  rdfs:isDefinedBy <http://terminology.hl7.org/CodeSystem/v3-NullFlavor#INV> .
+
+<https://w3id.org/fair-genomes/ontology/Slide_preparation_assay_Counter_labeling_Derived_(DER,_nullflavor)>
+  a <http://snomed.info/id/703857004>;
+  rdfs:label "Derived (DER, nullflavor)";
+  dc:description "An actual value may exist, but it must be derived from the provided information (usually an EXPR generic data type extension will be used to convey the derivation expression .";
+  rdfs:isDefinedBy <http://terminology.hl7.org/CodeSystem/v3-NullFlavor#DER> .
+
+<https://w3id.org/fair-genomes/ontology/Slide_preparation_assay_Counter_labeling_Other_(OTH,_nullflavor)>
+  a <http://snomed.info/id/703857004>;
+  rdfs:label "Other (OTH, nullflavor)";
+  dc:description "The actual value is not a member of the set of permitted data values in the constrained value domain of a variable.The actual value is not a member of the set of permitted data values in the constrained value domain of a variable. (e.g., concept not provided by required code system).";
+  rdfs:isDefinedBy <http://terminology.hl7.org/CodeSystem/v3-NullFlavor#OTH> .
+
+<https://w3id.org/fair-genomes/ontology/Slide_preparation_assay_Counter_labeling_Negative_infinity_(NINF,_nullflavor)>
+  a <http://snomed.info/id/703857004>;
+  rdfs:label "Negative infinity (NINF, nullflavor)";
+  dc:description "Negative infinity of numbers.";
+  rdfs:isDefinedBy <http://terminology.hl7.org/CodeSystem/v3-NullFlavor#NINF> .
+
+<https://w3id.org/fair-genomes/ontology/Slide_preparation_assay_Counter_labeling_Positive_infinity_(PINF,_nullflavor)>
+  a <http://snomed.info/id/703857004>;
+  rdfs:label "Positive infinity (PINF, nullflavor)";
+  dc:description "Positive infinity of numbers.";
+  rdfs:isDefinedBy <http://terminology.hl7.org/CodeSystem/v3-NullFlavor#PINF> .
+
+<https://w3id.org/fair-genomes/ontology/Slide_preparation_assay_Counter_labeling_Un-encoded_(UNC,_nullflavor)>
+  a <http://snomed.info/id/703857004>;
+  rdfs:label "Un-encoded (UNC, nullflavor)";
+  dc:description "The actual value has not yet been encoded within the approved value domain.";
+  rdfs:isDefinedBy <http://terminology.hl7.org/CodeSystem/v3-NullFlavor#UNC> .
+
+<https://w3id.org/fair-genomes/ontology/Slide_preparation_assay_Counter_labeling_Masked_(MSK,_nullflavor)>
+  a <http://snomed.info/id/703857004>;
+  rdfs:label "Masked (MSK, nullflavor)";
+  dc:description "There is information on this item available but it has not been provided by the sender due to security, privacy or other reasons. There may be an alternate mechanism for gaining access to this information.";
+  rdfs:isDefinedBy <http://terminology.hl7.org/CodeSystem/v3-NullFlavor#MSK> .
+
+<https://w3id.org/fair-genomes/ontology/Slide_preparation_assay_Counter_labeling_Not_applicable_(NA,_nullflavor)>
+  a <http://snomed.info/id/703857004>;
+  rdfs:label "Not applicable (NA, nullflavor)";
+  dc:description "Known to have no proper value (e.g., last menstrual period for a male).";
+  rdfs:isDefinedBy <http://terminology.hl7.org/CodeSystem/v3-NullFlavor#NA> .
+
+<https://w3id.org/fair-genomes/ontology/Slide_preparation_assay_Counter_labeling_Unknown_(UNK,_nullflavor)>
+  a <http://snomed.info/id/703857004>;
+  rdfs:label "Unknown (UNK, nullflavor)";
+  dc:description "A proper value is applicable, but not known.";
+  rdfs:isDefinedBy <http://terminology.hl7.org/CodeSystem/v3-NullFlavor#UNK> .
+
+<https://w3id.org/fair-genomes/ontology/Slide_preparation_assay_Counter_labeling_Asked_but_unknown_(ASKU,_nullflavor)>
+  a <http://snomed.info/id/703857004>;
+  rdfs:label "Asked but unknown (ASKU, nullflavor)";
+  dc:description "Information was sought but not found (e.g., patient was asked but didn't know)";
+  rdfs:isDefinedBy <http://terminology.hl7.org/CodeSystem/v3-NullFlavor#ASKU> .
+
+<https://w3id.org/fair-genomes/ontology/Slide_preparation_assay_Counter_labeling_Temporarily_unavailable_(NAV,_nullflavor)>
+  a <http://snomed.info/id/703857004>;
+  rdfs:label "Temporarily unavailable (NAV, nullflavor)";
+  dc:description "Information is not available at this time but it is expected that it will be available later.";
+  rdfs:isDefinedBy <http://terminology.hl7.org/CodeSystem/v3-NullFlavor#NAV> .
+
+<https://w3id.org/fair-genomes/ontology/Slide_preparation_assay_Counter_labeling_Not_asked_(NASK,_nullflavor)>
+  a <http://snomed.info/id/703857004>;
+  rdfs:label "Not asked (NASK, nullflavor)";
+  dc:description "This information has not been sought. (e.g., patient was not asked)";
+  rdfs:isDefinedBy <http://terminology.hl7.org/CodeSystem/v3-NullFlavor#NASK> .
+
+<https://w3id.org/fair-genomes/ontology/Slide_preparation_assay_Counter_labeling_Not_available_(NAVU,_nullflavor)>
+  a <http://snomed.info/id/703857004>;
+  rdfs:label "Not available (NAVU, nullflavor)";
+  dc:description "Information is not available at this time (with no expectation regarding whether it will or will not be available in the future).";
+  rdfs:isDefinedBy <http://terminology.hl7.org/CodeSystem/v3-NullFlavor#NAVU> .
+
+<https://w3id.org/fair-genomes/ontology/Slide_preparation_assay_Counter_labeling_Sufficient_quantity_(QS,_nullflavor)>
+  a <http://snomed.info/id/703857004>;
+  rdfs:label "Sufficient quantity (QS, nullflavor)";
+  dc:description "The specific quantity is not known, but is known to be non-zero and is not specified because it makes up the bulk of the material. e.g. 'Add 10mg of ingredient X, 50mg of ingredient Y, and sufficient quantity of water to 100mL.' The null flavor would be used to express the quantity of water.";
+  rdfs:isDefinedBy <http://terminology.hl7.org/CodeSystem/v3-NullFlavor#QS> .
+
+<https://w3id.org/fair-genomes/ontology/Slide_preparation_assay_Counter_labeling_Trace_(TRC,_nullflavor)>
+  a <http://snomed.info/id/703857004>;
+  rdfs:label "Trace (TRC, nullflavor)";
+  dc:description "The content is greater than zero, but too small to be quantified.";
+  rdfs:isDefinedBy <http://terminology.hl7.org/CodeSystem/v3-NullFlavor#TRC> .

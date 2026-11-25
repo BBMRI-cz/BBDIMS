@@ -1,0 +1,6 @@
+name	entity	label	dataType	idAttribute	nillable
+value	SlidePreparationAssay_AntibodyName	Value (English)	String	TRUE	FALSE
+description	SlidePreparationAssay_AntibodyName	Description (English)	Text	FALSE	TRUE
+codesystem	SlidePreparationAssay_AntibodyName	The code system (e.g. ontology) this term belongs to	String	FALSE	TRUE
+code	SlidePreparationAssay_AntibodyName	The code within the code system	String	FALSE	TRUE
+iri	SlidePreparationAssay_AntibodyName	The Internationalized Resource Identifier for this term	String	FALSE	TRUE
